@@ -247,6 +247,18 @@
                         <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
                         <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
                     </control>
+					<control type="radiobutton" id="110">
+                        <description>Disable Home Fanart</description>
+                        <width>810</width>
+                        <align>left</align>
+                        <label>Disable Home Fanart</label>
+                        <focusedcolor>Accent</focusedcolor>
+						<font>List_Settings</font>
+                        <onclick>Skin.ToggleSetting(DisableHomeFanart)</onclick>
+                        <selected>Skin.HasSetting(DisableHomeFanart)</selected>
+                        <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+                        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+                    </control>
 					
 				</control>
                 <control type="grouplist" id="200">
@@ -371,6 +383,19 @@
 						<font>List_Settings</font>
 						<label>Subtitle Addon</label>
 						<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>						
+					</control>
+					<control type="radiobutton" id="303">
+						<description>Tv Tunes</description>
+						 <width>810</width>
+                        <align>left</align>
+						<label>Enable TvTunes</label>
+                        <focusedcolor>Accent</focusedcolor>
+						<font>List_Settings</font>
+                        <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
+						<selected>Skin.HasSetting(ActivateTvTunes)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+                        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
                 </control>
 				<control type="grouplist" id="350">
