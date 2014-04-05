@@ -20,7 +20,7 @@
             <control type="group">
 				<animation effect="slide" start="0,-70" end="0,0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,-70" time="600" tween="cubic" easing="in">WindowClose</animation>
-				<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
+				<animation effect="fade" start="100" end="0" time="600" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -73,6 +73,8 @@
 						<onclick>ActivateWindow(123)</onclick>
 					</control>
 					<control type="button" id="4">
+						<posx>1220</posx>
+						<posy>10</posy>
 						<description>Subtitles</description>
 						<width>50</width>
 						<height>50</height>
@@ -80,64 +82,10 @@
 						<font>-</font>
 						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-						<onclick>ActivateWindow(SubtitleSearch)</onclick>
-					</control>
+						<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
+						<visible>System.HasAddon(script.xbmc.subtitles)</visible>
 				</control>
-				<!--
-				<control type="grouplist" id="400">
-					<width>230</width>
-					<height>60</height>
-					<posx>1040</posx>
-					<posy>10</posy>
-					<itemgap>10</itemgap>
-					<orientation>horizontal</orientation>
-					<align>right</align>
-					<onleft>17</onleft>
-					<onright>1</onright>
-					<control type="button" id="4">
-						<description>Subtitles</description>
-						<width>50</width>
-						<height>50</height>
-						<label>287</label>
-						<font>-</font>
-						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-						<onclick>ActivateWindow(SubtitleSearch)</onclick>
-					</control>
-					
-					<control type="button" id="5">
-						<width>50</width>
-						<height>50</height>
-						<font>-</font>
-						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-						<label>22006</label>
-						<onclick>SubtitleDelay</onclick>
-						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-					</control>
-					<control type="button"  id="6">
-						<width>50</width>
-						<height>50</height>
-						<font>-</font>
-						<texturefocus>other_textures/osd/osdbuttonfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/osdbuttonnf.png</texturenofocus>
-						<label>209</label>
-						<onclick>NextSubtitle</onclick>
-						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
-					</control>
-					<control type="radiobutton" id="7">
-						<width>50</width>
-						<height>50</height>
-						<font>-</font>
-						<texturefocus>other_textures/osd/osdbuttonfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/osdbuttonnf.png</texturenofocus>
-						<label>449</label>
-						<onclick>ShowSubtitles</onclick>
-						<selected>VideoPlayer.SubtitlesEnabled</selected>
-						<visible>VideoPlayer.HasSubtitles</visible>
-					</control>
-					
-				</control>-->
+				</control>
 				<!-- Player Controls -->
 				<control type="group">
 					<posx>465</posx>
@@ -250,7 +198,6 @@
 					<font>Clock</font>
 					<align>right</align>
 				</control>
-			
 			<!--Covers / Info / Progress Bar -->
 			<control type="group">
 				<visible>!Window.IsActive(fullscreeninfo)</visible>
@@ -380,7 +327,7 @@
 							</control>
 							<!-- Display of Season Episode -->
 							<control type="label">
-								<label>[COLOR Accent]$INFO[VideoPlayer.Season,[COLOR White]Season [/COLOR]] $INFO[VideoPlayer.Episode,[COLOR White]Episode [/COLOR] ][/COLOR] </label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Season,[COLOR White]$LOCALIZE[20373] [/COLOR]] $INFO[VideoPlayer.Episode,[COLOR White]$LOCALIZE[20359] [/COLOR] ][/COLOR] </label>
 								<posy>97</posy>
 								<width>1050</width>
 								<font>Music_Vis_Title3</font>
@@ -416,7 +363,7 @@
 								<description>Movie Director</description>
 								<posy>52</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]$LOCALIZE[20339] [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title2</font>
 								<align>left</align>
@@ -427,7 +374,7 @@
 								<description>Movie Director</description>
 								<posy>97</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]$LOCALIZE[20339] [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title3</font>
 								<align>left</align>
@@ -438,7 +385,7 @@
 								<description>Movie Director</description>
 								<posy>97</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Duration,[COLOR White]Duration [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Duration,[COLOR White]$LOCALIZE[180] [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title3</font>
 								<align>left</align>

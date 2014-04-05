@@ -14,4 +14,8 @@
 		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31739])">$LOCALIZE[31739]</value>
 		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31738])">$LOCALIZE[31738]</value>
 	</variable>
+	<variable name="SeasonPoster">    
+		<value condition="!IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Season,../season0,-poster.jpg]</value>
+		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-poster.jpg]</value> 
+	</variable> 
 </includes>
