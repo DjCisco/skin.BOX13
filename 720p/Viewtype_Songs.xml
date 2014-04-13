@@ -46,7 +46,7 @@
 				<focusposition>3</focusposition>
                 <onup>503</onup>
                 <ondown>503</ondown>
-                <onright>63</onright>
+                <onright>1</onright>
                 <onleft>9000</onleft>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
@@ -174,7 +174,13 @@
                 <posy>290</posy>
                 <width>5</width>
                 <height>315</height>
-				<onleft>503</onleft>
+                <texturesliderbackground></texturesliderbackground>
+                <textureslidernib>bar.png</textureslidernib>
+                <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+                <texturesliderbar></texturesliderbar>
+                <texturesliderbarfocus></texturesliderbarfocus>
+                <showonepage>true</showonepage>
+                <orientation>vertical</orientation>
             </control>
             <!-- This Control displays the Album Title-->
 			<control type="label">

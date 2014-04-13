@@ -120,8 +120,9 @@
                 <scrolltime>200</scrolltime>
                 <onup>525</onup>
                 <ondown>525</ondown>
-                <onright>63</onright>
-		        <onleft>9000</onleft>
+                <onright>down</onright>
+				<onright>left</onright>
+                <onleft>9000</onleft>
                 <viewtype label="Thumb">Episodes View</viewtype>
                 <orientation>vertical</orientation>
                 <focusposition>4</focusposition>
@@ -332,7 +333,11 @@
                 <posy>290</posy>
                 <width>5</width>
                 <height>315</height>
-				<onleft>525</onleft>
+                <texturesliderbackground></texturesliderbackground>
+                <textureslidernib>bar.png</textureslidernib>
+                <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+                <texturesliderbar></texturesliderbar>
+                <texturesliderbarfocus></texturesliderbarfocus>
                 <showonepage>true</showonepage>
                 <orientation>vertical</orientation>
             </control>

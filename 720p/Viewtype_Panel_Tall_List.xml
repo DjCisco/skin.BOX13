@@ -59,7 +59,7 @@
 					<movement>3</movement>
 					<focusposition>3</focusposition>
 					<onleft>9000</onleft>
-					<onright>62</onright>
+					<onright>523</onright>
 					<onup>523</onup>
 					<ondown>523</ondown>
 					<pagecontrol>62</pagecontrol>
@@ -332,7 +332,12 @@
 					<posy>290</posy>
 					<width>5</width>
 					<height>315</height>
-					<onleft>523</onleft>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
 					<orientation>vertical</orientation>
 					<visible>[!Skin.HasSetting(moviewidelist) + Container.Content(movies)] | [!Skin.HasSetting(tvshowwidelist) + Container.Content(tvshows)]</visible>
 				</control>
@@ -341,7 +346,12 @@
 					<posy>290</posy>
 					<width>5</width>
 					<height>315</height>
-					<onleft>523</onleft>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
 					<orientation>vertical</orientation>
 					<visible>[Skin.HasSetting(moviewidelist) + Container.Content(movies)] | [Skin.HasSetting(tvshowwidelist) + Container.Content(tvshows)]</visible>
 				</control>

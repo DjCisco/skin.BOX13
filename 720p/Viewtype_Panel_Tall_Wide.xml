@@ -28,7 +28,13 @@
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
                 <onleft>9000</onleft>
-                <onright>62</onright>
+                <onright>left</onright>
+                <onright>left</onright>
+                <onright>left</onright>
+                <onright>left</onright>
+                <onright>left</onright>
+                <onright>right</onright>
+                <onright>down</onright>
                 <pagecontrol>62</pagecontrol>
                 <preloaditems>2</preloaditems>
                 <visible>Window.IsActive(1) | Container.Content(Movies) | Container.Content(TVShows)</visible>
@@ -56,17 +62,10 @@
                         <width>100</width>
                         <height>155</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <colordiffuse>ImageDiffuse</colordiffuse>
                         <aspectratio scalediffuse="false">keep</aspectratio>
 						<bordersize>5</bordersize>
                         <visible>IsEmpty(ListItem.Art(poster))</visible>
-					</control>
-					<control type="image">
-                        <posx></posx>
-                        <posy></posy>
-                        <width>100</width>
-                        <height>155</height>
-                        <texture background="true">music_fanart_diffuse.png</texture>
-						<bordersize>5</bordersize>
 					</control>
                     <!-- This Control Displays the Watched Icon on the Top Right Corner of an Item of the Panel -->
 					<control type="image">
@@ -196,7 +195,12 @@
                 <posy>290</posy>
                 <width>5</width>
                 <height>315</height>
-				<onleft>524</onleft>
+                <texturesliderbackground></texturesliderbackground>
+                <textureslidernib>bar.png</textureslidernib>
+                <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+                <texturesliderbar></texturesliderbar>
+                <texturesliderbarfocus></texturesliderbarfocus>
+                <showonepage>true</showonepage>
                 <orientation>vertical</orientation>
             </control>
             <!-- This control displays the Movie Tv Show or Episode Title on the Top of the Poster Panel-->

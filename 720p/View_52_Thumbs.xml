@@ -35,7 +35,6 @@
                 <width>1200</width>
                 <height>320</height>
                 <onleft>9000</onleft>
-				<onright>60</onright>
                 <onup>noop</onup>
                 <ondown>noop</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -150,10 +149,16 @@
 					<posy>290</posy>
 					<width>5</width>
 					<height>315</height>
-					<onleft>52</onleft>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
 					<orientation>vertical</orientation>
 				</control>
-					
+				
+				
 		</control>
     </include>
 </includes>
