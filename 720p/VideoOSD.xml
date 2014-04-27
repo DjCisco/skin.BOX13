@@ -17,10 +17,11 @@
         </animation>
         <control type="group">
             <visible>!Window.IsVisible(sliderdialog)</visible>
+			<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml) | Window.IsActive(PVROSDGuide)">conditional</animation>
+			
             <control type="group">
 				<animation effect="slide" start="0,-70" end="0,0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 				<animation effect="slide" start="0,0" end="0,-70" time="600" tween="cubic" easing="in">WindowClose</animation>
-				<animation effect="fade" start="100" end="0" time="600" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -73,8 +74,6 @@
 						<onclick>ActivateWindow(123)</onclick>
 					</control>
 					<control type="button" id="4">
-						<posx>1220</posx>
-						<posy>10</posy>
 						<description>Subtitles</description>
 						<width>50</width>
 						<height>50</height>
@@ -82,10 +81,76 @@
 						<font>-</font>
 						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-						<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
-						<visible>System.HasAddon(script.xbmc.subtitles)</visible>
+						<onclick>ActivateWindow(SubtitleSearch)</onclick>
+					</control>
+					<control type="button" id="5">
+						<description>Video Settings</description>
+						<width>50</width>
+						<height>50</height>
+						<label>EPG</label>
+						<align>left</align>
+						<font>-</font>
+						<texturefocus>other_textures/osd/osdepgfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/osdepgnf.png</texturenofocus>
+						<onclick>ActivateWindow(PVROSDGuide)</onclick>
+						<visible>VideoPlayer.Content(livetv)</visible>
+					</control>
 				</control>
-				</control>
+				<!--
+				<control type="grouplist" id="400">
+					<width>230</width>
+					<height>60</height>
+					<posx>1040</posx>
+					<posy>10</posy>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<align>right</align>
+					<onleft>17</onleft>
+					<onright>1</onright>
+					<control type="button" id="4">
+						<description>Subtitles</description>
+						<width>50</width>
+						<height>50</height>
+						<label>287</label>
+						<font>-</font>
+						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
+						<onclick>ActivateWindow(SubtitleSearch)</onclick>
+					</control>
+					
+					<control type="button" id="5">
+						<width>50</width>
+						<height>50</height>
+						<font>-</font>
+						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
+						<label>22006</label>
+						<onclick>SubtitleDelay</onclick>
+						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					</control>
+					<control type="button"  id="6">
+						<width>50</width>
+						<height>50</height>
+						<font>-</font>
+						<texturefocus>other_textures/osd/osdbuttonfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/osdbuttonnf.png</texturenofocus>
+						<label>209</label>
+						<onclick>NextSubtitle</onclick>
+						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					</control>
+					<control type="radiobutton" id="7">
+						<width>50</width>
+						<height>50</height>
+						<font>-</font>
+						<texturefocus>other_textures/osd/osdbuttonfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/osdbuttonnf.png</texturenofocus>
+						<label>449</label>
+						<onclick>ShowSubtitles</onclick>
+						<selected>VideoPlayer.SubtitlesEnabled</selected>
+						<visible>VideoPlayer.HasSubtitles</visible>
+					</control>
+					
+				</control>-->
 				<!-- Player Controls -->
 				<control type="group">
 					<posx>465</posx>
@@ -198,6 +263,7 @@
 					<font>Clock</font>
 					<align>right</align>
 				</control>
+
 			<!--Covers / Info / Progress Bar -->
 			<control type="group">
 				<visible>!Window.IsActive(fullscreeninfo)</visible>
@@ -205,7 +271,6 @@
 				<control type="group">
 					<animation effect="slide" start="-180" end="0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 					<animation effect="slide" start="0" end="-180" time="600" tween="cubic" easing="in">WindowClose</animation>
-					<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 					<posy>455</posy>
 					<!-- Poster Bg -->
 					<control type="image">
@@ -294,7 +359,6 @@
 					<control type="group">
 						<animation effect="slide" start="1100" end="0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 						<animation effect="slide" start="0" end="1100" time="600" tween="cubic" easing="in">WindowClose</animation>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 						<control type="image">
 							<description>black bar</description>
 							<posy>5</posy>
@@ -327,7 +391,7 @@
 							</control>
 							<!-- Display of Season Episode -->
 							<control type="label">
-								<label>[COLOR Accent]$INFO[VideoPlayer.Season,[COLOR White]$LOCALIZE[20373] [/COLOR]] $INFO[VideoPlayer.Episode,[COLOR White]$LOCALIZE[20359] [/COLOR] ][/COLOR] </label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Season,[COLOR White]Season [/COLOR]] $INFO[VideoPlayer.Episode,[COLOR White]Episode [/COLOR] ][/COLOR] </label>
 								<posy>97</posy>
 								<width>1050</width>
 								<font>Music_Vis_Title3</font>
@@ -363,7 +427,7 @@
 								<description>Movie Director</description>
 								<posy>52</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]$LOCALIZE[20339] [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title2</font>
 								<align>left</align>
@@ -374,7 +438,7 @@
 								<description>Movie Director</description>
 								<posy>97</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]$LOCALIZE[20339] [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title3</font>
 								<align>left</align>
@@ -385,7 +449,7 @@
 								<description>Movie Director</description>
 								<posy>97</posy>
 								<width>1050</width>
-								<label>[COLOR Accent]$INFO[VideoPlayer.Duration,[COLOR White]$LOCALIZE[180] [/COLOR]][/COLOR]</label>
+								<label>[COLOR Accent]$INFO[VideoPlayer.Duration,[COLOR White]Duration [/COLOR]][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title3</font>
 								<align>left</align>
@@ -417,7 +481,6 @@
 					<control type="group">	
 						<animation effect="slide" start="0,60" end="0,0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 						<animation effect="slide" start="0,0" end="0,60" time="600" tween="cubic" easing="in">WindowClose</animation>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 						<posy>230</posy>
 						<!-- Background for Progress Bar -->
 						<control type="image">
@@ -470,7 +533,6 @@
 					<control type="group">
 						<animation effect="slide" start="1100" end="0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 						<animation effect="slide" start="0" end="1100" time="600" tween="cubic" easing="in">WindowClose</animation>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 						<control type="image">
 							<description>black bar</description>
 							<posy>5</posy>
@@ -513,23 +575,55 @@
 								<font>Music_Vis_Title3</font>
 								<align>left</align>
 							</control>
-						</control>
-						<!-- End Time -->
-						<control type="label">
-								<posx>15</posx>
-								<posy>157</posy>
+							<!-- End Time-->
+							<control type="label">
+								<posy>137</posy>
 								<width>785</width>
 								<label>[COLOR Accent]$INFO[Player.FinishTime,[COLOR White]$LOCALIZE[19127]: [/COLOR] ][/COLOR]</label>
 								<scroll>true</scroll>
 								<font>Music_Vis_Title4</font>
 								<align>left</align>
+							</control>
+						</control>
+						<!-- Tv Show Name and Plot -->
+						<control type="group">
+							<posx>15</posx>
+							<posy>20</posy>
+							<visible>VideoPlayer.Content(livetv)</visible>
+							<!-- Title -->	
+							<control type="label">
+								<description>Title</description>
+								<width>980</width>
+								<scroll>true</scroll>
+								<font>Music_Vis_Title</font>
+								<align>left</align>
+								<label>$INFO[VideoPlayer.Title]</label>
+							 </control>
+							<!-- Plot -->	
+							<control type="textbox">
+								<description>Album</description>
+								<posy>60</posy>
+								<width>980</width>
+								<height>100</height>
+								<label>$INFO[VideoPlayer.Plot]</label>
+								<scroll>true</scroll>
+								<align>justify</align>
+								<font>Panel_Description</font>
+							</control>
+							<control type="label">
+								<posy>160</posy>
+								<width>785</width>
+								<label>[COLOR Accent]$INFO[Player.StartTime,[COLOR White]$LOCALIZE[19126]: [/COLOR],[COLOR White] / [/COLOR]][/COLOR] [COLOR Accent]$INFO[Player.FinishTime,[COLOR White]$LOCALIZE[19127]: [/COLOR] ][/COLOR]</label>
+								<scroll>true</scroll>
+								<font>Music_Vis_Title4</font>
+								<align>left</align>
+							</control>
 						</control>
 					</control>
 					<!-- Progress Bar -->
 					<control type="group">	
 						<animation effect="slide" start="0,60" end="0,0" time="600" tween="cubic" easing="out">WindowOpen</animation>
 						<animation effect="slide" start="0,0" end="0,60" time="600" tween="cubic" easing="in">WindowClose</animation>
-						<animation effect="fade" start="100" end="0" time="300" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(script-XBMC-Subtitles-main.xml)">conditional</animation>
 						<posy>230</posy>
 						<!-- Background for Progress Bar -->
 						<control type="image">
