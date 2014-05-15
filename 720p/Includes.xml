@@ -163,7 +163,7 @@
 			<!-- List to Control the cycle through the tv show Fanart  & Image displaying the fanart	-->
 			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
-                <visible>!Skin.HasSetting(DisableHomeFanart) + [[[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + Control.HasFocus(5000)] | [[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(63) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(2002) | Control.HasFocus(2004)]] </visible>
+                <visible>!Skin.HasSetting(DisableHomeFanart) + [[[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + Control.HasFocus(5000)] | [[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(63) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(2002) | Control.HasFocus(2004)] </visible>
                 <control type="list" id="9601">
 					<posx>-1280</posx>
 					<width>1</width>
