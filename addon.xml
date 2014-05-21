@@ -5,8 +5,8 @@
 	name="BOX13"
 	provider-name="DjCisco">
 	<requires>
-		<import addon="xbmc.gui" version="5.0.0"/>
-		<import addon="service.skin.widgets" version="0.0.14"/>
+		<import addon="xbmc.gui" version="5.0.1"/>
+		<import addon="service.skin.widgets" version="0.0.27"/>
 	</requires>
 	<extension
 		point="xbmc.gui.skin"

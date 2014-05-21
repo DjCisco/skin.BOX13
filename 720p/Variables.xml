@@ -6,16 +6,33 @@
 	</variable>
 	<variable name="ShowTV">
 		<value condition="Stringcompare(Skin.String(ItemsTypeTV),Recent) | IsEmpty(Skin.String(ItemsTypeTV))">$LOCALIZE[31709]</value>
-		<value condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended)">$LOCALIZE[31738]</value>
-		<value condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">$LOCALIZE[31739]</value>
+		<value condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended)">$LOCALIZE[31739]</value>
+		<value condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">$LOCALIZE[31738]</value>
+		<value condition="Stringcompare(Skin.String(ItemsTypeTV),NextAired)">$LOCALIZE[19031]</value>
 	</variable>
 	<variable name="ShowMusic">
 		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),Recent) | IsEmpty(Skin.String(ItemsTypeMusic))">$LOCALIZE[31709]</value>
-		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">$LOCALIZE[31738]</value>
-		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">$LOCALIZE[31739]</value>
+		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">$LOCALIZE[31739]</value>
+		<value condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">$LOCALIZE[31738]</value>
 	</variable>
 	<variable name="SeasonPoster">    
 		<value condition="!IntegerGreaterThan(ListItem.Season,9)">$INFO[ListItem.Path]$INFO[ListItem.Season,../season0,-poster.jpg]</value>
 		<value>$INFO[ListItem.Path]$INFO[ListItem.Season,../season,-poster.jpg]</value> 
+	</variable>
+
+	<variable name="PanelFooterText">    
+		<!-- This control displays the unwatched episode at the bottom of the poster panel if unwatched episodes is not 0, when viewing tv shows-->
+		<value condition="[!StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + Container.Content(tvshows)">[COLOR Accent]$INFO[ListItem.Property(UnWatchedEpisodes),[COLOR White]$LOCALIZE[16101] [/COLOR],][/COLOR]</value>
+		<!-- This controls displays the Date that an episode of a tv shows was last played if the nr of unwatched episodes is 0 -->
+		<value condition="StringCompare(ListItem.Property(UnWatchedEpisodes),0) + !IsEmpty(ListItem.LastPlayed) + Container.Content(tvshows)">[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White][UPPERCASE]$LOCALIZE[568][/UPPERCASE]: [/COLOR]][/COLOR]</value>
+		<!-- This controls displays the tagline of the movie below the Movie Title -->
+		<value condition="!IsEmpty(ListItem.Tagline) + Container.Content(Movies)">$INFO[ListItem.Tagline]</value>
+		<!-- This controls displays the director of a Movie instead of the tagline, if there is no tagline -->
+		<value condition="IsEmpty(ListItem.Tagline) + Container.Content(Movies) + !IsEmpty(ListItem.Director)">[UPPERCASE][COLOR White]$LOCALIZE[20339][/COLOR]  [COLOR Accent]$INFO[ListItem.Director][/COLOR][/UPPERCASE]</value>
+		<value condition="Container.Content(albums) | Container.Content(songs)">$INFO[ListItem.Artist]</value>
+		
+		<value></value> 
 	</variable> 
-</includes>
+</includes>     
+
+    
