@@ -336,7 +336,7 @@
 					<description>Display Path to Music Library</description>
 					<visible>Container(1000).Hasfocus(2)</visible>
                         <top>95</top>
-						<left>790</left>
+						<left>190</left>
 						<width>600</width>
 						<height>40</height>
                         <align>right</align>

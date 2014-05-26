@@ -348,9 +348,9 @@
 			</control>
 			<!-- Episode Aire Date -->
 			<control type="label">
-                <left>1245</left>
+                <left>960</left>
                 <top>565</top>
-                <width>400</width>
+                <width>280</width>
                 <height>25</height>
 				<align>right</align>
 				<font>Panel_Description_Footer</font>
@@ -380,9 +380,9 @@
             </control>
             <!-- MPAA Rating -->
 			<control type="label">
-                <left>1245</left>
+                <left>1060</left>
                 <top>300</top>
-                <width>400</width>
+                <width>180</width>
                 <height>50</height>
                 <textcolor>Accent</textcolor>
 				<align>right</align>
