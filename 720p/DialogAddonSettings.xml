@@ -59,7 +59,7 @@
                 <width>290</width>
                 <height>370</height>
                 <itemgap>2</itemgap>
-                <onleft>30</onleft>
+                <onleft>10</onleft>
                 <onright>2</onright>
                 <onup>9</onup>
                 <ondown>9</ondown>
@@ -72,7 +72,7 @@
                 <height>360</height>
                 <itemgap>0</itemgap>
                 <onup>2</onup>
-                <ondown>2</ondown>
+                <ondown>10</ondown>
                 <onleft>9</onleft>
                 <onright>10</onright>
             </control>

@@ -135,78 +135,7 @@
                     <onright>noop</onright>
                     <orientation>vertical</orientation>
                     <visible>Container(1000).Hasfocus(1)</visible>
-                    <control type="radiobutton" id="101">
-                        <description>Toggle Movies</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>31727</label>
-                        <focusedcolor>Accent</focusedcolor>
-                        <onclick>Skin.ToggleSetting(HideMovies)</onclick>
-                        <selected>Skin.HasSetting(HideMovies)</selected>
-						<font>List_Settings</font>
-                    </control>
-                    <control type="radiobutton" id="102">
-                        <description>Toggle Music</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>31728</label>
-                        <focusedcolor>Accent</focusedcolor>
-                        <onclick>Skin.ToggleSetting(HideMusic)</onclick>
-                        <selected>Skin.HasSetting(HideMusic)</selected>
-						<font>List_Settings</font>
-                    </control>
-                    <control type="radiobutton" id="103">
-                        <description>Toggle TV</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>31729</label>
-                        <focusedcolor>Accent</focusedcolor>
-                        <onclick>Skin.ToggleSetting(HideTV)</onclick>
-                        <selected>Skin.HasSetting(HideTV)</selected>
-						<font>List_Settings</font>
-                    </control>
-                    <control type="button" id="104">
-                        <description>Movies to show</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>$LOCALIZE[31700]:</label>
-                        <label2>$VAR[ShowMovies]</label2>
-                        <focusedcolor>Accent</focusedcolor>
-						<font>List_Settings</font>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Random) | IsEmpty(Skin.String(ItemsTypeMovies))">Skin.SetString(ItemsTypeMovies,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Recent)">Skin.SetString(ItemsTypeMovies,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Recommended)">Skin.SetString(ItemsTypeMovies,Recent)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Random)">Skin.SetString(ItemsTypeMovies,Recommended)</onclick>
-                    </control>
-                    <control type="button" id="105">
-                        <description>TV to show:</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>$LOCALIZE[19020]:</label>
-                        <label2>$VAR[ShowTV]</label2>
-                        <focusedcolor>Accent</focusedcolor>
-						<font>List_Settings</font>
-                        <onclick condition="IsEmpty(Skin.String(ItemsTypeTV))">Skin.SetString(ItemsTypeTV,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Recent)">Skin.SetString(ItemsTypeTV,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended) + Skin.HasSetting(EnableTvShowNexAired)">Skin.SetString(ItemsTypeTV,NextAired)</onclick>
-						<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),NextAired)">Skin.SetString(ItemsTypeTV,Recent)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">Skin.SetString(ItemsTypeTV,Recommended)</onclick>
-						<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended) + !Skin.HasSetting(EnableTvShowNexAired)">Skin.SetString(ItemsTypeTV,Recent)</onclick>
-					</control>
-                    <control type="button" id="106">
-                        <description>Music to show:</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>$LOCALIZE[2]:</label>
-                        <label2>$VAR[ShowMusic]</label2>
-                        <focusedcolor>Accent</focusedcolor>
-						<font>List_Settings</font>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Random) | IsEmpty(Skin.String(ItemsTypeMusic))">Skin.SetString(ItemsTypeMusic,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Recent)">Skin.SetString(ItemsTypeMusic,Random)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">Skin.SetString(ItemsTypeMusic,Recent)</onclick>
-                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">Skin.SetString(ItemsTypeMusic,Recommended)</onclick>
-                    </control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="101">
                         <description>Disable Home Animations</description>
                         <width>810</width>
                         <align>left</align>
@@ -216,17 +145,7 @@
                         <onclick>Skin.ToggleSetting(DisableHomeAnimations)</onclick>
                         <selected>Skin.HasSetting(DisableHomeAnimations)</selected>
                     </control>
-					<control type="radiobutton" id="108">
-                        <description>Thumbs for episodes Widget</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>Thumbs instead of Posters in Episodes Widget</label>
-                        <focusedcolor>Accent</focusedcolor>
-						<font>List_Settings</font>
-                        <onclick>Skin.ToggleSetting(EpisodeThumbsOnHome)</onclick>
-                        <selected>Skin.HasSetting(EpisodeThumbsOnHome)</selected>
-                    </control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="102">
                         <description>Home Menu</description>
                         <width>810</width>
                         <align>left</align>
@@ -236,7 +155,7 @@
                         <onclick>Skin.ToggleSetting(HideHomeMenuIcons)</onclick>
                         <selected>Skin.HasSetting(HideHomeMenuIcons)</selected>
                     </control>
-					<control type="radiobutton" id="110">
+					<control type="radiobutton" id="103">
                         <description>Disable Home Fanart</description>
                         <width>810</width>
                         <align>left</align>
@@ -246,7 +165,16 @@
                         <onclick>Skin.ToggleSetting(DisableHomeFanart)</onclick>
                         <selected>Skin.HasSetting(DisableHomeFanart)</selected>
                     </control>
-					
+					 <control type="button" id="104">
+						<description>Open Customization Window</description>
+                        <width>810</width>
+                        <align>left</align>
+                        <label>Customize Home Menu</label>
+                        <label2></label2>
+                        <focusedcolor>Accent</focusedcolor>
+						<font>List_Settings</font>
+                        <onclick>ActivateWindow(3333,return)</onclick>
+					 </control>
 				</control>
                 <control type="grouplist" id="200">
                     <description>Control Area</description>

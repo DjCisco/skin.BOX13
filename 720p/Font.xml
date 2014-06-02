@@ -107,6 +107,14 @@
             <size>20</size>
         </font>
 		<font>
+			<name>Panel_ItemChooser</name>
+            <filename>MC360.ttf</filename>
+            <aspect>0.8</aspect>
+			<style>bold uppercase</style>
+            <size>14</size>
+        </font>
+		
+		<font>
 		 <name>Panel_Scroll_Label</name>
             <filename>MC360.ttf</filename>
             <aspect>0.8</aspect>
