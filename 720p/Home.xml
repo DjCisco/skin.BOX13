@@ -127,7 +127,7 @@
 		<control type="group">
 			<width>55</width>
 			<height>55</height>
-			<visible>!IsEmpty(Skin.String(SubMenu1A1Type)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenu1A1Type))</visible>
 			<control type="image">
 				<width>55</width>
 				<height>55</height>
@@ -169,7 +169,7 @@
 		<control type="group">
 			<width>55</width>
 			<height>55</height>
-			<visible>!IsEmpty(Skin.String(SubMenu2A1Type)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenu2A1Type))</visible>
 			<control type="image">
 				<width>55</width>
 				<height>55</height>
@@ -211,7 +211,7 @@
 		<control type="group">
 			<width>55</width>
 			<height>55</height>
-			<visible>!IsEmpty(Skin.String(SubMenu3A1Type)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenu3A1Type))</visible>
 			<control type="image">
 				<width>55</width>
 				<height>55</height>
@@ -253,7 +253,7 @@
 		<control type="group">
 			<width>55</width>
 			<height>55</height>
-			<visible>!IsEmpty(Skin.String(SubMenu4A1Type)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenu4A1Type))</visible>
 			<control type="image">
 				<width>55</width>
 				<height>55</height>
@@ -295,7 +295,7 @@
 		<control type="group">
 			<width>55</width>
 			<height>55</height>
-			<visible>!IsEmpty(Skin.String(SubMenu5A1Type)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenu5A1Type))</visible>
 			<control type="image">
 				<width>55</width>
 				<height>55</height>
@@ -356,7 +356,7 @@
 					<ondown>3000</ondown>
 					<onfocus>SetProperty(menu,menu1)</onfocus>
 					<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
-					<visible>!IsEmpty(Skin.String(SubMenu1A1Type)</visible>
+					<visible>!IsEmpty(Skin.String(SubMenu1A1Type))</visible>
 				</control>
 				<!-- Menu2 -->
 				<control  id="2002">
@@ -367,7 +367,7 @@
 					<ondown>4000</ondown>
 					<onfocus>SetProperty(menu,menu2)</onfocus>
 					<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
-					<visible>!IsEmpty(Skin.String(SubMenu2A1Type)</visible>
+					<visible>!IsEmpty(Skin.String(SubMenu2A1Type))</visible>
 				</control>
 				<!-- Menu3 -->
 				<control id="2003">
@@ -378,7 +378,7 @@
 					<ondown>5000</ondown>
 					<onfocus>SetProperty(menu,menu3)</onfocus>
 					<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
-					<visible>!IsEmpty(Skin.String(SubMenu3A1Type)</visible>
+					<visible>!IsEmpty(Skin.String(SubMenu3A1Type))</visible>
 				</control>
 				<!-- Menu4 -->
 				<control id="2004">
@@ -391,7 +391,7 @@
 					<ondown>6000</ondown>
 					<onfocus>SetProperty(menu,menu4)</onfocus>
 					<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
-					<visible>!IsEmpty(Skin.String(SubMenu4A1Type)</visible>
+					<visible>!IsEmpty(Skin.String(SubMenu4A1Type))</visible>
 				</control>
 				<!-- Menu5 -->
 				<control id="2005">
@@ -404,7 +404,7 @@
 					<ondown>7000</ondown>
 					<onfocus>SetProperty(menu,menu5)</onfocus>
 					<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
-					<visible>!IsEmpty(Skin.String(SubMenu5A1Type)</visible>
+					<visible>!IsEmpty(Skin.String(SubMenu5A1Type))</visible>
 				</control>
 			</control>	
 			
@@ -470,7 +470,7 @@
 					<control type="group">
 						<width>315</width>
 						<height>155</height>
-						<visible>!IsEmpty(Skin.String(SubMenu1A1Type)</visible>
+						<visible>!IsEmpty(Skin.String(SubMenu1A1Type))</visible>
 						<!-- This control displays the All Movies Highlighted Button-->
 						<control type="image">
 							<include>PanelRectButtonImageFO</include>
@@ -594,7 +594,7 @@
 					<control type="group">
 						<width>315</width>
 						<height>155</height>
-						<visible>!IsEmpty(Skin.String(SubMenu2A1Type)</visible>
+						<visible>!IsEmpty(Skin.String(SubMenu2A1Type))</visible>
 						<!-- This control displays the All Movies Highlighted Button-->
 						<control type="image">
 							<include>PanelRectButtonImageFO</include>
@@ -718,7 +718,7 @@
 					<control type="group">
 						<width>315</width>
 						<height>155</height>
-						<visible>!IsEmpty(Skin.String(SubMenu3A1Type)</visible>
+						<visible>!IsEmpty(Skin.String(SubMenu3A1Type))</visible>
 						<!-- This control displays the All Movies Highlighted Button-->
 						<control type="image">
 							<include>PanelRectButtonImageFO</include>
@@ -841,7 +841,7 @@
 					<control type="group">
 						<width>315</width>
 						<height>155</height>
-						<visible>!IsEmpty(Skin.String(SubMenu4A1Type)</visible>
+						<visible>!IsEmpty(Skin.String(SubMenu4A1Type))</visible>
 						<!-- This control displays the All Movies Highlighted Button-->
 						<control type="image">
 							<include>PanelRectButtonImageFO</include>
@@ -964,7 +964,7 @@
 					<control type="group">
 						<width>315</width>
 						<height>155</height>
-						<visible>!IsEmpty(Skin.String(SubMenu5A1Type)</visible>
+						<visible>!IsEmpty(Skin.String(SubMenu5A1Type))</visible>
 						<!-- This control displays the All Movies Highlighted Button-->
 						<control type="image">
 							<include>PanelRectButtonImageFO</include>
@@ -1092,7 +1092,7 @@
 					<focusposition>0</focusposition>
 					<scrolltime tween="cubic" easing="out">400</scrolltime>
 					<!-- This control defines the default item layout of the Movies Panel -->
-					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item -->
 						<control type="image">
 							<width>215</width>
@@ -1109,7 +1109,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1119,10 +1119,10 @@
 							<width>145</width>
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
-							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1139,7 +1139,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1150,11 +1150,11 @@
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
 							<textcolor>Accent</textcolor>
-							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows)</visible>
 						</control>
 					</focusedlayout>
 					<!-- This control defines the default item layout of the TV Shows Panel with Episodes-->	
-					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs)">
 						<control type="image">
 							<width>215</width>
 							<height>155</height>
@@ -1187,7 +1187,7 @@
 						</control>
 					</itemlayout>
 					<!-- This control defines the focused item layout of the TV Shows Panel with Episodes-->	
-					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Color Ring Background of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1384,7 +1384,7 @@
 					<focusposition>0</focusposition>
 					<scrolltime tween="cubic" easing="out">400</scrolltime>
 					<!-- This control defines the default item layout of the Movies Panel -->
-					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item -->
 						<control type="image">
 							<width>215</width>
@@ -1401,7 +1401,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1411,10 +1411,10 @@
 							<width>145</width>
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
-							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1431,7 +1431,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1442,11 +1442,11 @@
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
 							<textcolor>Accent</textcolor>
-							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows)</visible>
 						</control>
 					</focusedlayout>
 					<!-- This control defines the default item layout of the TV Shows Panel with Episodes-->	
-					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs)">
 						<control type="image">
 							<width>215</width>
 							<height>155</height>
@@ -1479,7 +1479,7 @@
 						</control>
 					</itemlayout>
 					<!-- This control defines the focused item layout of the TV Shows Panel with Episodes-->	
-					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Color Ring Background of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1676,7 +1676,7 @@
 					<focusposition>0</focusposition>
 					<scrolltime tween="cubic" easing="out">400</scrolltime>
 					<!-- This control defines the default item layout of the Movies Panel -->
-					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item -->
 						<control type="image">
 							<width>215</width>
@@ -1693,7 +1693,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1703,10 +1703,10 @@
 							<width>145</width>
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
-							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1723,7 +1723,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1734,11 +1734,11 @@
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
 							<textcolor>Accent</textcolor>
-							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows)</visible>
 						</control>
 					</focusedlayout>
 					<!-- This control defines the default item layout of the TV Shows Panel with Episodes-->	
-					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs)">
 						<control type="image">
 							<width>215</width>
 							<height>155</height>
@@ -1771,7 +1771,7 @@
 						</control>
 					</itemlayout>
 					<!-- This control defines the focused item layout of the TV Shows Panel with Episodes-->	
-					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Color Ring Background of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -1968,7 +1968,7 @@
 					<focusposition>0</focusposition>
 					<scrolltime tween="cubic" easing="out">400</scrolltime>
 					<!-- This control defines the default item layout of the Movies Panel -->
-					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item -->
 						<control type="image">
 							<width>215</width>
@@ -1985,7 +1985,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -1995,10 +1995,10 @@
 							<width>145</width>
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
-							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -2015,7 +2015,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -2026,11 +2026,11 @@
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
 							<textcolor>Accent</textcolor>
-							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows)</visible>
 						</control>
 					</focusedlayout>
 					<!-- This control defines the default item layout of the TV Shows Panel with Episodes-->	
-					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs)">
 						<control type="image">
 							<width>215</width>
 							<height>155</height>
@@ -2063,7 +2063,7 @@
 						</control>
 					</itemlayout>
 					<!-- This control defines the focused item layout of the TV Shows Panel with Episodes-->	
-					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Color Ring Background of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -2260,7 +2260,7 @@
 					<focusposition>0</focusposition>
 					<scrolltime tween="cubic" easing="out">400</scrolltime>
 					<!-- This control defines the default item layout of the Movies Panel -->
-					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item -->
 						<control type="image">
 							<width>215</width>
@@ -2277,7 +2277,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -2287,10 +2287,10 @@
 							<width>145</width>
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
-							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows)</visible>
 						</control>
 					</itemlayout>
-					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs + !Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="320" condition="!Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs) + !Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Poster of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
@@ -2307,7 +2307,7 @@
 							<height>30</height>
 							<texture>black.png</texture>
 							<colordiffuse>CCFFFFFF</colordiffuse>
-							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows)</visible>
 						</control>
 						<control type="label">
 							<label>$INFO[ListItem.Property(EpisodeNo)]</label>
@@ -2318,11 +2318,11 @@
 							<font>Panel_Title_Footer</font>
 							<align>right</align>
 							<textcolor>Accent</textcolor>
-							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows</visible>
+							<visible>Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows)</visible>
 						</control>
 					</focusedlayout>
 					<!-- This control defines the default item layout of the TV Shows Panel with Episodes-->	
-					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs">
+					<itemlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs)">
 						<control type="image">
 							<width>215</width>
 							<height>155</height>
@@ -2355,7 +2355,7 @@
 						</control>
 					</itemlayout>
 					<!-- This control defines the focused item layout of the TV Shows Panel with Episodes-->	
-					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs">
+					<focusedlayout width="220" height="160" condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs) | Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs)">
 						<!-- This control defines the Color Ring Background of the Item when the item is selected -->
 						<control type="image">
 							<width>215</width>
