@@ -5777,6 +5777,13 @@
 		<item id="1">
 			<label></label>
 			<label2></label2>
+			<icon>DefaultFolderBack.png</icon>
+			<thumb>DefaultFolderBack.png</thumb>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="2">
+			<label>$LOCALIZE[1211]</label>
+			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/MusicLibrary.png</icon>
 			<thumb>icons/MusicLibrary.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicLibrary)</onclick>
@@ -5806,9 +5813,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="2">
-			<label></label>
-			<label2></label2>
+		<item id="3">
+			<label>$LOCALIZE[20343]</label>
+			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/TvShowLibrary.png</icon>
 			<thumb>icons/TvShowLibrary.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TVShowLibrary)</onclick>
@@ -5838,9 +5845,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TVShowLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="3">
-			<label></label>
-			<label2></label2>
+		<item id="4">
+			<label>$LOCALIZE[20342]</label>
+			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/MovieLibrary.png</icon>
 			<thumb>icons/MovieLibrary.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MovieLibrary)</onclick>
@@ -5870,8 +5877,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MovieLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="4">
-			<label></label>
+		<item id="5">
+			<label>$LOCALIZE[10006]</label>
 			<label2></label2>
 			<icon>DefaultVideo.png</icon>
 			<thumb>DefaultVideo.png</thumb>
@@ -5902,9 +5909,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="5">
-			<label></label>
-			<label2></label2>
+		<item id="6">
+			<label>$LOCALIZE[10005]</label>
+			<label2>$LOCALIZE[744]</label2>
 			<icon>DefaultMusicFiles.png</icon>
 			<thumb>DefaultMusicFiles.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicFiles)</onclick>
@@ -5934,8 +5941,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicFiles)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="6">
-			<label></label>
+		<item id="7">
+			<label>$LOCALIZE[20386]</label>
 			<label2></label2>
 			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<thumb>DefaultRecentlyAddedMovies.png</thumb>
@@ -5966,8 +5973,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedMovies)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="7">
-			<label></label>
+		<item id="8">
+			<label>$LOCALIZE[20387]</label>
 			<label2></label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
 			<thumb>DefaultRecentlyAddedEpisodes.png</thumb>
@@ -5998,8 +6005,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedEpisodes)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="8">
-			<label></label>
+		<item id="9">
+			<label>$LOCALIZE[359]</label>
 			<label2></label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
 			<thumb>DefaultMusicRecentlyAdded.png</thumb>
@@ -6030,9 +6037,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedAlbums)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="9">
-			<label></label>
-			<label2></label2>
+		<item id="10">
+			<label>$LOCALIZE[1211]</label>
+			<label2>$LOCALIZE[133]</label2>
 			<icon>DefaultMusicArtists.png</icon>
 			<thumb>DefaultMusicArtists.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Artists)</onclick>
@@ -6062,9 +6069,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Artists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="10">
-			<label></label>
-			<label2></label2>
+		<item id="11">
+			<label>$LOCALIZE[20338]</label>
+			<label2>$LOCALIZE[20348]</label2>
 			<icon>DefaultDirector.png</icon>
 			<thumb>DefaultDirector.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Directors)</onclick>
@@ -6094,9 +6101,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Directors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		 <item id="11">
-			<label></label>
-			<label2></label2>
+		 <item id="12">
+			<label>$LOCALIZE[20338]</label>
+			<label2>$LOCALIZE[344]</label2>
 			<icon>DefaultMovieActor.png</icon>
 			<thumb>DefaultMovieActor.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MovieActors)</onclick>
@@ -6126,9 +6133,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MovieActors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		 <item id="12">
-			<label></label>
-			<label2></label2>
+		 <item id="13">
+			<label>$LOCALIZE[20364]</label>
+			<label2>$LOCALIZE[344]</label2>
 			<icon>DefaultTvShowActor.png</icon>
 			<thumb>DefaultTvShowActor.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TvShowActors)</onclick>
@@ -6158,8 +6165,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvShowActors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="13">
-			<label></label>
+		<item id="14">
+			<label>$LOCALIZE[132]</label>
 			<label2></label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
@@ -6190,8 +6197,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Albums)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="14">
-			<label></label>
+		<item id="15">
+			<label>$LOCALIZE[342]</label>
 			<label2></label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
@@ -6222,8 +6229,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Movies)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="15">
-			<label></label>
+		<item id="16">
+			<label>$LOCALIZE[20343]</label>
 			<label2></label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb>DefaultTVShows.png</thumb>
@@ -6254,8 +6261,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvShows)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="16">
-			<label></label>
+		<item id="17">
+			<label>$LOCALIZE[20012]</label>
 			<label2></label2>
 			<icon>DefaultVideoPlaylists.png</icon>
 			<thumb>DefaultVideoPlaylists.png</thumb>
@@ -6286,8 +6293,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoPlaylists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="17">
-			<label></label>
+		<item id="18">
+			<label>$LOCALIZE[20011]</label>
 			<label2></label2>
 			<icon>DefaultMusicPlaylists.png</icon>
 			<thumb>DefaultMusicPlaylists.png</thumb>
@@ -6318,8 +6325,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicPlaylists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="18">
-			<label></label>
+		<item id="19">
+			<label>$LOCALIZE[1037]</label>
 			<label2></label2>
 			<icon>DefaultAddonVideo.png</icon>
 			<thumb>DefaultAddonVideo.png</thumb>
@@ -6350,8 +6357,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoAddons)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="19">
-			<label></label>
+		<item id="20">
+			<label>$LOCALIZE[1038]</label>
 			<label2></label2>
 			<icon>DefaultAddonMusic.png</icon>
 			<thumb>DefaultAddonMusic.png</thumb>
@@ -6382,9 +6389,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicAddons)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="20">
-			<label></label>
-			<label2></label2>
+		<item id="21">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19217]</label2>
 			<icon>DefaultTvChannels.png</icon>
 			<thumb>DefaultTvChannels.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TvChannels)</onclick>
@@ -6414,9 +6421,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvChannels)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="21">
-			<label></label>
-			<label2></label2>
+		<item id="22">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19216]</label2>
 			<icon>DefaultRadio.png</icon>
 			<thumb>DefaultRadio.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,RadioChannels)</onclick>
@@ -6446,9 +6453,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RadioChannels)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="22">
-			<label></label>
-			<label2></label2>
+		<item id="23">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19069]</label2>
 			<icon>DefaultEPG.png</icon>
 			<thumb>DefaultEPG.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,EPG)</onclick>
@@ -6478,9 +6485,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,EPG)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="23">
-			<label></label>
-			<label2></label2>
+		<item id="24">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19163]</label2>
 			<icon>DefaultTvRecordings.png</icon>
 			<thumb>DefaultTvRecordings.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Recordings)</onclick>
@@ -6510,9 +6517,9 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Recordings)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		<item id="24">
-			<label></label>
-			<label2></label2>
+		<item id="25">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[31710]</label2>
 			<icon>DefaultTimer.png</icon>
 			<thumb>DefaultTimer.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Timers)</onclick>
@@ -6542,8 +6549,8 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Timers)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		 <item id="25">
-			<label></label>
+		 <item id="26">
+			<label>$LOCALIZE[117]</label>
 			<label2></label2>
 			<icon>DefaultDelete.png</icon>
 			<thumb>DefaultDelete.png</thumb>
@@ -6574,6 +6581,7 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
+		 <!--
 		 <item id="26">
 			<label></label>
 			<label2></label2>
@@ -6631,6 +6639,7 @@
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">RunScript(script.favourites,property=SubMenu5B4Favourite)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
+		 -->
 	</include>
 
 	<include name="MainMenuIconChooser">

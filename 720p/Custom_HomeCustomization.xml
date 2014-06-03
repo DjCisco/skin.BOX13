@@ -10,9 +10,8 @@
 		<include>HomeBackground</include>
 		<control type="group">
 			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666)" reversible="true">
-				<effect type="slide" end="0,-195" time="300" tween="cubic" easing="inout"/>
+				<effect type="slide" end="+1500" time="300" tween="cubic" easing="inout"/>
 			</animation>
-	
 			<control type="grouplist">
 				<top>205</top>
 				<left>50</left>
