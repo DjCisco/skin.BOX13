@@ -1288,18 +1288,18 @@
 					<focusedlayout  width="1" height="1">
 					</focusedlayout>
 					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType1),RecommendedAlbums)">RecommendedFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentMovies)">RecentFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomMovies)">RandomFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShows)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShows)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentAlbums)">RecentFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomAlbums)">RandomFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
 					</content>
 				</control>
 				<control type="image">
@@ -1335,18 +1335,18 @@
 					<focusedlayout  width="1" height="1">
 					</focusedlayout>
 					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType2),RecommendedAlbums)">RecommendedFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentMovies)">RecentFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomMovies)">RandomFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShows)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShows)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentAlbums)">RecentFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomAlbums)">RandomFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
 					</content>
 				</control>
 				<control type="image">
@@ -1382,18 +1382,18 @@
 					<focusedlayout  width="1" height="1">
 					</focusedlayout>
 					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType3),RecommendedAlbums)">RecommendedFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentMovies)">RecentFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomMovies)">RandomFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShows)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShows)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentAlbums)">RecentFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomAlbums)">RandomFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
 					</content>
 				</control>
 				<control type="image">
@@ -1429,18 +1429,18 @@
 					<focusedlayout  width="1" height="1">
 					</focusedlayout>
 					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType4),RecommendedAlbums)">RecommendedFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentMovies)">RecentFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomMovies)">RandomFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShows)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShows)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentAlbums)">RecentFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomAlbums)">RandomFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
 					</content>
 				</control>
 				<control type="image">
@@ -1476,18 +1476,18 @@
 					<focusedlayout  width="1" height="1">
 					</focusedlayout>
 					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidgetType5),RecommendedAlbums)">RecommendedFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentMovies)">RecentFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomMovies)">RandomFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShows)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShows)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentAlbums)">RecentFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomAlbums)">RandomFanartMusic</include>
+						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
 					</content>
 				</control>
 				<control type="image">
@@ -2329,6 +2329,11 @@
         <height>70</height>
         <width>70</width>
         <aspectratio scalediffuse="false">stretch</aspectratio>
+	</include>
+	<include name="PanelButtonFullIcon">	
+		<width>155</width>
+        <height>155</height>
+		<bordersize>5</bordersize>
 	</include>
 	<include name="PanelButtonImageNF">
 		<width>155</width>
@@ -5392,387 +5397,426 @@
 	
 	<include name="SubMenu1B">
 		<item id="1">
-			<label>$VAR[SubMenu1BLabel1]</label>
+			<label>$VAR[SubMenu1Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon1]</icon>
-			<thumb>$VAR[SubMenu1BIcon1]</thumb>
-			<onclick>$VAR[SubMenu1BClick1]</onclick>
-			<onclick>$VAR[SubMenu1B2ndClick1]</onclick>
-			
-			<visible>!IsEmpty(Skin.String(SubMenu1B1Type))</visible>
+			<icon>$VAR[SubMenu1Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile2.Image]</thumb>
+			<onclick>$VAR[SubMenu1Tile2.Action]</onclick>
+			<onclick>$VAR[SubMenu1Tile2.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu1Tile2.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu1Tile2.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu1Tile2.Type))</visible>
 		 </item>
-		<item id="2">
-			<label>$VAR[SubMenu1BLabel2]</label>
+			<item id="2">
+			<label>$VAR[SubMenu1Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon2]</icon>
-			<thumb>$VAR[SubMenu1BIcon2]</thumb>
-			<onclick>$VAR[SubMenu1BClick2]</onclick>
-			<onclick>$VAR[SubMenu1B2ndClick2]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu1B2Type))</visible>
+			<icon>$VAR[SubMenu1Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile3.Image]</thumb>
+			<onclick>$VAR[SubMenu1Tile3.Action]</onclick>
+			<onclick>$VAR[SubMenu1Tile3.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu1Tile3.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu1Tile3.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu1Tile3.Type))</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu1BLabel3]</label>
+			<label>$VAR[SubMenu1Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon3]</icon>
-			<thumb>$VAR[SubMenu1BIcon3]</thumb>
-			<onclick>$VAR[SubMenu1BClick3]</onclick>
-			<onclick>$VAR[SubMenu1B2ndClick3]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu1B3Type))</visible>
+			<icon>$VAR[SubMenu1Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile4.Image]</thumb>
+			<onclick>$VAR[SubMenu1Tile4.Action]</onclick>
+			<onclick>$VAR[SubMenu1Tile4.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu1Tile4.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu1Tile4.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu1Tile4.Type))</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu1BLabel4]</label>
+			<label>$VAR[SubMenu1Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon4]</icon>
-			<thumb>$VAR[SubMenu1BIcon4]</thumb>
-			<onclick>$VAR[SubMenu1BClick4]</onclick>
-			<onclick>$VAR[SubMenu1B2ndClick4]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu1B4Type))</visible>
+			<icon>$VAR[SubMenu1Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile5.Image]</thumb>
+			<onclick>$VAR[SubMenu1Tile5.Action]</onclick>
+			<onclick>$VAR[SubMenu1Tile5.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu1Tile5.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu1Tile5.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu1Tile5.Type))</visible>
 		 </item>
 	</include>
 	<include name="SubMenu2B">
 		<item id="1">
-			<label>$VAR[SubMenu2BLabel1]</label>
+			<label>$VAR[SubMenu2Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon1]</icon>
-			<thumb>$VAR[SubMenu2BIcon1]</thumb>
-			<onclick>$VAR[SubMenu2BClick1]</onclick>
-			<onclick>$VAR[SubMenu2B2ndClick1]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu2B1Type))</visible>
+			<icon>$VAR[SubMenu2Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile2.Image]</thumb>
+			<onclick>$VAR[SubMenu2Tile2.Action]</onclick>
+			<onclick>$VAR[SubMenu2Tile2.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu2Tile2.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu2Tile2.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu2Tile2.Type))</visible>
 		 </item>
-		<item id="2">
-			<label>$VAR[SubMenu2BLabel2]</label>
+			<item id="2">
+			<label>$VAR[SubMenu2Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon2]</icon>
-			<thumb>$VAR[SubMenu2BIcon2]</thumb>
-			<onclick>$VAR[SubMenu2BClick2]</onclick>
-			<onclick>$VAR[SubMenu2B2ndClick2]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu2B2Type))</visible>
+			<icon>$VAR[SubMenu2Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile3.Image]</thumb>
+			<onclick>$VAR[SubMenu2Tile3.Action]</onclick>
+			<onclick>$VAR[SubMenu2Tile3.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu2Tile3.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu2Tile3.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu2Tile3.Type))</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu2BLabel3]</label>
+			<label>$VAR[SubMenu2Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon3]</icon>
-			<thumb>$VAR[SubMenu2BIcon3]</thumb>
-			<onclick>$VAR[SubMenu2BClick3]</onclick>
-			<onclick>$VAR[SubMenu2B2ndClick3]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu2B3Type))</visible>
+			<icon>$VAR[SubMenu2Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile4.Image]</thumb>
+			<onclick>$VAR[SubMenu2Tile4.Action]</onclick>
+			<onclick>$VAR[SubMenu2Tile4.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu2Tile4.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu2Tile4.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu2Tile4.Type))</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu2BLabel4]</label>
+			<label>$VAR[SubMenu2Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon4]</icon>
-			<thumb>$VAR[SubMenu2BIcon4]</thumb>
-			<onclick>$VAR[SubMenu2BClick4]</onclick>
-			<onclick>$VAR[SubMenu2B2ndClick4]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu2B4Type))</visible>
+			<icon>$VAR[SubMenu2Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile5.Image]</thumb>
+			<onclick>$VAR[SubMenu2Tile5.Action]</onclick>
+			<onclick>$VAR[SubMenu2Tile5.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu2Tile5.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu2Tile5.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu2Tile5.Type))</visible>
 		 </item>
 	</include>
 	<include name="SubMenu3B">
 		<item id="1">
-			<label>$VAR[SubMenu3BLabel1]</label>
+			<label>$VAR[SubMenu3Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon1]</icon>
-			<thumb>$VAR[SubMenu3BIcon1]</thumb>
-			<onclick>$VAR[SubMenu3BClick1]</onclick>
-			<onclick>$VAR[SubMenu3B2ndClick1]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu3B1Type))</visible>
+			<icon>$VAR[SubMenu3Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile2.Image]</thumb>
+			<onclick>$VAR[SubMenu3Tile2.Action]</onclick>
+			<onclick>$VAR[SubMenu3Tile2.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu3Tile2.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu3Tile2.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu3Tile2.Type))</visible>
 		 </item>
-		<item id="2">
-			<label>$VAR[SubMenu3BLabel2]</label>
+			<item id="2">
+			<label>$VAR[SubMenu3Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon2]</icon>
-			<thumb>$VAR[SubMenu3BIcon2]</thumb>
-			<onclick>$VAR[SubMenu3BClick2]</onclick>
-			<onclick>$VAR[SubMenu3B2ndClick2]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu3B2Type))</visible>
+			<icon>$VAR[SubMenu3Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile3.Image]</thumb>
+			<onclick>$VAR[SubMenu3Tile3.Action]</onclick>
+			<onclick>$VAR[SubMenu3Tile3.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu3Tile3.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu3Tile3.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu3Tile3.Type))</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu3BLabel3]</label>
+			<label>$VAR[SubMenu3Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon3]</icon>
-			<thumb>$VAR[SubMenu3BIcon3]</thumb>
-			<onclick>$VAR[SubMenu3BClick3]</onclick>
-			<onclick>$VAR[SubMenu3B2ndClick3]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu3B3Type))</visible>
+			<icon>$VAR[SubMenu3Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile4.Image]</thumb>
+			<onclick>$VAR[SubMenu3Tile4.Action]</onclick>
+			<onclick>$VAR[SubMenu3Tile4.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu3Tile4.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu3Tile4.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu3Tile4.Type))</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu3BLabel4]</label>
+			<label>$VAR[SubMenu3Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon4]</icon>
-			<thumb>$VAR[SubMenu3BIcon4]</thumb>
-			<onclick>$VAR[SubMenu3BClick4]</onclick>
-			<onclick>$VAR[SubMenu3B2ndClick4]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu3B4Type))</visible>
+			<icon>$VAR[SubMenu3Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile5.Image]</thumb>
+			<onclick>$VAR[SubMenu3Tile5.Action]</onclick>
+			<onclick>$VAR[SubMenu3Tile5.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu3Tile5.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu3Tile5.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu3Tile5.Type))</visible>
 		 </item>
 	</include>
 	<include name="SubMenu4B">
 		<item id="1">
-			<label>$VAR[SubMenu4BLabel1]</label>
+			<label>$VAR[SubMenu4Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon1]</icon>
-			<thumb>$VAR[SubMenu4BIcon1]</thumb>
-			<onclick>$VAR[SubMenu4BClick1]</onclick>
-			<onclick>$VAR[SubMenu4B2ndClick1]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu4B1Type))</visible>
+			<icon>$VAR[SubMenu4Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile2.Image]</thumb>
+			<onclick>$VAR[SubMenu4Tile2.Action]</onclick>
+			<onclick>$VAR[SubMenu4Tile2.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu4Tile2.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu4Tile2.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu4Tile2.Type))</visible>
 		 </item>
-		<item id="2">
-			<label>$VAR[SubMenu4BLabel2]</label>
+			<item id="2">
+			<label>$VAR[SubMenu4Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon2]</icon>
-			<thumb>$VAR[SubMenu4BIcon2]</thumb>
-			<onclick>$VAR[SubMenu4BClick2]</onclick>
-			<onclick>$VAR[SubMenu4B2ndClick2]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu4B2Type))</visible>
+			<icon>$VAR[SubMenu4Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile3.Image]</thumb>
+			<onclick>$VAR[SubMenu4Tile3.Action]</onclick>
+			<onclick>$VAR[SubMenu4Tile3.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu4Tile3.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu4Tile3.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu4Tile3.Type))</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu4BLabel3]</label>
+			<label>$VAR[SubMenu4Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon3]</icon>
-			<thumb>$VAR[SubMenu4BIcon3]</thumb>
-			<onclick>$VAR[SubMenu4BClick3]</onclick>
-			<onclick>$VAR[SubMenu4B2ndClick3]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu4B3Type))</visible>
+			<icon>$VAR[SubMenu4Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile4.Image]</thumb>
+			<onclick>$VAR[SubMenu4Tile4.Action]</onclick>
+			<onclick>$VAR[SubMenu4Tile4.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu4Tile4.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu4Tile4.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu4Tile4.Type))</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu4BLabel4]</label>
+			<label>$VAR[SubMenu4Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon4]</icon>
-			<thumb>$VAR[SubMenu4BIcon4]</thumb>
-			<onclick>$VAR[SubMenu4BClick4]</onclick>
-			<onclick>$VAR[SubMenu4B2ndClick4]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu4B4Type))</visible>
+			<icon>$VAR[SubMenu4Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile5.Image]</thumb>
+			<onclick>$VAR[SubMenu4Tile5.Action]</onclick>
+			<onclick>$VAR[SubMenu4Tile5.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu4Tile5.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu4Tile5.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu4Tile5.Type))</visible>
 		 </item>
 	</include>
 	<include name="SubMenu5B">
 		<item id="1">
-			<label>$VAR[SubMenu5BLabel1]</label>
+			<label>$VAR[SubMenu5Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon1]</icon>
-			<thumb>$VAR[SubMenu5BIcon1]</thumb>
-			<onclick>$VAR[SubMenu5BClick1]</onclick>
-			<onclick>$VAR[SubMenu5B2ndClick1]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu5B1Type))</visible>
+			<icon>$VAR[SubMenu5Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile2.Image]</thumb>
+			<onclick>$VAR[SubMenu5Tile2.Action]</onclick>
+			<onclick>$VAR[SubMenu5Tile2.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu5Tile2.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu5Tile2.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu5Tile2.Type))</visible>
 		 </item>
-		<item id="2">
-			<label>$VAR[SubMenu5BLabel2]</label>
+			<item id="2">
+			<label>$VAR[SubMenu5Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon2]</icon>
-			<thumb>$VAR[SubMenu5BIcon2]</thumb>
-			<onclick>$VAR[SubMenu5BClick2]</onclick>
-			<onclick>$VAR[SubMenu5B2ndClick2]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu5B2Type))</visible>
+			<icon>$VAR[SubMenu5Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile3.Image]</thumb>
+			<onclick>$VAR[SubMenu5Tile3.Action]</onclick>
+			<onclick>$VAR[SubMenu5Tile3.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu5Tile3.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu5Tile3.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu5Tile3.Type))</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu5BLabel3]</label>
+			<label>$VAR[SubMenu5Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon3]</icon>
-			<thumb>$VAR[SubMenu5BIcon3]</thumb>
-			<onclick>$VAR[SubMenu5BClick3]</onclick>
-			<onclick>$VAR[SubMenu5B2ndClick3]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu5B3Type))</visible>
+			<icon>$VAR[SubMenu5Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile4.Image]</thumb>
+			<onclick>$VAR[SubMenu5Tile4.Action]</onclick>
+			<onclick>$VAR[SubMenu5Tile4.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu5Tile4.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu5Tile4.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu5Tile4.Type))</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu5BLabel4]</label>
+			<label>$VAR[SubMenu5Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon4]</icon>
-			<thumb>$VAR[SubMenu5BIcon4]</thumb>
-			<onclick>$VAR[SubMenu5BClick4]</onclick>
-			<onclick>$VAR[SubMenu5B2ndClick4]</onclick>
-			<visible>!IsEmpty(Skin.String(SubMenu5B4Type))</visible>
+			<icon>$VAR[SubMenu5Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile5.Image]</thumb>
+			<onclick>$VAR[SubMenu5Tile5.Action]</onclick>
+			<onclick>$VAR[SubMenu5Tile5.2ndAction]</onclick>
+			<property name="Type">$INFO[Skin.String(SubMenu5Tile5.Type)]</property>
+			<property name="ImageType">$INFO[Skin.String(SubMenu5Tile5.ImageType)]</property>
+			<visible>!IsEmpty(Skin.String(SubMenu5Tile5.Type))</visible>
 		 </item>
 	</include>
-	
+		
 	<include name="SubMenu1BCustomization">
 		<item id="1">
-			<label>$VAR[SubMenu1BLabel1]</label>
+			<label>$VAR[SubMenu1Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon1]</icon>
-			<thumb>$VAR[SubMenu1BIcon1]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,1B1)</onclick>
+			<icon>$VAR[SubMenu1Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile2.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu1Tile2)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="2">
-			<label>$VAR[SubMenu1BLabel2]</label>
+			<label>$VAR[SubMenu1Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon2]</icon>
-			<thumb>$VAR[SubMenu1BIcon2]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,1B2)</onclick>
+			<icon>$VAR[SubMenu1Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile3.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu1Tile3)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu1BLabel3]</label>
+			<label>$VAR[SubMenu1Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon3]</icon>
-			<thumb>$VAR[SubMenu1BIcon3]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,1B3)</onclick>
+			<icon>$VAR[SubMenu1Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile4.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu1Tile4)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu1BLabel4]</label>
+			<label>$VAR[SubMenu1Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu1BIcon4]</icon>
-			<thumb>$VAR[SubMenu1BIcon4]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,1B4)</onclick>
+			<icon>$VAR[SubMenu1Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu1Tile5.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu1Tile5)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 	</include>
 	<include name="SubMenu2BCustomization">
 		<item id="1">
-			<label>$VAR[SubMenu2BLabel1]</label>
+			<label>$VAR[SubMenu2Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon1]</icon>
-			<thumb>$VAR[SubMenu2BIcon1]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,2B1)</onclick>
+			<icon>$VAR[SubMenu2Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile2.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu2Tile2)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="2">
-			<label>$VAR[SubMenu2BLabel2]</label>
+			<label>$VAR[SubMenu2Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon2]</icon>
-			<thumb>$VAR[SubMenu2BIcon2]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,2B2)</onclick>
+			<icon>$VAR[SubMenu2Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile3.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu2Tile3)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu2BLabel3]</label>
+			<label>$VAR[SubMenu2Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon3]</icon>
-			<thumb>$VAR[SubMenu2BIcon3]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,2B3)</onclick>
+			<icon>$VAR[SubMenu2Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile4.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu2Tile4)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu2BLabel4]</label>
+			<label>$VAR[SubMenu2Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu2BIcon4]</icon>
-			<thumb>$VAR[SubMenu2BIcon4]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,2B4)</onclick>
+			<icon>$VAR[SubMenu2Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu2Tile5.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu2Tile5)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 	</include>
 	<include name="SubMenu3BCustomization">
 		<item id="1">
-			<label>$VAR[SubMenu3BLabel1]</label>
+			<label>$VAR[SubMenu3Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon1]</icon>
-			<thumb>$VAR[SubMenu3BIcon1]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,3B1)</onclick>
+			<icon>$VAR[SubMenu3Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile2.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu3Tile2)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="2">
-			<label>$VAR[SubMenu3BLabel2]</label>
+			<label>$VAR[SubMenu3Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon2]</icon>
-			<thumb>$VAR[SubMenu3BIcon2]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,3B2)</onclick>
+			<icon>$VAR[SubMenu3Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile3.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu3Tile3)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu3BLabel3]</label>
+			<label>$VAR[SubMenu3Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon3]</icon>
-			<thumb>$VAR[SubMenu3BIcon3]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,3B3)</onclick>
+			<icon>$VAR[SubMenu3Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile4.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu3Tile4)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu3BLabel4]</label>
+			<label>$VAR[SubMenu3Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu3BIcon4]</icon>
-			<thumb>$VAR[SubMenu3BIcon4]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,3B4)</onclick>
+			<icon>$VAR[SubMenu3Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu3Tile5.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu3Tile5)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 	</include>
 	<include name="SubMenu4BCustomization">
 		<item id="1">
-			<label>$VAR[SubMenu4BLabel1]</label>
+			<label>$VAR[SubMenu4Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon1]</icon>
-			<thumb>$VAR[SubMenu4BIcon1]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,4B1)</onclick>
+			<icon>$VAR[SubMenu4Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile2.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu4Tile2)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="2">
-			<label>$VAR[SubMenu4BLabel2]</label>
+			<label>$VAR[SubMenu4Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon2]</icon>
-			<thumb>$VAR[SubMenu4BIcon2]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,4B2)</onclick>
+			<icon>$VAR[SubMenu4Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile3.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu4Tile3)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu4BLabel3]</label>
+			<label>$VAR[SubMenu4Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon3]</icon>
-			<thumb>$VAR[SubMenu4BIcon3]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,4B3)</onclick>
+			<icon>$VAR[SubMenu4Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile4.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu4Tile4)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu4BLabel4]</label>
+			<label>$VAR[SubMenu4Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu4BIcon4]</icon>
-			<thumb>$VAR[SubMenu4BIcon4]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,4B4)</onclick>
+			<icon>$VAR[SubMenu4Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu4Tile5.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu4Tile5)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 	</include>
 	<include name="SubMenu5BCustomization">
 		<item id="1">
-			<label>$VAR[SubMenu5BLabel1]</label>
+			<label>$VAR[SubMenu5Tile2.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon1]</icon>
-			<thumb>$VAR[SubMenu5BIcon1]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,5B1)</onclick>
+			<icon>$VAR[SubMenu5Tile2.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile2.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu5Tile2)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="2">
-			<label>$VAR[SubMenu5BLabel2]</label>
+			<label>$VAR[SubMenu5Tile3.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon2]</icon>
-			<thumb>$VAR[SubMenu5BIcon2]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,5B2)</onclick>
+			<icon>$VAR[SubMenu5Tile3.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile3.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu5Tile3)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="3">
-			<label>$VAR[SubMenu5BLabel3]</label>
+			<label>$VAR[SubMenu5Tile4.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon3]</icon>
-			<thumb>$VAR[SubMenu5BIcon3]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,5B3)</onclick>
+			<icon>$VAR[SubMenu5Tile4.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile4.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu5Tile4)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 		<item id="4">
-			<label>$VAR[SubMenu5BLabel4]</label>
+			<label>$VAR[SubMenu5Tile5.Label]</label>
 			<label2></label2>
-			<icon>$VAR[SubMenu5BIcon4]</icon>
-			<thumb>$VAR[SubMenu5BIcon4]</thumb>
-			<onclick>Skin.SetString(SelectedHomeTitle,5B4)</onclick>
+			<icon>$VAR[SubMenu5Tile5.Image]</icon>
+			<thumb>$VAR[SubMenu5Tile5.Image]</thumb>
+			<onclick>Skin.SetString(SelectedHomeTitle,SubMenu5Tile5)</onclick>
 			<onclick>ActivateWindow(4444,return)</onclick>
 			<visible>true</visible>
 		 </item>
 	</include>
-	
+
 	<include name="SubMenuTileChooser">
 		<item id="1">
 			<label></label>
@@ -5786,31 +5830,7 @@
 			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/MusicLibrary.png</icon>
 			<thumb>icons/MusicLibrary.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MusicLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicLibrary)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="3">
@@ -5818,31 +5838,7 @@
 			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/TvShowLibrary.png</icon>
 			<thumb>icons/TvShowLibrary.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,TVShowLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TVShowLibrary)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TVShowLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="4">
@@ -5850,31 +5846,7 @@
 			<label2>$LOCALIZE[14022]</label2>
 			<icon>icons/MovieLibrary.png</icon>
 			<thumb>icons/MovieLibrary.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MovieLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MovieLibrary)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MovieLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="5">
@@ -5882,31 +5854,7 @@
 			<label2></label2>
 			<icon>DefaultVideo.png</icon>
 			<thumb>DefaultVideo.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,VideoLibrary)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoLibrary)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoLibrary)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="6">
@@ -5914,31 +5862,7 @@
 			<label2>$LOCALIZE[744]</label2>
 			<icon>DefaultMusicFiles.png</icon>
 			<thumb>DefaultMusicFiles.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MusicFiles)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicFiles)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicFiles)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="7">
@@ -5946,31 +5870,7 @@
 			<label2></label2>
 			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<thumb>DefaultRecentlyAddedMovies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,RecentylAddedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedMovies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedMovies)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="8">
@@ -5978,31 +5878,7 @@
 			<label2></label2>
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
 			<thumb>DefaultRecentlyAddedEpisodes.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,RecentylAddedEpisodes)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedEpisodes)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedEpisodes)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="9">
@@ -6010,31 +5886,7 @@
 			<label2></label2>
 			<icon>DefaultMusicRecentlyAdded.png</icon>
 			<thumb>DefaultMusicRecentlyAdded.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,RecentylAddedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RecentylAddedAlbums)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedAlbums)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="10">
@@ -6042,31 +5894,7 @@
 			<label2>$LOCALIZE[133]</label2>
 			<icon>DefaultMusicArtists.png</icon>
 			<thumb>DefaultMusicArtists.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Artists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Artists)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Artists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="11">
@@ -6074,31 +5902,7 @@
 			<label2>$LOCALIZE[20348]</label2>
 			<icon>DefaultDirector.png</icon>
 			<thumb>DefaultDirector.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Directors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Directors)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Directors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 <item id="12">
@@ -6106,31 +5910,7 @@
 			<label2>$LOCALIZE[344]</label2>
 			<icon>DefaultMovieActor.png</icon>
 			<thumb>DefaultMovieActor.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MovieActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MovieActors)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MovieActors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 <item id="13">
@@ -6138,31 +5918,7 @@
 			<label2>$LOCALIZE[344]</label2>
 			<icon>DefaultTvShowActor.png</icon>
 			<thumb>DefaultTvShowActor.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,TvShowActors)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvShowActors)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvShowActors)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="14">
@@ -6170,31 +5926,7 @@
 			<label2></label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Albums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Albums)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Albums)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="15">
@@ -6202,31 +5934,7 @@
 			<label2></label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Movies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Movies)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="16">
@@ -6234,31 +5942,7 @@
 			<label2></label2>
 			<icon>DefaultTVShows.png</icon>
 			<thumb>DefaultTVShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvShows)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="17">
@@ -6266,31 +5950,7 @@
 			<label2></label2>
 			<icon>DefaultVideoPlaylists.png</icon>
 			<thumb>DefaultVideoPlaylists.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,VideoPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoPlaylists)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoPlaylists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="18">
@@ -6298,31 +5958,7 @@
 			<label2></label2>
 			<icon>DefaultMusicPlaylists.png</icon>
 			<thumb>DefaultMusicPlaylists.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MusicPlaylists)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicPlaylists)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicPlaylists)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="19">
@@ -6330,31 +5966,7 @@
 			<label2></label2>
 			<icon>DefaultAddonVideo.png</icon>
 			<thumb>DefaultAddonVideo.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,VideoAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,VideoAddons)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoAddons)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="20">
@@ -6362,31 +5974,7 @@
 			<label2></label2>
 			<icon>DefaultAddonMusic.png</icon>
 			<thumb>DefaultAddonMusic.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,MusicAddons)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,MusicAddons)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicAddons)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="21">
@@ -6394,31 +5982,7 @@
 			<label2>$LOCALIZE[19217]</label2>
 			<icon>DefaultTvChannels.png</icon>
 			<thumb>DefaultTvChannels.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,TvChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,TvChannels)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvChannels)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="22">
@@ -6426,31 +5990,7 @@
 			<label2>$LOCALIZE[19216]</label2>
 			<icon>DefaultRadio.png</icon>
 			<thumb>DefaultRadio.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,RadioChannels)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,RadioChannels)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RadioChannels)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="23">
@@ -6458,31 +5998,7 @@
 			<label2>$LOCALIZE[19069]</label2>
 			<icon>DefaultEPG.png</icon>
 			<thumb>DefaultEPG.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,EPG)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,EPG)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,EPG)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="24">
@@ -6490,31 +6006,7 @@
 			<label2>$LOCALIZE[19163]</label2>
 			<icon>DefaultTvRecordings.png</icon>
 			<thumb>DefaultTvRecordings.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Recordings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Recordings)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Recordings)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="25">
@@ -6522,63 +6014,24 @@
 			<label2>$LOCALIZE[31710]</label2>
 			<icon>DefaultTimer.png</icon>
 			<thumb>DefaultTimer.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Timers)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Timers)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Timers)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		 <item id="26">
+		  <item id="26">
+			<label>CUSTOM TILE</label>
+			<label2></label2>
+			<icon>DefaultAddCustom.png</icon>
+			<thumb>DefaultAddCustom.png</thumb>
+			<onclick>Dialog.Close(4444)</onclick>
+			<onclick>ActivateWindow(7777,return)</onclick>
+			
+		 </item>
+		 <item id="27">
 			<label>$LOCALIZE[117]</label>
 			<label2></label2>
 			<icon>DefaultDelete.png</icon>
 			<thumb>DefaultDelete.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 <!--
@@ -6588,55 +6041,7 @@
 			<icon>top.png</icon>
 			<thumb>top.png</thumb>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">Skin.SetString(SubMenu1B1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">Skin.SetString(SubMenu1B2Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">Skin.SetString(SubMenu1B3Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">Skin.SetString(SubMenu1B4Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">Skin.SetString(SubMenu2A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">Skin.SetString(SubMenu2B1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">Skin.SetString(SubMenu2B2Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">Skin.SetString(SubMenu2B3Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">Skin.SetString(SubMenu2B4Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">Skin.SetString(SubMenu3A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">Skin.SetString(SubMenu3B1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">Skin.SetString(SubMenu3B2Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">Skin.SetString(SubMenu3B3Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">Skin.SetString(SubMenu3B4Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">Skin.SetString(SubMenu4A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">Skin.SetString(SubMenu4B1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">Skin.SetString(SubMenu4B2Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">Skin.SetString(SubMenu4B3Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">Skin.SetString(SubMenu4B4Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">Skin.SetString(SubMenu5A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">Skin.SetString(SubMenu5B1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">Skin.SetString(SubMenu5B2Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">Skin.SetString(SubMenu5B3Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">Skin.SetString(SubMenu5B4Type,Favourite)</onclick>
 			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">RunScript(script.favourites,property=SubMenu1A1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B1)">RunScript(script.favourites,property=SubMenu1B1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B2)">RunScript(script.favourites,property=SubMenu1B2Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B3)">RunScript(script.favourites,property=SubMenu1B3Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1B4)">RunScript(script.favourites,property=SubMenu1B4Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2A1)">RunScript(script.favourites,property=SubMenu2A1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B1)">RunScript(script.favourites,property=SubMenu2B1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B2)">RunScript(script.favourites,property=SubMenu2B2Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B3)">RunScript(script.favourites,property=SubMenu2B3Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),2B4)">RunScript(script.favourites,property=SubMenu2B4Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3A1)">RunScript(script.favourites,property=SubMenu3A1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B1)">RunScript(script.favourites,property=SubMenu3B1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B2)">RunScript(script.favourites,property=SubMenu3B2Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B3)">RunScript(script.favourites,property=SubMenu3BTFavourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),3B4)">RunScript(script.favourites,property=SubMenu3B4Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4A1)">RunScript(script.favourites,property=SubMenu4A1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B1)">RunScript(script.favourites,property=SubMenu4B1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B2)">RunScript(script.favourites,property=SubMenu4B2Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B3)">RunScript(script.favourites,property=SubMenu4B3Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),4B4)">RunScript(script.favourites,property=SubMenu4B4Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5A1)">RunScript(script.favourites,property=SubMenu5A1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B1)">RunScript(script.favourites,property=SubMenu5B1Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B2)">RunScript(script.favourites,property=SubMenu5B2Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B3)">RunScript(script.favourites,property=SubMenu5B3Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),5B4)">RunScript(script.favourites,property=SubMenu5B4Favourite)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 -->
@@ -6655,11 +6060,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Disc.png</icon>
 			<thumb>HomeIcons/Disc.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Disc)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Disc)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Disc)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Disc)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Disc)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Disc)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="3">
@@ -6667,11 +6068,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Disc2.png</icon>
 			<thumb>HomeIcons/Disc2.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Disc2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Disc2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Disc2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Disc2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Disc2)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Disc2)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="4">
@@ -6679,11 +6076,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Games.png</icon>
 			<thumb>HomeIcons/Games.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Games)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Games)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Games)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Games)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Games)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Games)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="5">
@@ -6691,11 +6084,7 @@
 			<label2></label2>
 			<icon>HomeIcons/LiveTv.png</icon>
 			<thumb>HomeIcons/LiveTv.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,LiveTv)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,LiveTv)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,LiveTv)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,LiveTv)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,LiveTv)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,LiveTv)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="6">
@@ -6703,11 +6092,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Movies.png</icon>
 			<thumb>HomeIcons/Movies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Movies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Movies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Movies)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="7">
@@ -6715,11 +6100,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Movies2.png</icon>
 			<thumb>HomeIcons/Movies2.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Movies2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Movies2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Movies2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Movies2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Movies2)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Movies2)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="8">
@@ -6727,11 +6108,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Movies3.png</icon>
 			<thumb>HomeIcons/Movies3.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Movies3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Movies3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Movies3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Movies3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Movies3)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Movies3)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="9">
@@ -6739,11 +6116,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Music.png</icon>
 			<thumb>HomeIcons/Music.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Music)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Music)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Music)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Music)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Music)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Music)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		</item>
 		<item id="10">
@@ -6751,11 +6124,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Music2.png</icon>
 			<thumb>HomeIcons/Music2.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Music2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Music2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Music2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Music2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Music2)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Music2)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="11">
@@ -6763,11 +6132,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Music3.png</icon>
 			<thumb>HomeIcons/Music3.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Music3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Music3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Music3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Music3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Music3)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Music3)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="12">
@@ -6775,11 +6140,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Music4.png</icon>
 			<thumb>HomeIcons/Music4.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Music4)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Music4)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Music4)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Music4)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Music4)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Music4)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="13">
@@ -6787,11 +6148,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Pictures.png</icon>
 			<thumb>HomeIcons/Pictures.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Pictures)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Pictures)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Pictures)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Pictures)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Pictures)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Pictures)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="14">
@@ -6799,11 +6156,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Programs.png</icon>
 			<thumb>HomeIcons/Programs.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Programs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Programs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Programs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Programs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Programs)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Programs)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="15">
@@ -6811,11 +6164,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Radio.png</icon>
 			<thumb>HomeIcons/Radio.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Radio)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Radio)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Radio)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Radio)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Radio)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Radio)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="16">
@@ -6823,23 +6172,15 @@
 			<label2></label2>
 			<icon>HomeIcons/Settings.png</icon>
 			<thumb>HomeIcons/Settings.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Settings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Settings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Settings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Settings)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Settings)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Settings)</onclick>			
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
-		 <item id="1">
+		 <item id="17">
 			<label></label>
 			<label2></label2>
 			<icon>HomeIcons/Shutdown.png</icon>
 			<thumb>HomeIcons/Shutdown.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Shutdown)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Shutdown)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Shutdown)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Shutdown)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Shutdown)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Shutdown)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="18">
@@ -6847,11 +6188,7 @@
 			<label2></label2>
 			<icon>HomeIcons/TvShows.png</icon>
 			<thumb>HomeIcons/TvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,TvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,TvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,TvShows)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="19">
@@ -6859,11 +6196,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Videos.png</icon>
 			<thumb>HomeIcons/Videos.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Videos)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Videos)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Videos)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Videos)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Videos)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Videos)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="20">
@@ -6871,11 +6204,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Weather.png</icon>
 			<thumb>HomeIcons/Weather.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Weather)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Weather)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Weather)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Weather)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Weather)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Weather)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="21">
@@ -6883,11 +6212,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Weather2.png</icon>
 			<thumb>HomeIcons/Weather2.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Weather2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Weather2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Weather2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Weather2)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Weather2)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Weather2)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		 <item id="22">
@@ -6895,11 +6220,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Weather3.png</icon>
 			<thumb>HomeIcons/Weather3.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,Weather3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,Weather3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,Weather3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,Weather3)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,Weather3)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,Weather3)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>
 		<item id="23">
@@ -6907,11 +6228,7 @@
 			<label2></label2>
 			<icon>HomeIcons/Delete.png</icon>
 			<thumb>HomeIcons/Delete.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M1)">Skin.SetString(HomeMenuIcon1,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M2)">Skin.SetString(HomeMenuIcon2,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M3)">Skin.SetString(HomeMenuIcon3,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M4)">Skin.SetString(HomeMenuIcon4,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeMenu),M5)">Skin.SetString(HomeMenuIcon5,)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeMenu)].Image,)</onclick>
 			<onclick>Dialog.Close(6666)</onclick>
 		 </item>			 
 	</include>
@@ -6929,11 +6246,7 @@
 			<label2>$LOCALIZE[31738]</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RandomMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RandomMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RandomMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RandomMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RandomMovies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RandomMovies)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="3">
@@ -6941,11 +6254,7 @@
 			<label2>$LOCALIZE[31709]</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecentMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecentMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecentMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecentMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecentMovies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecentMovies)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="4">
@@ -6953,11 +6262,7 @@
 			<label2>$LOCALIZE[31739]</label2>
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecommendedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecommendedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecommendedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecommendedMovies)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecommendedMovies)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecommendedMovies)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="5">
@@ -6965,11 +6270,7 @@
 			<label2>$LOCALIZE[31738]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RandomTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RandomTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RandomTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RandomTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RandomTvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RandomTvShows)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		  <item id="6">
@@ -6977,11 +6278,7 @@
 			<label2>$LOCALIZE[31709]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecentTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecentTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecentTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecentTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecentTvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecentTvShows)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="7">
@@ -6989,11 +6286,7 @@
 			<label2>$LOCALIZE[31739]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecommendedTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecommendedTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecommendedTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecommendedTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecommendedTvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecommendedTvShows)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 	 
@@ -7002,11 +6295,7 @@
 			<label2>$LOCALIZE[31738]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RandomTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RandomTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RandomTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RandomTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RandomTvShowsThumbs)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RandomTvShowsThumbs)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		  <item id="9">
@@ -7014,11 +6303,7 @@
 			<label2>$LOCALIZE[31709]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecentTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecentTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecentTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecentTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecentTvShowsThumbs)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecentTvShowsThumbs)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="10">
@@ -7026,11 +6311,7 @@
 			<label2>$LOCALIZE[31739]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecommendedTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecommendedTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecommendedTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecommendedTvShowsThumbs)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecommendedTvShowsThumbs)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecommendedTvShowsThumbs)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="11">
@@ -7038,11 +6319,7 @@
 			<label2>$LOCALIZE[19031]</label2>
 			<icon>DefaultTvShows.png</icon>
 			<thumb>DefaultTvShows.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,NextAiredTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,NextAiredTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,NextAiredTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,NextAiredTvShows)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,NextAiredTvShows)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,NextAiredTvShows)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		  <item id="12">
@@ -7050,11 +6327,7 @@
 			<label2>$LOCALIZE[31738]</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RandomAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RandomAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RandomAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RandomAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RandomAlbums)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RandomAlbums)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="13">
@@ -7062,11 +6335,7 @@
 			<label2>$LOCALIZE[31709]</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecentAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecentAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecentAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecentAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecentAlbums)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecentAlbums)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="14">
@@ -7074,11 +6343,7 @@
 			<label2>$LOCALIZE[31739]</label2>
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,RecommendedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,RecommendedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,RecommendedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,RecommendedAlbums)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,RecommendedAlbums)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,RecommendedAlbums)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 		 <item id="15">
@@ -7086,21 +6351,62 @@
 			<label2></label2>
 			<icon>DefaultDelete.png</icon>
 			<thumb>DefaultDelete.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W1)">Skin.SetString(HomeWidgetType1,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W2)">Skin.SetString(HomeWidgetType2,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W3)">Skin.SetString(HomeWidgetType3,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W4)">Skin.SetString(HomeWidgetType4,)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeWidget),W5)">Skin.SetString(HomeWidgetType5,)</onclick>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeWidget)].Type,)</onclick>
 			<onclick>Dialog.Close(5555)</onclick>
 		 </item>
 	</include>
-  
 	
+	<include name="CustomItemChooser">
+		<item id="1">
+			<label>Video</label>
+			<label2>$LOCALIZE[31738]</label2>
+			<icon>DefaultAddonVideo.png</icon>
+			<thumb>DefaultAddonVideo.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,addon)</onclick>
+			<onclick>Skin.SetAddon(CustomHomeTile.Path,xbmc.addon.video)</onclick>
+		</item>
+		 <item id="2">
+			<label>Music</label>
+			<label2>$LOCALIZE[31709]</label2>
+			<icon>DefaultAddonMusic.png</icon>
+			<thumb>DefaultAddonMusic.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,addon)</onclick>
+			<onclick>Skin.SetAddon(CustomHomeTile.Path,xbmc.addon.audio)</onclick>
+		 </item>
+		 <item id="3">
+			<label>Image</label>
+			<label2>$LOCALIZE[31739]</label2>
+			<icon>DefaultAddonPicture.png</icon>
+			<thumb>DefaultAddonPicture.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,addon)</onclick>
+			<onclick>Skin.SetAddon(CustomHomeTile.Path,xbmc.addon.image)</onclick>
+		 </item>
+		 <item id="4">
+			<label>Program</label>
+			<label2>$LOCALIZE[31738]</label2>
+			<icon>DefaultAddonProgram.png</icon>
+			<thumb>DefaultAddonProgram.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,addon)</onclick>
+			<onclick>Skin.SetAddon(CustomHomeTile.Path,xbmc.addon.executable)</onclick>
+		 </item>
+		 <item id="5">
+			<label>Playlist</label>
+			<label2>$LOCALIZE[31738]</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
+			<thumb>DefaultMusicPlaylists.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,PlaylistAudio)</onclick>
+			<onclick>Skin.SetFile(CustomHomeTile.Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
+		 </item>
+		 <item id="6">
+			<label>Playlist</label>
+			<label2>$LOCALIZE[31738]</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb>DefaultVideoPlaylists.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,PlaylistVideo)</onclick>
+			<onclick>Skin.SetFile(CustomHomeTile.Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+		 </item>
+	</include>
 
-  
 
-  
-  
-  
   
   </includes>

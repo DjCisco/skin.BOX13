@@ -1,3 +1,14 @@
+[B]2.2.1[/B]
+- Added Support for Global Search Addon / Coded Global Search Main Window with BOX Design
+- Added Home Customization Functionality for Video Addons
+- Added Home Customization Functionality for Music Addons
+- Added Home Customization Functionality for Program Addons
+- Added Home Customization Functionality for Image Addons
+- Added Home Customization Functionality for Music Playlists
+- Added Home Customization Functionality for VideoPlaylists
+[B]2.1.1[/B]
+- Bug Fixes
+
 [B]2.1.0[/B]
 - Bug Fix Navigation in Screensaver Dimm Settings
 - Added Home Customization Functionality

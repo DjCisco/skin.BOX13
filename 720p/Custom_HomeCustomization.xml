@@ -9,7 +9,7 @@
 		</control>
 		<include>HomeBackground</include>
 		<control type="group">
-			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666)" reversible="true">
+			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666) | Window.IsActive(7777)" reversible="true">
 				<effect type="slide" end="+1500" time="300" tween="cubic" easing="inout"/>
 			</animation>
 			<control type="grouplist">
@@ -20,61 +20,61 @@
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture>$VAR[MainMenu1Icon]</texture>
+					<texture>$VAR[MainMenu1.Image]</texture>
 					<visible>!Control.HasFocus(100)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture colordiffuse="Accent">$VAR[MainMenu1Icon]</texture>
+					<texture colordiffuse="Accent">$VAR[MainMenu1.Image]</texture>
 					<visible>Control.HasFocus(100)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture>$VAR[MainMenu2Icon]</texture>
+					<texture>$VAR[MainMenu2.Image]</texture>
 					<visible>!Control.HasFocus(200)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture colordiffuse="Accent">$VAR[MainMenu2Icon]</texture>
+					<texture colordiffuse="Accent">$VAR[MainMenu2.Image]</texture>
 					<visible>Control.HasFocus(200)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture>$VAR[MainMenu3Icon]</texture>
+					<texture>$VAR[MainMenu3.Image]</texture>
 					<visible>!Control.HasFocus(300)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture colordiffuse="Accent">$VAR[MainMenu3Icon]</texture>
+					<texture colordiffuse="Accent">$VAR[MainMenu3.Image]</texture>
 					<visible>Control.HasFocus(300)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture>$VAR[MainMenu4Icon]</texture>
+					<texture>$VAR[MainMenu4.Image]</texture>
 					<visible>!Control.HasFocus(400)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture colordiffuse="Accent">$VAR[MainMenu4Icon]</texture>
+					<texture colordiffuse="Accent">$VAR[MainMenu4.Image]</texture>
 					<visible>Control.HasFocus(400)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture>$VAR[MainMenu5Icon]</texture>
+					<texture>$VAR[MainMenu5.Image]</texture>
 					<visible>!Control.HasFocus(500)</visible>
 				</control>
 				<control type="image">
 					<width>45</width>
 					<height>45</height>
-					<texture colordiffuse="Accent">$VAR[MainMenu5Icon]</texture>
+					<texture colordiffuse="Accent">$VAR[MainMenu5.Image]</texture>
 					<visible>Control.HasFocus(500)</visible>
 				</control>
 			</control>
@@ -89,7 +89,7 @@
 					<ondown>101</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(SelectedHomeMenu,M1)</onclick>
+					<onclick>Skin.SetString(SelectedHomeMenu,HomeMenu1)</onclick>
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 				<control type="button" id="200">
@@ -98,7 +98,7 @@
 					<ondown>201</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(SelectedHomeMenu,M2)</onclick>
+					<onclick>Skin.SetString(SelectedHomeMenu,HomeMenu2)</onclick>
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 				<control type="button" id="300">
@@ -107,7 +107,7 @@
 					<ondown>301</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(SelectedHomeMenu,M3)</onclick>
+					<onclick>Skin.SetString(SelectedHomeMenu,HomeMenu3)</onclick>
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 				<control type="button" id="400">
@@ -116,7 +116,7 @@
 					<ondown>401</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(SelectedHomeMenu,M4)</onclick>
+					<onclick>Skin.SetString(SelectedHomeMenu,HomeMenu4)</onclick>
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 				<control type="button" id="500">
@@ -125,7 +125,7 @@
 					<ondown>501</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(SelectedHomeMenu,M5)</onclick>
+					<onclick>Skin.SetString(SelectedHomeMenu,HomeMenu5)</onclick>
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 			</control>
@@ -139,62 +139,62 @@
 					<width>210</width>
 					<height>25</height>
 					<align>left</align>
-					<label>$VAR[MainMenu1Label]</label>
+					<label>$VAR[MainMenu1.Label]</label>
 					<label2></label2>
 					<onup>100</onup>
 					<ondown>102</ondown>
 					<font>Panel_Description_Title</font>
 					<texturefocus></texturefocus>
-					<onclick>Skin.SetString(HomeMenuLabel1)</onclick>
+					<onclick>Skin.SetString(HomeMenu1.Label)</onclick>
 				</control>
 				<control type="button" id="201">
 					<textoffsetx>0</textoffsetx>
 					<width>210</width>
 					<height>25</height>
 					<align>left</align>
-					<label>$VAR[MainMenu2Label]</label>
+					<label>$VAR[MainMenu2.Label]</label>
 					<label2></label2>
 					<onup>200</onup>
 					<ondown>202</ondown>
 					<font>Panel_Description_Title</font>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(HomeMenuLabel2)</onclick>
+					<onclick>Skin.SetString(HomeMenu2.Label)</onclick>
 				</control>
 				<control type="button" id="301">
 					<textoffsetx>0</textoffsetx>
 					<width>210</width>
 					<height>25</height>
 					<align>left</align>
-					<label>$VAR[MainMenu3Label]</label>
+					<label>$VAR[MainMenu3.Label]</label>
 					<label2></label2>
 					<onup>300</onup>
 					<ondown>302</ondown>
 					<font>Panel_Description_Title</font>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(HomeMenuLabel3)</onclick>
+					<onclick>Skin.SetString(HomeMenu3.Label)</onclick>
 				</control>
 				<control type="button" id="401">
 					<textoffsetx>0</textoffsetx>
 					<width>210</width>
 					<height>25</height>
 					<align>left</align>
-					<label>$VAR[MainMenu4Label]</label>
+					<label>$VAR[MainMenu4.Label]</label>
 					<label2></label2>
 					<onup>400</onup>
 					<ondown>402</ondown>
 					<font>Panel_Description_Title</font>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(HomeMenuLabel4)</onclick>
+					<onclick>Skin.SetString(HomeMenu4.Label)</onclick>
 				</control>
 				<control type="button" id="501">
 					<textoffsetx>0</textoffsetx>
 					<width>210</width>
 					<height>25</height>
 					<align>left</align>
-					<label>$VAR[MainMenu5Label]</label>
+					<label>$VAR[MainMenu5.Label]</label>
 					<label2></label2>
 					<onleft>900</onleft>
 					<onup>500</onup>
@@ -202,7 +202,7 @@
 					<font>Panel_Description_Title</font>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
-					<onclick>Skin.SetString(HomeMenuLabel5)</onclick>
+					<onclick>Skin.SetString(HomeMenu5.Label)</onclick>
 				</control>
 			</control>
 	
@@ -226,7 +226,7 @@
 						<font>List_Settings</font>
 						<texturefocus>button.png</texturefocus>
 						<texturenofocus>tile.png</texturenofocus>
-						<onclick>Skin.SetString(SelectedHomeTitle,1A1)</onclick>
+						<onclick>Skin.SetString(SelectedHomeTitle,SubMenu1Tile1)</onclick>
 						<onclick>ActivateWindow(4444,return)</onclick>
 					</control>
 					<control type="Image">
@@ -234,13 +234,13 @@
 						<width>100</width>
 						<height>100</height>
 						<bordersize>25</bordersize>
-						<texture>$VAR[SubMenu1AIcon1]</texture>
+						<texture>$VAR[SubMenu1Tile1.Image]</texture>
 					</control>
 					<control type="label">
 						<top>80</top>
 						<left>5</left>
 						<height>15</height>
-						<label>$VAR[SubMenu1ALabel1]</label>
+						<label>$VAR[SubMenu1Tile1.Label]</label>
 						<font>Panel_ItemChooser</font>
 					</control>
 					<control type="panel" id="103">
@@ -313,7 +313,7 @@
 						<font>List_Settings</font>
 						<texturefocus>button.png</texturefocus>
 						<texturenofocus>tile.png</texturenofocus>
-						<onclick>Skin.SetString(SelectedHomeTitle,2A1)</onclick>
+						<onclick>Skin.SetString(SelectedHomeTitle,SubMenu2Tile1)</onclick>
 						<onclick>ActivateWindow(4444,return)</onclick>
 					</control>
 					<control type="Image">
@@ -321,13 +321,13 @@
 						<width>100</width>
 						<height>100</height>
 						<bordersize>25</bordersize>
-						<texture>$VAR[SubMenu2AIcon1]</texture>
+						<texture>$VAR[SubMenu2Tile1.Image]</texture>
 					</control>
 					<control type="label">
 						<top>80</top>
 						<left>5</left>
 						<height>15</height>
-						<label>$VAR[SubMenu2ALabel1]</label>
+						<label>$VAR[SubMenu2Tile1.Label]</label>
 						<font>Panel_ItemChooser</font>
 					</control>
 					<control type="panel" id="203">
@@ -399,7 +399,7 @@
 						<font>List_Settings</font>
 						<texturefocus>button.png</texturefocus>
 						<texturenofocus>tile.png</texturenofocus>
-						<onclick>Skin.SetString(SelectedHomeTitle,3A1)</onclick>
+						<onclick>Skin.SetString(SelectedHomeTitle,SubMenu3Tile1)</onclick>
 						<onclick>ActivateWindow(4444,return)</onclick>
 					</control>
 					<control type="Image">
@@ -407,13 +407,13 @@
 						<width>100</width>
 						<height>100</height>
 						<bordersize>25</bordersize>
-						<texture>$VAR[SubMenu3AIcon1]</texture>
+						<texture>$VAR[SubMenu3Tile1.Image]</texture>
 					</control>
 					<control type="label">
 						<top>80</top>
 						<left>5</left>
 						<height>15</height>
-						<label>$VAR[SubMenu3ALabel1]</label>
+						<label>$VAR[SubMenu3Tile1.Label]</label>
 						<font>Panel_ItemChooser</font>
 					</control>
 					<control type="panel" id="303">
@@ -485,7 +485,7 @@
 						<font>List_Settings</font>
 						<texturefocus>button.png</texturefocus>
 						<texturenofocus>tile.png</texturenofocus>
-						<onclick>Skin.SetString(SelectedHomeTitle,4A1)</onclick>
+						<onclick>Skin.SetString(SelectedHomeTitle,SubMenu4Tile1)</onclick>
 						<onclick>ActivateWindow(4444,return)</onclick>
 					</control>
 					<control type="Image">
@@ -493,13 +493,13 @@
 						<width>100</width>
 						<height>100</height>
 						<bordersize>25</bordersize>
-						<texture>$VAR[SubMenu4AIcon1]</texture>
+						<texture>$VAR[SubMenu4Tile1.Image]</texture>
 					</control>
 					<control type="label">
 						<top>80</top>
 						<left>5</left>
 						<height>15</height>
-						<label>$VAR[SubMenu4ALabel1]</label>
+						<label>$VAR[SubMenu4Tile1.Label]</label>
 						<font>Panel_ItemChooser</font>
 					</control>
 					<control type="panel" id="403">
@@ -571,7 +571,7 @@
 						<font>List_Settings</font>
 						<texturefocus>button.png</texturefocus>
 						<texturenofocus>tile.png</texturenofocus>
-						<onclick>Skin.SetString(SelectedHomeTitle,5A1)</onclick>
+						<onclick>Skin.SetString(SelectedHomeTitle,SubMenu5Tile1)</onclick>
 						<onclick>ActivateWindow(4444,return)</onclick>
 					</control>
 					<control type="Image">
@@ -579,13 +579,13 @@
 						<width>100</width>
 						<height>100</height>
 						<bordersize>25</bordersize>
-						<texture>$VAR[SubMenu5AIcon1]</texture>
+						<texture>$VAR[SubMenu5Tile1.Image]</texture>
 					</control>
 					<control type="label">
 						<top>80</top>
 						<left>5</left>
 						<height>15</height>
-						<label>$VAR[SubMenu5ALabel1]</label>
+						<label>$VAR[SubMenu5Tile1.Label]</label>
 						<font>Panel_ItemChooser</font>
 					</control>
 					<control type="panel" id="503">
@@ -656,9 +656,9 @@
 					<texturefocus>button.png</texturefocus>
 					<texturenofocus>tile.png</texturenofocus>
 					<focusedcolor>White</focusedcolor>
-					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidgetType1)]</label>
+					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidget1.Type)]</label>
 					<font>Panel_ItemChooser</font>
-					<onclick>Skin.SetString(SelectedHomeWidget,W1)</onclick>
+					<onclick>Skin.SetString(SelectedHomeWidget,HomeWidget1)</onclick>
 					<onclick>ActivateWindow(5555,return)</onclick>
 				</control>
 				<control type="button" id="205">
@@ -667,10 +667,10 @@
 					<onup>203</onup>
 					<focusedcolor>White</focusedcolor>
 					<texturefocus>button.png</texturefocus>
-					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidgetType2)]</label>
+					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidget2.Type)]</label>
 					<texturenofocus>tile.png</texturenofocus>
 					<font>Panel_ItemChooser</font>
-					<onclick>Skin.SetString(SelectedHomeWidget,W2)</onclick>
+					<onclick>Skin.SetString(SelectedHomeWidget,HomeWidget2)</onclick>
 					<onclick>ActivateWindow(5555,return)</onclick>
 				</control>
 				<control type="button" id="305">
@@ -680,9 +680,9 @@
 					<texturefocus>button.png</texturefocus>
 					<texturenofocus>tile.png</texturenofocus>
 					<focusedcolor>White</focusedcolor>
-					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidgetType3)]</label>
+					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidget3.Type)]</label>
 					<font>Panel_ItemChooser</font>
-					<onclick>Skin.SetString(SelectedHomeWidget,W3)</onclick>
+					<onclick>Skin.SetString(SelectedHomeWidget,HomeWidget3)</onclick>
 					<onclick>ActivateWindow(5555,return)</onclick>
 				</control>
 				<control type="button" id="405">
@@ -692,9 +692,9 @@
 					<texturefocus>button.png</texturefocus>
 					<texturenofocus>tile.png</texturenofocus>
 					<focusedcolor>White</focusedcolor>
-					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidgetType4)]</label>
+					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidget4.Type)]</label>
 					<font>Panel_ItemChooser</font>
-					<onclick>Skin.SetString(SelectedHomeWidget,W4)</onclick>
+					<onclick>Skin.SetString(SelectedHomeWidget,HomeWidget4)</onclick>
 					<onclick>ActivateWindow(5555,return)</onclick>
 				</control>
 				<control type="button" id="505">
@@ -705,13 +705,13 @@
 					<texturenofocus>tile.png</texturenofocus>
 					<focusedcolor>White</focusedcolor>
 					<font>Panel_ItemChooser</font>
-					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidgetType5)]</label>
-					<onclick>Skin.SetString(SelectedHomeWidget,W5)</onclick>
+					<label>WIDGET:[CR]$INFO[Skin.String(HomeWidget5.Type)]</label>
+					<onclick>Skin.SetString(SelectedHomeWidget,HomeWidget5)</onclick>
 					<onclick>ActivateWindow(5555,return)</onclick>
 				</control>
 	
 			</control>
-		
+				
 		</control>
 	</controls>
 </window>
