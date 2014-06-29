@@ -175,17 +175,6 @@
 						<font>List_Settings</font>
                         <onclick>ActivateWindow(3333,return)</onclick>
 					 </control>
-					 <control type="button">
-						<description>Favoutires script</description>
-                        <width>810</width>
-                        <align>left</align>
-                        <label>Favourites script</label>
-                        <label2></label2>
-                        <focusedcolor>Accent</focusedcolor>
-						<font>List_Settings</font>
-                        <onclick condition="System.HasAddon(script.favourites)">RunScript(script.favourites,property=MyFavourite1)</onclick>
-					 </control>
-					 
 				</control>
                 <control type="grouplist" id="200">
                     <description>Control Area</description>
