@@ -163,7 +163,7 @@
 	</variable>
 	<!-- SubMenu 1 -->
 	<variable  name="SubMenu1Tile1.Label">
-		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[SubMenu1A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,addon)">$INFO[Skin.String(SubMenu1Tile1.Label)]</value>
@@ -192,10 +192,19 @@
 		<value condition="Skin.String(SubMenu1Tile1.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu1Tile1.Image">
-		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[SubMenu1A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,addon)">$INFO[Skin.String(SubMenu1Tile1.Image)]</value>
@@ -224,10 +233,19 @@
 		<value condition="Skin.String(SubMenu1Tile1.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu1Tile1.Action">
-		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[SubMenu1A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile1.Path)]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu1Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu1Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,addon)">RunAddon($INFO[Skin.String(SubMenu1Tile1.Path)])</value>
@@ -256,6 +274,15 @@
 		<value condition="Skin.String(SubMenu1Tile1.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile1.2ndAction">
@@ -288,10 +315,19 @@
 		<value condition="Skin.String(SubMenu1Tile1.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile2.Label">
-		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[SubMenu1A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,addon)">$INFO[Skin.String(SubMenu1Tile2.Label)]</value>
@@ -320,10 +356,19 @@
 		<value condition="Skin.String(SubMenu1Tile2.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu1Tile2.Image">
-		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[SubMenu1A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,addon)">$INFO[Skin.String(SubMenu1Tile2.Image)]</value>
@@ -352,10 +397,19 @@
 		<value condition="Skin.String(SubMenu1Tile2.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu1Tile2.Action">
-		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[SubMenu1A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile2.Path)]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu1Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu1Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,addon)">RunAddon($INFO[Skin.String(SubMenu1Tile2.Path)])</value>
@@ -384,6 +438,15 @@
 		<value condition="Skin.String(SubMenu1Tile2.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile2.2ndAction">
@@ -416,10 +479,19 @@
 		<value condition="Skin.String(SubMenu1Tile2.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile3.Label">
-		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[SubMenu1A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,addon)">$INFO[Skin.String(SubMenu1Tile3.Label)]</value>
@@ -448,10 +520,19 @@
 		<value condition="Skin.String(SubMenu1Tile3.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu1Tile3.Image">
-		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[SubMenu1A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,addon)">$INFO[Skin.String(SubMenu1Tile3.Image)]</value>
@@ -480,10 +561,19 @@
 		<value condition="Skin.String(SubMenu1Tile3.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu1Tile3.Action">
-		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[SubMenu1A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile3.Path)]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu1Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu1Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,addon)">RunAddon($INFO[Skin.String(SubMenu1Tile3.Path)])</value>
@@ -512,6 +602,15 @@
 		<value condition="Skin.String(SubMenu1Tile3.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile3.2ndAction">
@@ -544,10 +643,19 @@
 		<value condition="Skin.String(SubMenu1Tile3.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile4.Label">
-		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[SubMenu1A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,addon)">$INFO[Skin.String(SubMenu1Tile4.Label)]</value>
@@ -576,10 +684,19 @@
 		<value condition="Skin.String(SubMenu1Tile4.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu1Tile4.Image">
-		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[SubMenu1A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,addon)">$INFO[Skin.String(SubMenu1Tile4.Image)]</value>
@@ -608,10 +725,19 @@
 		<value condition="Skin.String(SubMenu1Tile4.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu1Tile4.Action">
-		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[SubMenu1A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile4.Path)]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu1Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu1Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,addon)">RunAddon($INFO[Skin.String(SubMenu1Tile4.Path)])</value>
@@ -640,6 +766,15 @@
 		<value condition="Skin.String(SubMenu1Tile4.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile4.2ndAction">
@@ -672,10 +807,19 @@
 		<value condition="Skin.String(SubMenu1Tile4.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile5.Label">
-		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[SubMenu1A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,addon)">$INFO[Skin.String(SubMenu1Tile5.Label)]</value>
@@ -704,10 +848,19 @@
 		<value condition="Skin.String(SubMenu1Tile5.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu1Tile5.Image">
-		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[SubMenu1A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu1Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu1Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,addon)">$INFO[Skin.String(SubMenu1Tile5.Image)]</value>
@@ -736,10 +889,19 @@
 		<value condition="Skin.String(SubMenu1Tile5.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu1Tile5.Action">
-		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[SubMenu1A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu1Tile5.Path)]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu1Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu1Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,addon)">RunAddon($INFO[Skin.String(SubMenu1Tile5.Path)])</value>
@@ -768,6 +930,15 @@
 		<value condition="Skin.String(SubMenu1Tile5.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu1Tile5.2ndAction">
@@ -800,11 +971,20 @@
 		<value condition="Skin.String(SubMenu1Tile5.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<!-- SubMenu 2 -->
 	<variable  name="SubMenu2Tile1.Label">
-		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[SubMenu2A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,addon)">$INFO[Skin.String(SubMenu2Tile1.Label)]</value>
@@ -833,10 +1013,19 @@
 		<value condition="Skin.String(SubMenu2Tile1.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu2Tile1.Image">
-		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[SubMenu2A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,addon)">$INFO[Skin.String(SubMenu2Tile1.Image)]</value>
@@ -865,10 +1054,19 @@
 		<value condition="Skin.String(SubMenu2Tile1.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu2Tile1.Action">
-		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[SubMenu2A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile1.Path)]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu2Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu2Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,addon)">RunAddon($INFO[Skin.String(SubMenu2Tile1.Path)])</value>
@@ -897,6 +1095,15 @@
 		<value condition="Skin.String(SubMenu2Tile1.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile1.2ndAction">
@@ -929,10 +1136,19 @@
 		<value condition="Skin.String(SubMenu2Tile1.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile2.Label">
-		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[SubMenu2A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,addon)">$INFO[Skin.String(SubMenu2Tile2.Label)]</value>
@@ -961,10 +1177,19 @@
 		<value condition="Skin.String(SubMenu2Tile2.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu2Tile2.Image">
-		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[SubMenu2A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,addon)">$INFO[Skin.String(SubMenu2Tile2.Image)]</value>
@@ -993,10 +1218,19 @@
 		<value condition="Skin.String(SubMenu2Tile2.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu2Tile2.Action">
-		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[SubMenu2A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile2.Path)]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu2Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu2Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,addon)">RunAddon($INFO[Skin.String(SubMenu2Tile2.Path)])</value>
@@ -1025,6 +1259,15 @@
 		<value condition="Skin.String(SubMenu2Tile2.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile2.2ndAction">
@@ -1057,10 +1300,19 @@
 		<value condition="Skin.String(SubMenu2Tile2.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile3.Label">
-		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[SubMenu2A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,addon)">$INFO[Skin.String(SubMenu2Tile3.Label)]</value>
@@ -1089,10 +1341,19 @@
 		<value condition="Skin.String(SubMenu2Tile3.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu2Tile3.Image">
-		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[SubMenu2A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,addon)">$INFO[Skin.String(SubMenu2Tile3.Image)]</value>
@@ -1121,10 +1382,19 @@
 		<value condition="Skin.String(SubMenu2Tile3.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu2Tile3.Action">
-		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[SubMenu2A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile3.Path)]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu2Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu2Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,addon)">RunAddon($INFO[Skin.String(SubMenu2Tile3.Path)])</value>
@@ -1153,6 +1423,15 @@
 		<value condition="Skin.String(SubMenu2Tile3.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile3.2ndAction">
@@ -1185,10 +1464,19 @@
 		<value condition="Skin.String(SubMenu2Tile3.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile4.Label">
-		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[SubMenu2A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,addon)">$INFO[Skin.String(SubMenu2Tile4.Label)]</value>
@@ -1217,10 +1505,19 @@
 		<value condition="Skin.String(SubMenu2Tile4.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu2Tile4.Image">
-		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[SubMenu2A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,addon)">$INFO[Skin.String(SubMenu2Tile4.Image)]</value>
@@ -1249,10 +1546,19 @@
 		<value condition="Skin.String(SubMenu2Tile4.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu2Tile4.Action">
-		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[SubMenu2A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile4.Path)]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu2Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu2Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,addon)">RunAddon($INFO[Skin.String(SubMenu2Tile4.Path)])</value>
@@ -1281,6 +1587,15 @@
 		<value condition="Skin.String(SubMenu2Tile4.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile4.2ndAction">
@@ -1313,10 +1628,19 @@
 		<value condition="Skin.String(SubMenu2Tile4.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile5.Label">
-		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[SubMenu2A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,addon)">$INFO[Skin.String(SubMenu2Tile5.Label)]</value>
@@ -1345,10 +1669,19 @@
 		<value condition="Skin.String(SubMenu2Tile5.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu2Tile5.Image">
-		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[SubMenu2A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu2Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu2Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,addon)">$INFO[Skin.String(SubMenu2Tile5.Image)]</value>
@@ -1377,10 +1710,19 @@
 		<value condition="Skin.String(SubMenu2Tile5.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu2Tile5.Action">
-		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[SubMenu2A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu2Tile5.Path)]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu2Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu2Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,addon)">RunAddon($INFO[Skin.String(SubMenu2Tile5.Path)])</value>
@@ -1409,6 +1751,15 @@
 		<value condition="Skin.String(SubMenu2Tile5.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu2Tile5.2ndAction">
@@ -1441,11 +1792,20 @@
 		<value condition="Skin.String(SubMenu2Tile5.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<!-- SubMenu 3 -->
 	<variable  name="SubMenu3Tile1.Label">
-		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[SubMenu3A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,addon)">$INFO[Skin.String(SubMenu3Tile1.Label)]</value>
@@ -1474,10 +1834,19 @@
 		<value condition="Skin.String(SubMenu3Tile1.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu3Tile1.Image">
-		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[SubMenu3A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,addon)">$INFO[Skin.String(SubMenu3Tile1.Image)]</value>
@@ -1506,10 +1875,19 @@
 		<value condition="Skin.String(SubMenu3Tile1.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu3Tile1.Action">
-		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[SubMenu3A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile1.Path)]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu3Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu3Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,addon)">RunAddon($INFO[Skin.String(SubMenu3Tile1.Path)])</value>
@@ -1538,6 +1916,15 @@
 		<value condition="Skin.String(SubMenu3Tile1.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile1.2ndAction">
@@ -1570,10 +1957,19 @@
 		<value condition="Skin.String(SubMenu3Tile1.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile2.Label">
-		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[SubMenu3A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,addon)">$INFO[Skin.String(SubMenu3Tile2.Label)]</value>
@@ -1602,10 +1998,19 @@
 		<value condition="Skin.String(SubMenu3Tile2.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu3Tile2.Image">
-		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[SubMenu3A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,addon)">$INFO[Skin.String(SubMenu3Tile2.Image)]</value>
@@ -1634,10 +2039,19 @@
 		<value condition="Skin.String(SubMenu3Tile2.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu3Tile2.Action">
-		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[SubMenu3A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile2.Path)]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu3Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu3Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,addon)">RunAddon($INFO[Skin.String(SubMenu3Tile2.Path)])</value>
@@ -1666,6 +2080,15 @@
 		<value condition="Skin.String(SubMenu3Tile2.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile2.2ndAction">
@@ -1698,10 +2121,19 @@
 		<value condition="Skin.String(SubMenu3Tile2.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile3.Label">
-		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[SubMenu3A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,addon)">$INFO[Skin.String(SubMenu3Tile3.Label)]</value>
@@ -1730,10 +2162,19 @@
 		<value condition="Skin.String(SubMenu3Tile3.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu3Tile3.Image">
-		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[SubMenu3A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,addon)">$INFO[Skin.String(SubMenu3Tile3.Image)]</value>
@@ -1762,10 +2203,19 @@
 		<value condition="Skin.String(SubMenu3Tile3.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu3Tile3.Action">
-		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[SubMenu3A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile3.Path)]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu3Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu3Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,addon)">RunAddon($INFO[Skin.String(SubMenu3Tile3.Path)])</value>
@@ -1794,6 +2244,15 @@
 		<value condition="Skin.String(SubMenu3Tile3.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile3.2ndAction">
@@ -1826,10 +2285,19 @@
 		<value condition="Skin.String(SubMenu3Tile3.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile4.Label">
-		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[SubMenu3A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,addon)">$INFO[Skin.String(SubMenu3Tile4.Label)]</value>
@@ -1858,10 +2326,19 @@
 		<value condition="Skin.String(SubMenu3Tile4.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu3Tile4.Image">
-		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[SubMenu3A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,addon)">$INFO[Skin.String(SubMenu3Tile4.Image)]</value>
@@ -1890,10 +2367,19 @@
 		<value condition="Skin.String(SubMenu3Tile4.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu3Tile4.Action">
-		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[SubMenu3A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile4.Path)]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu3Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu3Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,addon)">RunAddon($INFO[Skin.String(SubMenu3Tile4.Path)])</value>
@@ -1922,6 +2408,15 @@
 		<value condition="Skin.String(SubMenu3Tile4.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile4.2ndAction">
@@ -1954,10 +2449,19 @@
 		<value condition="Skin.String(SubMenu3Tile4.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile5.Label">
-		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[SubMenu3A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,addon)">$INFO[Skin.String(SubMenu3Tile5.Label)]</value>
@@ -1986,10 +2490,19 @@
 		<value condition="Skin.String(SubMenu3Tile5.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu3Tile5.Image">
-		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[SubMenu3A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu3Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu3Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,addon)">$INFO[Skin.String(SubMenu3Tile5.Image)]</value>
@@ -2018,10 +2531,19 @@
 		<value condition="Skin.String(SubMenu3Tile5.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu3Tile5.Action">
-		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[SubMenu3A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu3Tile5.Path)]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu3Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu3Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,addon)">RunAddon($INFO[Skin.String(SubMenu3Tile5.Path)])</value>
@@ -2050,6 +2572,15 @@
 		<value condition="Skin.String(SubMenu3Tile5.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu3Tile5.2ndAction">
@@ -2082,11 +2613,20 @@
 		<value condition="Skin.String(SubMenu3Tile5.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<!-- SubMenu 4 -->
 	<variable  name="SubMenu4Tile1.Label">
-		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[SubMenu4A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,addon)">$INFO[Skin.String(SubMenu4Tile1.Label)]</value>
@@ -2115,10 +2655,19 @@
 		<value condition="Skin.String(SubMenu4Tile1.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu4Tile1.Image">
-		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[SubMenu4A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,addon)">$INFO[Skin.String(SubMenu4Tile1.Image)]</value>
@@ -2147,10 +2696,19 @@
 		<value condition="Skin.String(SubMenu4Tile1.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu4Tile1.Action">
-		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[SubMenu4A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile1.Path)]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu4Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu4Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,addon)">RunAddon($INFO[Skin.String(SubMenu4Tile1.Path)])</value>
@@ -2179,6 +2737,15 @@
 		<value condition="Skin.String(SubMenu4Tile1.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile1.2ndAction">
@@ -2211,10 +2778,19 @@
 		<value condition="Skin.String(SubMenu4Tile1.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile2.Label">
-		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[SubMenu4A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,addon)">$INFO[Skin.String(SubMenu4Tile2.Label)]</value>
@@ -2243,10 +2819,19 @@
 		<value condition="Skin.String(SubMenu4Tile2.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu4Tile2.Image">
-		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[SubMenu4A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,addon)">$INFO[Skin.String(SubMenu4Tile2.Image)]</value>
@@ -2275,10 +2860,19 @@
 		<value condition="Skin.String(SubMenu4Tile2.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu4Tile2.Action">
-		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[SubMenu4A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile2.Path)]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu4Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu4Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,addon)">RunAddon($INFO[Skin.String(SubMenu4Tile2.Path)])</value>
@@ -2307,6 +2901,15 @@
 		<value condition="Skin.String(SubMenu4Tile2.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile2.2ndAction">
@@ -2339,10 +2942,19 @@
 		<value condition="Skin.String(SubMenu4Tile2.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile3.Label">
-		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[SubMenu4A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,addon)">$INFO[Skin.String(SubMenu4Tile3.Label)]</value>
@@ -2371,10 +2983,19 @@
 		<value condition="Skin.String(SubMenu4Tile3.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu4Tile3.Image">
-		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[SubMenu4A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,addon)">$INFO[Skin.String(SubMenu4Tile3.Image)]</value>
@@ -2403,10 +3024,19 @@
 		<value condition="Skin.String(SubMenu4Tile3.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu4Tile3.Action">
-		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[SubMenu4A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile3.Path)]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu4Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu4Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,addon)">RunAddon($INFO[Skin.String(SubMenu4Tile3.Path)])</value>
@@ -2435,6 +3065,15 @@
 		<value condition="Skin.String(SubMenu4Tile3.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile3.2ndAction">
@@ -2467,10 +3106,19 @@
 		<value condition="Skin.String(SubMenu4Tile3.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile4.Label">
-		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[SubMenu4A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,addon)">$INFO[Skin.String(SubMenu4Tile4.Label)]</value>
@@ -2499,10 +3147,19 @@
 		<value condition="Skin.String(SubMenu4Tile4.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu4Tile4.Image">
-		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[SubMenu4A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,addon)">$INFO[Skin.String(SubMenu4Tile4.Image)]</value>
@@ -2531,10 +3188,19 @@
 		<value condition="Skin.String(SubMenu4Tile4.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu4Tile4.Action">
-		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[SubMenu4A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile4.Path)]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu4Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu4Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,addon)">RunAddon($INFO[Skin.String(SubMenu4Tile4.Path)])</value>
@@ -2563,6 +3229,15 @@
 		<value condition="Skin.String(SubMenu4Tile4.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile4.2ndAction">
@@ -2595,10 +3270,19 @@
 		<value condition="Skin.String(SubMenu4Tile4.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile5.Label">
-		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[SubMenu4A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,addon)">$INFO[Skin.String(SubMenu4Tile5.Label)]</value>
@@ -2627,10 +3311,19 @@
 		<value condition="Skin.String(SubMenu4Tile5.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu4Tile5.Image">
-		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[SubMenu4A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu4Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu4Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,addon)">$INFO[Skin.String(SubMenu4Tile5.Image)]</value>
@@ -2659,10 +3352,19 @@
 		<value condition="Skin.String(SubMenu4Tile5.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu4Tile5.Action">
-		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[SubMenu4A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu4Tile5.Path)]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu4Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu4Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,addon)">RunAddon($INFO[Skin.String(SubMenu4Tile5.Path)])</value>
@@ -2691,6 +3393,15 @@
 		<value condition="Skin.String(SubMenu4Tile5.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu4Tile5.2ndAction">
@@ -2723,11 +3434,20 @@
 		<value condition="Skin.String(SubMenu4Tile5.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<!-- SubMenu 5 -->
 	<variable  name="SubMenu5Tile1.Label">
-		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[SubMenu5A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile1.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,addon)">$INFO[Skin.String(SubMenu5Tile1.Label)]</value>
@@ -2756,10 +3476,19 @@
 		<value condition="Skin.String(SubMenu5Tile1.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu5Tile1.Image">
-		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[SubMenu5A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile1.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,addon)">$INFO[Skin.String(SubMenu5Tile1.Image)]</value>
@@ -2788,10 +3517,19 @@
 		<value condition="Skin.String(SubMenu5Tile1.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu5Tile1.Action">
-		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[SubMenu5A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile1.Path)]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu5Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu5Tile1.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,addon)">RunAddon($INFO[Skin.String(SubMenu5Tile1.Path)])</value>
@@ -2820,6 +3558,15 @@
 		<value condition="Skin.String(SubMenu5Tile1.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile1.2ndAction">
@@ -2852,10 +3599,19 @@
 		<value condition="Skin.String(SubMenu5Tile1.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile2.Label">
-		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[SubMenu5A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile2.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,addon)">$INFO[Skin.String(SubMenu5Tile2.Label)]</value>
@@ -2884,10 +3640,19 @@
 		<value condition="Skin.String(SubMenu5Tile2.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu5Tile2.Image">
-		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[SubMenu5A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile2.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,addon)">$INFO[Skin.String(SubMenu5Tile2.Image)]</value>
@@ -2916,10 +3681,19 @@
 		<value condition="Skin.String(SubMenu5Tile2.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu5Tile2.Action">
-		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[SubMenu5A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile2.Path)]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu5Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu5Tile2.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,addon)">RunAddon($INFO[Skin.String(SubMenu5Tile2.Path)])</value>
@@ -2948,6 +3722,15 @@
 		<value condition="Skin.String(SubMenu5Tile2.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile2.2ndAction">
@@ -2980,10 +3763,19 @@
 		<value condition="Skin.String(SubMenu5Tile2.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile3.Label">
-		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[SubMenu5A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile3.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,addon)">$INFO[Skin.String(SubMenu5Tile3.Label)]</value>
@@ -3012,10 +3804,19 @@
 		<value condition="Skin.String(SubMenu5Tile3.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu5Tile3.Image">
-		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[SubMenu5A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile3.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,addon)">$INFO[Skin.String(SubMenu5Tile3.Image)]</value>
@@ -3044,10 +3845,19 @@
 		<value condition="Skin.String(SubMenu5Tile3.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu5Tile3.Action">
-		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[SubMenu5A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile3.Path)]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu5Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu5Tile3.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,addon)">RunAddon($INFO[Skin.String(SubMenu5Tile3.Path)])</value>
@@ -3076,6 +3886,15 @@
 		<value condition="Skin.String(SubMenu5Tile3.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile3.2ndAction">
@@ -3108,10 +3927,19 @@
 		<value condition="Skin.String(SubMenu5Tile3.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile4.Label">
-		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[SubMenu5A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile4.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,addon)">$INFO[Skin.String(SubMenu5Tile4.Label)]</value>
@@ -3140,10 +3968,19 @@
 		<value condition="Skin.String(SubMenu5Tile4.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu5Tile4.Image">
-		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[SubMenu5A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile4.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,addon)">$INFO[Skin.String(SubMenu5Tile4.Image)]</value>
@@ -3172,10 +4009,19 @@
 		<value condition="Skin.String(SubMenu5Tile4.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu5Tile4.Action">
-		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[SubMenu5A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile4.Path)]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu5Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu5Tile4.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,addon)">RunAddon($INFO[Skin.String(SubMenu5Tile4.Path)])</value>
@@ -3204,6 +4050,15 @@
 		<value condition="Skin.String(SubMenu5Tile4.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile4.2ndAction">
@@ -3236,10 +4091,19 @@
 		<value condition="Skin.String(SubMenu5Tile4.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile5.Label">
-		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[SubMenu5A1Favourite.Label]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile5.Label)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,addon)">$INFO[Skin.String(SubMenu5Tile5.Label)]</value>
@@ -3268,10 +4132,19 @@
 		<value condition="Skin.String(SubMenu5Tile5.Type,EPG)">$LOCALIZE[19069]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Recordings)">$LOCALIZE[19163]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Timers)">$LOCALIZE[31710]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,PlayDisc)">$LOCALIZE[341]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,EjectDisc)">$LOCALIZE[13391]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Weather)">$LOCALIZE[8]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Pictures)">$LOCALIZE[1]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Programs)">$LOCALIZE[0]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Settings)">$LOCALIZE[10004]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,FileManager)">$LOCALIZE[7]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Shutdown)">$LOCALIZE[13005]</value>
 		<value>$LOCALIZE[504]</value>
 	</variable>
 	<variable  name="SubMenu5Tile5.Image">
-		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[SubMenu5A1Favourite.Icon]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistVideo)">$INFO[Skin.String(SubMenu5Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistAudio)">$INFO[Skin.String(SubMenu5Tile5.Image)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,addon)">$INFO[Skin.String(SubMenu5Tile5.Image)]</value>
@@ -3300,10 +4173,19 @@
 		<value condition="Skin.String(SubMenu5Tile5.Type,EPG)">DefaultEPG.png</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Recordings)">DefaultTvRecordings.png</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Timers)">DefaultTimer.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,PlayDisc)">icons/music.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,EjectDisc)">eject.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Weather)">DefaultWeather.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourites)">top.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Pictures)">DefaultPicture.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Programs)">DefaultProgram.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Settings)">icons/Settings.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,FileManager)">icons/FileManager.png</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Shutdown)">icons/Power.png</value>
 		<value>defaultaddsource.png</value>
 	</variable>
 	<variable  name="SubMenu5Tile5.Action">
-		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[SubMenu5A1Favourite.path)]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourite)">$INFO[Skin.String(SubMenu5Tile5.Path)]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistVideo)">ActivateWindow(Videos,$INFO[Skin.String(SubMenu5Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,PlaylistAudio)">ActivateWindow(MusicLibrary,$INFO[Skin.String(SubMenu5Tile5.Path)],return)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,addon)">RunAddon($INFO[Skin.String(SubMenu5Tile5.Path)])</value>
@@ -3332,6 +4214,15 @@
 		<value condition="Skin.String(SubMenu5Tile5.Type,EPG)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Recordings)">ActivateWindow(PVR)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Timers)">ActivateWindow(PVR)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,PlayDisc)">XBMC.PlayDVD()</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,EjectDisc)">XBMC.EjectTray()</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Weather)">ActivateWindow(Weather,return)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourites)">ActivateWindow(Favourites,return)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Pictures)">ActivateWindow(Pictures)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Programs)">ActivateWindow(Programs)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Settings)">ActivateWindow(Settings, return)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,FileManager)">ActivateWindow(filemanager)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Shutdown)">ActivateWindow(shutdownmenu)</value>
 		<value>noop</value>
 	</variable>
 	<variable  name="SubMenu5Tile5.2ndAction">
@@ -3364,8 +4255,24 @@
 		<value condition="Skin.String(SubMenu5Tile5.Type,EPG)">Setfocus(31)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Recordings)">Setfocus(34)</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,Timers)">Setfocus(35)</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,PlayDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,EjectDisc)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Weather)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Favourites)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Pictures)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Programs)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Settings)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,FileManager)">noop</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,Shutdown)">noop</value>
 		<value>noop</value>
 	</variable>
+	
+	
+	
+	
+	
+	
+	
 	<!-- Home Widget Labels -->
 	<variable  name="HomeWidget1.Label">
 		<value condition="Skin.String(HomeWidget1.Type,RandomMovies)">$LOCALIZE[31738]</value>
@@ -3449,7 +4356,8 @@
 	</variable>
 	<!-- Image for Custom Tile Selection -->
 	<variable  name="CustomHomeTile.Image">
-		<value condition="Skin.String(CustomHomeTile.Image,)">$INFO[system.addonicon(Skin.String(CustomHomeTile.Path))]</value>
+		<value condition="Skin.String(CustomHomeTile.Image,) + Skin.String(CustomHomeTile.Icon,)">$INFO[system.addonicon(Skin.String(CustomHomeTile.Path))]</value>
+		<value condition="Skin.String(CustomHomeTile.Image,) + Skin.String(CustomHomeTile.Icon)">$INFO[Skin.String(CustomHomeTile.Icon)]</value>
 		<value>$INFO[Skin.String(CustomHomeTile.Image)]</value>
 	</variable>
 		<!-- Label for Custom Tile Selection -->

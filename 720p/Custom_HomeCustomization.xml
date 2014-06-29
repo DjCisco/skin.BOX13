@@ -12,6 +12,113 @@
 			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666) | Window.IsActive(7777)" reversible="true">
 				<effect type="slide" end="+1500" time="300" tween="cubic" easing="inout"/>
 			</animation>
+			
+			
+			<control type="grouplist">
+				<top>140</top>
+				<left>50</left>
+				<orientation>horizontal</orientation>
+				<itemgap>180</itemgap>
+				<control type="radiobutton" id="99">
+					<description>Enable Home Menu1 </description>
+					<width>55</width>
+					<height>55</height>
+					<radiowidth>45</radiowidth>
+					<radioheight>45</radioheight>
+					<align>center</align>
+					<label></label>
+					<texturefocus></texturefocus>
+					<textoffsetx>0</textoffsetx>
+					<ondown>100</ondown>
+					<focusedcolor>Accent</focusedcolor>
+					<font>List_Settings</font>
+					<textureradioonnofocus>PVRTimerEnabled.png</textureradioonnofocus>
+					<textureradiooffnofocus>PVRTimerDisabled.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="Accent">PVRTimerEnabled.png</textureradioonfocus>
+					<textureradioofffocus colordiffuse="Accent">PVRTimerDisabled.png</textureradioofffocus>
+					<onclick>Skin.ToggleSetting(EnableHomeMenu1)</onclick>
+					<selected>Skin.HasSetting(EnableHomeMenu1)</selected>
+				</control>
+				<control type="radiobutton" id="199">
+					<description>Enable Home Menu2 </description>
+					<width>55</width>
+					<height>55</height>
+					<radiowidth>45</radiowidth>
+					<radioheight>45</radioheight>
+					<align>left</align>
+					<label></label>
+					<ondown>200</ondown>
+					<texturefocus></texturefocus>
+					<focusedcolor>Accent</focusedcolor>
+					<font>List_Settings</font>
+					<textureradioonnofocus>PVRTimerEnabled.png</textureradioonnofocus>
+					<textureradiooffnofocus>PVRTimerDisabled.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="Accent">PVRTimerEnabled.png</textureradioonfocus>
+					<textureradioofffocus colordiffuse="Accent">PVRTimerDisabled.png</textureradioofffocus>
+					<onclick>Skin.ToggleSetting(EnableHomeMenu2)</onclick>
+					<selected>Skin.HasSetting(EnableHomeMenu2)</selected>
+				</control>
+				<control type="radiobutton" id="299">
+					<description>Enable Home Menu3 </description>
+					<width>55</width>
+					<height>55</height>
+					<radiowidth>45</radiowidth>
+					<radioheight>45</radioheight>
+					<align>left</align>
+					<label></label>
+					<ondown>300</ondown>
+					<focusedcolor>Accent</focusedcolor>
+					<texturefocus></texturefocus>
+					<font>List_Settings</font>
+					<textureradioonnofocus>PVRTimerEnabled.png</textureradioonnofocus>
+					<textureradiooffnofocus>PVRTimerDisabled.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="Accent">PVRTimerEnabled.png</textureradioonfocus>
+					<textureradioofffocus colordiffuse="Accent">PVRTimerDisabled.png</textureradioofffocus>
+					<onclick>Skin.ToggleSetting(EnableHomeMenu3)</onclick>
+					<selected>Skin.HasSetting(EnableHomeMenu3)</selected>
+				</control>
+				<control type="radiobutton" id="399">
+					<description>Enable Home Menu4 </description>
+					<width>55</width>
+					<height>55</height>
+					<radiowidth>45</radiowidth>
+					<radioheight>45</radioheight>
+					<align>left</align>
+					<label></label>
+					<ondown>400</ondown>
+					<focusedcolor>Accent</focusedcolor>
+					<texturefocus></texturefocus>
+					<font>List_Settings</font>
+					<textureradioonnofocus>PVRTimerEnabled.png</textureradioonnofocus>
+					<textureradiooffnofocus>PVRTimerDisabled.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="Accent">PVRTimerEnabled.png</textureradioonfocus>
+					<textureradioofffocus colordiffuse="Accent">PVRTimerDisabled.png</textureradioofffocus>
+					<onclick>Skin.ToggleSetting(EnableHomeMenu4)</onclick>
+					<selected>Skin.HasSetting(EnableHomeMenu4)</selected>
+				</control>
+				<control type="radiobutton" id="499">
+					<description>Enable Home Menu5 </description>
+					<width>55</width>
+					<height>55</height>
+					<radiowidth>45</radiowidth>
+					<radioheight>45</radioheight>
+					<align>left</align>
+					<label></label>
+					<ondown>500</ondown>
+					<focusedcolor>Accent</focusedcolor>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<textureradioonnofocus>PVRTimerEnabled.png</textureradioonnofocus>
+					<textureradiooffnofocus>PVRTimerDisabled.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="Accent">PVRTimerEnabled.png</textureradioonfocus>
+					<textureradioofffocus colordiffuse="Accent">PVRTimerDisabled.png</textureradioofffocus>
+					<onclick>Skin.ToggleSetting(EnableHomeMenu5)</onclick>
+					<selected>Skin.HasSetting(EnableHomeMenu5)</selected>
+				</control>
+			</control>
+			
+			
+			<!-- Display of Home Icons-->
 			<control type="grouplist">
 				<top>205</top>
 				<left>50</left>
@@ -78,6 +185,7 @@
 					<visible>Control.HasFocus(500)</visible>
 				</control>
 			</control>
+			<!-- Buttons for Main Menu Icon Selection -->
 			<control type="grouplist">
 				<top>205</top>
 				<left>50</left>
@@ -86,6 +194,7 @@
 				<control type="button" id="100">
 					<width>45</width>
 					<height>45</height>
+					<onup>99</onup>
 					<ondown>101</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
@@ -95,6 +204,7 @@
 				<control type="button" id="200">
 					<width>45</width>
 					<height>45</height>
+					<onup>199</onup>
 					<ondown>201</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
@@ -104,6 +214,7 @@
 				<control type="button" id="300">
 					<width>45</width>
 					<height>45</height>
+					<onup>299</onup>
 					<ondown>301</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
@@ -113,6 +224,7 @@
 				<control type="button" id="400">
 					<width>45</width>
 					<height>45</height>
+					<onup>399</onup>
 					<ondown>401</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
@@ -122,6 +234,7 @@
 				<control type="button" id="500">
 					<width>45</width>
 					<height>45</height>
+					<onup>499</onup>
 					<ondown>501</ondown>
 					<texturefocus></texturefocus>
 					<texturenofocus></texturenofocus>
@@ -205,7 +318,6 @@
 					<onclick>Skin.SetString(HomeMenu5.Label)</onclick>
 				</control>
 			</control>
-	
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<itemgap>25</itemgap>
@@ -642,8 +754,6 @@
 					</control>
 				</control>
 			</control>
-		
-		
 			<control type="grouplist">
 				<top>605</top>
 				<left>50</left>
@@ -711,7 +821,6 @@
 				</control>
 	
 			</control>
-				
 		</control>
 	</controls>
 </window>

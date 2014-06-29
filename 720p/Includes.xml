@@ -1162,7 +1162,9 @@
     <!-- This Displays the Time and Date on the Top Right -->
 	<include name="BarClock">
 		<control type="group">
-			<animation effect="slide" start="0,0" end="0,30" time="300"  delay="200" easing="inout" condition="Window.IsActive(138)">conditional</animation>
+			<animation type="Conditional" condition="Window.IsActive(151) | Window.IsActive(138) | Window.IsActive(107)">
+				<effect type="slide" time="300"end="0,40" easing="out" tween="cubic" />
+			</animation>
 			<!-- This Displays the Current Time on the Top Right -->
 			<control type="label">
 				<label>$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx), ][/COLOR]</label>
@@ -1241,7 +1243,244 @@
 			</control>
 		</control>
 	 </include>
-	
+	<include name="WidgetBackground">
+		<visible>!Skin.HasSetting(Fanart)</visible>
+		<!-- List to Control the cycle through the Fanart for Menu1	-->
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu1) + !Window.IsVisible(favourites) + Skin.String(HomeWidget1.Type)</visible>
+			<control type="list" id="3007">
+				<left>-1280</left>
+				<width>1</width>
+				<height>20</height>
+				<orientation>vertical</orientation>
+				<autoscroll time="10000">true</autoscroll> 
+				<itemgap>0</itemgap>
+				<itemlayout width="1" height="1">
+				</itemlayout>
+				<focusedlayout  width="1" height="1">
+				</focusedlayout>
+				<content>	
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentMovies)">RecentFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomMovies)">RandomFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShows)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShows)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentAlbums)">RecentFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomAlbums)">RandomFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
+				</content>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>black.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>music_fanart_diffuse_blue.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>1000</fadetime>
+				<texture>$INFO[Container(3007).ListItem(0).thumb]</texture>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</control>
+		<!-- List to Control the cycle through the Fanart for Menu2	-->
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu2) + !Window.IsVisible(favourites) + Skin.String(HomeWidget2.Type)</visible>
+			<control type="list" id="4007">
+				<left>-1280</left>
+				<width>1</width>
+				<height>20</height>
+				<orientation>vertical</orientation>
+				<autoscroll time="10000">true</autoscroll> 
+				<itemgap>0</itemgap>
+				<itemlayout width="1" height="1">
+				</itemlayout>
+				<focusedlayout  width="1" height="1">
+				</focusedlayout>
+				<content>	
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentMovies)">RecentFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomMovies)">RandomFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShows)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShows)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentAlbums)">RecentFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomAlbums)">RandomFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
+				</content>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>black.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>music_fanart_diffuse_blue.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>1000</fadetime>
+				<texture>$INFO[Container(4007).ListItem(0).thumb]</texture>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</control>
+		<!-- List to Control the cycle through the Fanart for Menu3	-->
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu3) + !Window.IsVisible(favourites) + Skin.String(HomeWidget3.Type)</visible>
+			<control type="list" id="5007">
+				<left>-1280</left>
+				<width>1</width>
+				<height>20</height>
+				<orientation>vertical</orientation>
+				<autoscroll time="10000">true</autoscroll> 
+				<itemgap>0</itemgap>
+				<itemlayout width="1" height="1">
+				</itemlayout>
+				<focusedlayout  width="1" height="1">
+				</focusedlayout>
+				<content>	
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentMovies)">RecentFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomMovies)">RandomFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShows)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShows)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentAlbums)">RecentFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomAlbums)">RandomFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
+				</content>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>black.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>music_fanart_diffuse_blue.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>1000</fadetime>
+				<texture>$INFO[Container(5007).ListItem(0).thumb]</texture>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</control>
+		<!-- List to Control the cycle through the Fanart for Menu4	-->
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu4) + !Window.IsVisible(favourites) + Skin.String(HomeWidget4.Type)</visible>
+			<control type="list" id="6007">
+				<left>-1280</left>
+				<width>1</width>
+				<height>20</height>
+				<orientation>vertical</orientation>
+				<autoscroll time="10000">true</autoscroll> 
+				<itemgap>0</itemgap>
+				<itemlayout width="1" height="1">
+				</itemlayout>
+				<focusedlayout  width="1" height="1">
+				</focusedlayout>
+				<content>	
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentMovies)">RecentFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomMovies)">RandomFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShows)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShows)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentAlbums)">RecentFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomAlbums)">RandomFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
+				</content>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>black.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>music_fanart_diffuse_blue.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>1000</fadetime>
+				<texture>$INFO[Container(6007).ListItem(0).thumb]</texture>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</control>			
+		<!-- List to Control the cycle through the Fanart for Menu5	-->
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu5) + !Window.IsVisible(favourites) + Skin.String(HomeWidget5.Type)</visible>
+			<control type="list" id="7007">
+				<left>-1280</left>
+				<width>1</width>
+				<height>20</height>
+				<orientation>vertical</orientation>
+				<autoscroll time="10000">true</autoscroll> 
+				<itemgap>0</itemgap>
+				<itemlayout width="1" height="1">
+				</itemlayout>
+				<focusedlayout  width="1" height="1">
+				</focusedlayout>
+				<content>	
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentMovies)">RecentFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomMovies)">RandomFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedMovies)">RecommendedFanartMovies</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShows)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShows)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentAlbums)">RecentFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomAlbums)">RandomFanartMusic</include>
+					<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
+				</content>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>black.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>music_fanart_diffuse_blue.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>1000</fadetime>
+				<texture>$INFO[Container(7007).ListItem(0).thumb]</texture>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</control>				
+	</include>
 	<include name="HomeBackground">
         <!-- Blue Background -->
  		<control type="image">
@@ -1272,241 +1511,6 @@
 		<!-- This Displays the Fanart of Home Sections, Music Visualization and List Items-->
 		<control type="group">
             <visible>!Skin.HasSetting(Fanart)</visible>
-            <!-- List to Control the cycle through the Fanart for Menu1	-->
-			<control type="group">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu1) + !Window.IsVisible(favourites)</visible>
-               	<control type="list" id="3007">
-					<left>-1280</left>
-					<width>1</width>
-					<height>20</height>
-					<orientation>vertical</orientation>
-					<autoscroll time="10000">true</autoscroll> 
-					<itemgap>0</itemgap>
-					<itemlayout width="1" height="1">
-					</itemlayout>
-					<focusedlayout  width="1" height="1">
-					</focusedlayout>
-					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget1.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
-					</content>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>black.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>music_fanart_diffuse_blue.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<fadetime>1000</fadetime>
-					<texture>$INFO[Container(3007).ListItem(0).thumb]</texture>
-					<colordiffuse>ImageDiffuse</colordiffuse>
-				</control>
-			</control>
-			<!-- List to Control the cycle through the Fanart for Menu2	-->
-			<control type="group">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu2) + !Window.IsVisible(favourites)</visible>
-               	<control type="list" id="4007">
-					<left>-1280</left>
-					<width>1</width>
-					<height>20</height>
-					<orientation>vertical</orientation>
-					<autoscroll time="10000">true</autoscroll> 
-					<itemgap>0</itemgap>
-					<itemlayout width="1" height="1">
-					</itemlayout>
-					<focusedlayout  width="1" height="1">
-					</focusedlayout>
-					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget2.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
-					</content>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>black.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>music_fanart_diffuse_blue.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<fadetime>1000</fadetime>
-					<texture>$INFO[Container(4007).ListItem(0).thumb]</texture>
-					<colordiffuse>ImageDiffuse</colordiffuse>
-				</control>
-			</control>
-			<!-- List to Control the cycle through the Fanart for Menu3	-->
-			<control type="group">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu3) + !Window.IsVisible(favourites)</visible>
-               	<control type="list" id="5007">
-					<left>-1280</left>
-					<width>1</width>
-					<height>20</height>
-					<orientation>vertical</orientation>
-					<autoscroll time="10000">true</autoscroll> 
-					<itemgap>0</itemgap>
-					<itemlayout width="1" height="1">
-					</itemlayout>
-					<focusedlayout  width="1" height="1">
-					</focusedlayout>
-					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget3.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
-					</content>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>black.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>music_fanart_diffuse_blue.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<fadetime>1000</fadetime>
-					<texture>$INFO[Container(5007).ListItem(0).thumb]</texture>
-					<colordiffuse>ImageDiffuse</colordiffuse>
-				</control>
-			</control>
-			<!-- List to Control the cycle through the Fanart for Menu4	-->
-			<control type="group">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu4) + !Window.IsVisible(favourites)</visible>
-               	<control type="list" id="6007">
-					<left>-1280</left>
-					<width>1</width>
-					<height>20</height>
-					<orientation>vertical</orientation>
-					<autoscroll time="10000">true</autoscroll> 
-					<itemgap>0</itemgap>
-					<itemlayout width="1" height="1">
-					</itemlayout>
-					<focusedlayout  width="1" height="1">
-					</focusedlayout>
-					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget4.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
-					</content>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>black.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>music_fanart_diffuse_blue.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<fadetime>1000</fadetime>
-					<texture>$INFO[Container(6007).ListItem(0).thumb]</texture>
-					<colordiffuse>ImageDiffuse</colordiffuse>
-				</control>
-			</control>			
-			<!-- List to Control the cycle through the Fanart for Menu5	-->
-			<control type="group">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>!Skin.HasSetting(DisableHomeFanart) + SubString(Window(Home).Property(menu),menu5) + !Window.IsVisible(favourites)</visible>
-               	<control type="list" id="7007">
-					<left>-1280</left>
-					<width>1</width>
-					<height>20</height>
-					<orientation>vertical</orientation>
-					<autoscroll time="10000">true</autoscroll> 
-					<itemgap>0</itemgap>
-					<itemlayout width="1" height="1">
-					</itemlayout>
-					<focusedlayout  width="1" height="1">
-					</focusedlayout>
-					<content>	
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentMovies)">RecentFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomMovies)">RandomFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedMovies)">RecommendedFanartMovies</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShows)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShows)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShows)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentTvShowsThumbs)">RecentFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomTvShowsThumbs)">RandomFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedTvShowsThumbs)">RecommendedFanartTvShows</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecentAlbums)">RecentFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RandomAlbums)">RandomFanartMusic</include>
-						<include condition="Stringcompare(Skin.String(HomeWidget5.Type),RecommendedAlbums)">RecommendedFanartMusic</include>
-					</content>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>black.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<texture>music_fanart_diffuse_blue.png</texture>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-				</control>
-				<control type="image">
-					<include>Dimensions_Fullscreen</include>
-					<fadetime>1000</fadetime>
-					<texture>$INFO[Container(7007).ListItem(0).thumb]</texture>
-					<colordiffuse>ImageDiffuse</colordiffuse>
-				</control>
-			</control>				
 			<!-- Displays Fanart of  Movie EPisode Tv Show Item selected from a list-->
 			<control type="group">
 				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
@@ -2306,6 +2310,7 @@
             <effect type="fade" start="0" end="100" time="400" easing="out" tween="square" />
         </animation>
         <aspectratio scalediffuse="false">stretch</aspectratio>
+		<colordiffuse>AccentDiffuse</colordiffuse>
 	</include>
 	<include name="PanelButtonTitle">	
 		<left>10</left>
@@ -2334,6 +2339,7 @@
 		<width>155</width>
         <height>155</height>
 		<bordersize>5</bordersize>
+		<aspectratio>scale</aspectratio>
 	</include>
 	<include name="PanelButtonImageNF">
 		<width>155</width>
@@ -2349,6 +2355,7 @@
             <effect type="fade" start="0" end="100" time="400" easing="out" tween="square" />
         </animation>
         <aspectratio scalediffuse="false">stretch</aspectratio>
+		<colordiffuse>AccentDiffuse</colordiffuse>
 	</include>
 	<include name="PanelRectButtonTitle">	
 		<left>10</left>
@@ -2373,6 +2380,7 @@
             <effect type="fade" start="0" end="100" time="400" easing="out" tween="square" />
         </animation>
         <aspectratio scalediffuse="false">stretch</aspectratio>
+		<colordiffuse>AccentDiffuse</colordiffuse>
 	</include>
 	<include name="PanelRectButtonHeaderTitle">
 		<left>0</left>
@@ -5407,7 +5415,7 @@
 			<property name="ImageType">$INFO[Skin.String(SubMenu1Tile2.ImageType)]</property>
 			<visible>!IsEmpty(Skin.String(SubMenu1Tile2.Type))</visible>
 		 </item>
-			<item id="2">
+		<item id="2">
 			<label>$VAR[SubMenu1Tile3.Label]</label>
 			<label2></label2>
 			<icon>$VAR[SubMenu1Tile3.Image]</icon>
@@ -5453,7 +5461,7 @@
 			<property name="ImageType">$INFO[Skin.String(SubMenu2Tile2.ImageType)]</property>
 			<visible>!IsEmpty(Skin.String(SubMenu2Tile2.Type))</visible>
 		 </item>
-			<item id="2">
+		<item id="2">
 			<label>$VAR[SubMenu2Tile3.Label]</label>
 			<label2></label2>
 			<icon>$VAR[SubMenu2Tile3.Image]</icon>
@@ -5499,7 +5507,7 @@
 			<property name="ImageType">$INFO[Skin.String(SubMenu3Tile2.ImageType)]</property>
 			<visible>!IsEmpty(Skin.String(SubMenu3Tile2.Type))</visible>
 		 </item>
-			<item id="2">
+		<item id="2">
 			<label>$VAR[SubMenu3Tile3.Label]</label>
 			<label2></label2>
 			<icon>$VAR[SubMenu3Tile3.Image]</icon>
@@ -5831,6 +5839,7 @@
 			<icon>icons/MusicLibrary.png</icon>
 			<thumb>icons/MusicLibrary.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicLibrary)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="3">
@@ -5839,6 +5848,7 @@
 			<icon>icons/TvShowLibrary.png</icon>
 			<thumb>icons/TvShowLibrary.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TVShowLibrary)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="4">
@@ -5847,6 +5857,7 @@
 			<icon>icons/MovieLibrary.png</icon>
 			<thumb>icons/MovieLibrary.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MovieLibrary)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="5">
@@ -5855,6 +5866,7 @@
 			<icon>DefaultVideo.png</icon>
 			<thumb>DefaultVideo.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoLibrary)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="6">
@@ -5863,6 +5875,7 @@
 			<icon>DefaultMusicFiles.png</icon>
 			<thumb>DefaultMusicFiles.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicFiles)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="7">
@@ -5871,6 +5884,7 @@
 			<icon>DefaultRecentlyAddedMovies.png</icon>
 			<thumb>DefaultRecentlyAddedMovies.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedMovies)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="8">
@@ -5879,6 +5893,7 @@
 			<icon>DefaultRecentlyAddedEpisodes.png</icon>
 			<thumb>DefaultRecentlyAddedEpisodes.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedEpisodes)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="9">
@@ -5887,6 +5902,7 @@
 			<icon>DefaultMusicRecentlyAdded.png</icon>
 			<thumb>DefaultMusicRecentlyAdded.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RecentylAddedAlbums)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="10">
@@ -5895,6 +5911,7 @@
 			<icon>DefaultMusicArtists.png</icon>
 			<thumb>DefaultMusicArtists.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Artists)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="11">
@@ -5903,6 +5920,7 @@
 			<icon>DefaultDirector.png</icon>
 			<thumb>DefaultDirector.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Directors)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 <item id="12">
@@ -5911,6 +5929,7 @@
 			<icon>DefaultMovieActor.png</icon>
 			<thumb>DefaultMovieActor.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MovieActors)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		 <item id="13">
@@ -5919,6 +5938,7 @@
 			<icon>DefaultTvShowActor.png</icon>
 			<thumb>DefaultTvShowActor.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvShowActors)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="14">
@@ -5927,6 +5947,7 @@
 			<icon>DefaultMusicAlbums.png</icon>
 			<thumb>DefaultMusicAlbums.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Albums)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="15">
@@ -5935,6 +5956,7 @@
 			<icon>DefaultMovies.png</icon>
 			<thumb>DefaultMovies.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Movies)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="16">
@@ -5943,6 +5965,7 @@
 			<icon>DefaultTVShows.png</icon>
 			<thumb>DefaultTVShows.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvShows)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="17">
@@ -5951,6 +5974,7 @@
 			<icon>DefaultVideoPlaylists.png</icon>
 			<thumb>DefaultVideoPlaylists.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoPlaylists)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="18">
@@ -5959,6 +5983,7 @@
 			<icon>DefaultMusicPlaylists.png</icon>
 			<thumb>DefaultMusicPlaylists.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicPlaylists)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="19">
@@ -5967,6 +5992,7 @@
 			<icon>DefaultAddonVideo.png</icon>
 			<thumb>DefaultAddonVideo.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,VideoAddons)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="20">
@@ -5975,6 +6001,7 @@
 			<icon>DefaultAddonMusic.png</icon>
 			<thumb>DefaultAddonMusic.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,MusicAddons)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="21">
@@ -5983,6 +6010,7 @@
 			<icon>DefaultTvChannels.png</icon>
 			<thumb>DefaultTvChannels.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,TvChannels)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="22">
@@ -5991,6 +6019,7 @@
 			<icon>DefaultRadio.png</icon>
 			<thumb>DefaultRadio.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,RadioChannels)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="23">
@@ -5999,6 +6028,7 @@
 			<icon>DefaultEPG.png</icon>
 			<thumb>DefaultEPG.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,EPG)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="24">
@@ -6007,6 +6037,7 @@
 			<icon>DefaultTvRecordings.png</icon>
 			<thumb>DefaultTvRecordings.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Recordings)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
 		<item id="25">
@@ -6015,9 +6046,91 @@
 			<icon>DefaultTimer.png</icon>
 			<thumb>DefaultTimer.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Timers)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		  <item id="26">
+		<item id="26">
+			<label>$LOCALIZE[341]</label>
+			<label2></label2>
+			<icon>icons/music.png</icon>
+			<thumb>icons/music.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,PlayDisc)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="27">
+			<label>$LOCALIZE[13391]</label>
+			<label2></label2>
+			<icon>eject.png</icon>
+			<thumb>eject.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,EjectDisc)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="28">
+			<label>$LOCALIZE[8]</label>
+			<label2></label2>
+			<icon>DefaultWeather.png</icon>
+			<thumb>DefaultWeather.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Weather)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="29">
+			<label>$LOCALIZE[1036]</label>
+			<label2></label2>
+			<icon>top.png</icon>
+			<thumb>top.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Favourites)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="30">
+			<label>$LOCALIZE[1]</label>
+			<label2></label2>
+			<icon>DefaultPicture.png</icon>
+			<thumb>DefaultPicture.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Pictures)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="31">
+			<label>$LOCALIZE[0]</label>
+			<label2></label2>
+			<icon>DefaultProgram.png</icon>
+			<thumb>DefaultProgram.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Programs)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="32">
+			<label>$LOCALIZE[10004]</label>
+			<label2></label2>
+			<icon>icons/Settings.png</icon>
+			<thumb>icons/Settings.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Settings)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		<item id="33">
+			<label>$LOCALIZE[7]</label>
+			<label2></label2>
+			<icon>icons/FileManager.png</icon>
+			<thumb>icons/FileManager.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,FileManager)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		 <item id="34">
+			<label>$LOCALIZE[13005]</label>
+			<label2></label2>
+			<icon>icons/Power.png</icon>
+			<thumb>icons/Power.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,Shutdown)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
+			<onclick>Dialog.Close(4444)</onclick>
+		 </item>
+		  <item id="35">
 			<label>CUSTOM TILE</label>
 			<label2></label2>
 			<icon>DefaultAddCustom.png</icon>
@@ -6026,25 +6139,15 @@
 			<onclick>ActivateWindow(7777,return)</onclick>
 			
 		 </item>
-		 <item id="27">
+		 <item id="36">
 			<label>$LOCALIZE[117]</label>
 			<label2></label2>
 			<icon>DefaultDelete.png</icon>
 			<thumb>DefaultDelete.png</thumb>
 			<onclick>Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Type,)</onclick>
+			<onclick>Skin.Reset($INFO[Skin.String(SelectedHomeTitle)].ImageType)</onclick>
 			<onclick>Dialog.Close(4444)</onclick>
 		 </item>
-		 <!--
-		 <item id="26">
-			<label></label>
-			<label2></label2>
-			<icon>top.png</icon>
-			<thumb>top.png</thumb>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">Skin.SetString(SubMenu1A1Type,Favourite)</onclick>
-			<onclick condition="StringCompare(Skin.String(SelectedHomeTitle),1A1)">RunScript(script.favourites,property=SubMenu1A1Favourite)</onclick>
-			<onclick>Dialog.Close(4444)</onclick>
-		 </item>
-		 -->
 	</include>
 
 	<include name="MainMenuIconChooser">
@@ -6404,6 +6507,15 @@
 			<thumb>DefaultVideoPlaylists.png</thumb>
 			<onclick>Skin.SetString(CustomHomeTile.Type,PlaylistVideo)</onclick>
 			<onclick>Skin.SetFile(CustomHomeTile.Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+		 </item>
+		 <item id="7">
+			<label>Favourite</label>
+			<label2></label2>
+			<icon>top.png</icon>
+			<thumb>top.png</thumb>
+			<onclick>Skin.SetString(CustomHomeTile.Type,Favourite)</onclick>
+			<onclick>RunScript(script.favourites,property=CustomHomeTile)</onclick>
+			<visible>System.HasAddon(script.favourites)</visible>
 		 </item>
 	</include>
 

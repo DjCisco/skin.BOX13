@@ -5,6 +5,7 @@
   	<onunload>Skin.Reset(CustomHomeTile.Path)</onunload>
 	<onunload>Skin.Reset(CustomHomeTile.Type)</onunload>
 	<onunload>Skin.Reset(CustomHomeTile.Image)</onunload>
+	<onunload>Skin.Reset(CustomHomeTile.Icon)</onunload>
 	<onunload>Skin.Reset(CustomHomeTile.Label)</onunload>
 	<onunload>Skin.Reset(CustomHomeTile.ImageType)</onunload>
 	<onunload>Skin.Reset(ShowIconSelector)</onunload>
@@ -37,6 +38,7 @@
 			<width>1200</width>
 			<label2></label2>
 			<ondown>2</ondown>
+			<onright>3</onright>
 			<font>Panel_Description_Title</font>
 			<texturefocus></texturefocus>
 			<onclick>Skin.SetString(CustomHomeTile.Label)</onclick>
@@ -46,6 +48,12 @@
 			<include>ViewMainTitle</include>
 			<label>$LOCALIZE[504]</label>
 			<visible>IsEmpty(Control.getLabel(1))</visible>
+		</control>
+		<control type="label">
+			<include>ViewMainTitle</include>
+			<label>$LOCALIZE[504]</label>
+			<textcolor>Accent</textcolor>
+			<visible>IsEmpty(Control.getLabel(1)) + Control.HasFocus(1)</visible>
 		</control>
 		<control type="button" id="2">
 			<include>PanelCoordinates</include>
@@ -107,6 +115,10 @@
 			</content>
 		</control>
 		
+		<control type="label">
+			<include>ViewFooterTitle</include>
+			<label>$INFO[Skin.String(CustomHomeTile.Path),PATH: ]</label>
+		</control>
 	
 		<control type="fixedlist" id="4">
 			<top>50</top>
@@ -220,7 +232,7 @@
 					<texturenofocus>tile.png</texturenofocus>
 					<onclick condition="Skin.String(CustomHomeTile.Label,) + Skin.String(CustomHomeTile.Type,addon)">Skin.SetString(CustomHomeTile.Label,$INFO[system.addontitle(Skin.String(CustomHomeTile.Path))])</onclick>
 					<onclick condition="Skin.String(CustomHomeTile.Image,) + Skin.String(CustomHomeTile.Type,addon)">Skin.SetString(CustomHomeTile.Image,$INFO[system.addonicon(Skin.String(CustomHomeTile.Path))])</onclick>
-					<onclick condition="Skin.String(CustomHomeTile.Image,) + Skin.String(CustomHomeTile.Type,addon)">Skin.SetString(CustomHomeTile.ImageType,addonIcon)</onclick>
+					<onclick condition="Skin.String(CustomHomeTile.Image,) + Skin.String(CustomHomeTile.Type,Favourite)">Skin.SetString(CustomHomeTile.Image,$INFO[Skin.String(CustomHomeTile.Icon)])</onclick>
 					<onclick condition="!Skin.String(CustomHomeTile.Path,)">Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Path,$INFO[Skin.String(CustomHomeTile.Path)])</onclick>
 					<onclick condition="!Skin.String(CustomHomeTile.Path,)">Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Label,$INFO[Skin.String(CustomHomeTile.Label)])</onclick>
 					<onclick condition="!Skin.String(CustomHomeTile.Path,)">Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].Image,$INFO[Skin.String(CustomHomeTile.Image)])</onclick>
@@ -228,8 +240,22 @@
 					<onclick condition="!Skin.String(CustomHomeTile.Path,)">Skin.SetString($INFO[Skin.String(SelectedHomeTitle)].ImageType,$INFO[Skin.String(CustomHomeTile.ImageType)])</onclick>
 					<onclick>Dialog.Close(7777)</onclick>
 				</control>
-				<control type="button" id="20">
-                    <description>Apply Button</description>
+				<control type="radiobutton" id="20">
+					<description>Disable Home Animations</description>
+					<width>145</width>
+					<align>left</align>
+					 <onleft>3</onleft>
+                    <onright>3</onright>
+					<label>Full Icon</label>
+					<focusedcolor>White</focusedcolor>
+					<texturenofocus>tile.png</texturenofocus>
+					<texturefocus colordiffuse="AccentDiffuse">button.png</texturefocus>
+					<font>List_Hint</font>
+					<onclick>Skin.SetString(CustomHomeTile.ImageType,FullIcon)</onclick>
+					<selected>Skin.String(CustomHomeTile.ImageType,FullIcon)</selected>
+				</control>
+				<control type="button" id="30">
+                    <description>Reset Button</description>
                     <width>145</width>
                     <label>RESET</label>
                     <onleft>3</onleft>
@@ -239,10 +265,10 @@
 					<align>center</align>
 					<texturefocus>button.png</texturefocus>
 					<texturenofocus>tile.png</texturenofocus>
-					<onclick>Skin.SetString(CustomHomeTile.Label,$INFO[system.addontitle($INFO[Skin.String(SelectedHomeTitle)].Path)])</onclick>
-					<onclick>Skin.SetString(CustomHomeTile.Image,$INFO[system.addonicon($INFO[Skin.String(SelectedHomeTitle)].Path)])</onclick>
-					<onclick>Skin.SetString(CustomHomeTile.ImageType,addonIcon)</onclick>
-					<visible>!Skin.String(CustomHomeTile.Path,) + Skin.String(CustomHomeTile.Type,addon)</visible>
+					<onclick condition="Skin.String(CustomHomeTile.Type,addon)">Skin.SetString(CustomHomeTile.Label,$INFO[system.addontitle($INFO[Skin.String(SelectedHomeTitle)].Path)])</onclick>
+					<onclick condition="Skin.String(CustomHomeTile.Type,addon)">Skin.SetString(CustomHomeTile.Image,$INFO[system.addonicon($INFO[Skin.String(SelectedHomeTitle)].Path)])</onclick>
+					<onclick condition="Skin.String(CustomHomeTile.Type,Favourite)">Skin.SetString(CustomHomeTile.Image,$INFO[Skin.String(CustomHomeTile.Icon)])</onclick>
+					<visible>!Skin.String(CustomHomeTile.Path,) + [Skin.String(CustomHomeTile.Type,addon) | Skin.String(CustomHomeTile.Type,Favourite)]</visible>
 				</control>
             </control>
 				

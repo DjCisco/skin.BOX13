@@ -38,7 +38,7 @@
                 <ondown>10</ondown>
 				<font>Panel_Hint</font>
 				<focusedcolor>White</focusedcolor>
-				<texturefocus>button.png</texturefocus>
+				<texturefocus colordiffuse="AccentDiffuse">button.png</texturefocus>
 				<texturenofocus>tile.png</texturenofocus>
 	            </control>
             <control type="button" id="11">
@@ -53,7 +53,7 @@
                 <ondown>11</ondown>
 				<font>Panel_Hint</font>
 				<focusedcolor>White</focusedcolor>
-				<texturefocus>button.png</texturefocus>
+				<texturefocus colordiffuse="AccentDiffuse">button.png</texturefocus>
 				<texturenofocus>tile.png</texturenofocus>
             </control>
         </control>

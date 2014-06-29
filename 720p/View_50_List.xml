@@ -123,7 +123,7 @@
 					<control type="image">
 						<width>880</width>
 						<height>45</height>
-						<texture border="2">button.png</texture>
+						<texture colordiffuse="AccentDiffuse">button.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
 					</control>
 					<control type="label">
