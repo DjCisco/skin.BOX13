@@ -1,3 +1,12 @@
+[B]2.3.2[/B]
+- Localized Skin Strings
+
+[B]2.3.1[/B]
+- Coded Global Search Addon Info Window with BOX Design
+- Added Home Customization Functionality for Favourites
+- Added Home Menus Enable/Disable option
+- Added Full Icon option for Custom Home Tiles
+
 [B]2.2.1[/B]
 - Added Support for Global Search Addon / Coded Global Search Main Window with BOX Design
 - Added Home Customization Functionality for Video Addons

@@ -30,13 +30,10 @@
 			<height>30</height>
 			<width>1180</width>
 			<font>Panel_Title</font>
-			<scroll>true</scroll>
 			<aligny>top</aligny>
 			<align>left</align>
 			<label>$VAR[CustomHomeTile.Label]</label>
 			<textoffsetx>0</textoffsetx>
-			<width>1200</width>
-			<label2></label2>
 			<ondown>2</ondown>
 			<onright>3</onright>
 			<font>Panel_Description_Title</font>
@@ -63,7 +60,6 @@
 			<onup>1</onup>
 			<texturefocus>button.png</texturefocus>
 			<texturenofocus></texturenofocus>
-			<!--<onclick>Skin.SetImage(CustomHomeTile.Image)</onclick>-->
 			<onclick>Skin.ToggleSetting(ShowIconSelector)</onclick>
 			<onclick>setFocus(4,1)</onclick>
 			<visible>!Skin.String(CustomHomeTile.Path,)</visible>
@@ -73,7 +69,6 @@
 			<width>315</width>
 			<height>315</height>
 			<texture fallback="defaultaddsource.png">$VAR[CustomHomeTile.Image]</texture> 
-			<shadowcolor>black</shadowcolor>
 			<bordersize>15</bordersize>
 			<bordertexture>tile.png</bordertexture>
 		</control>		
@@ -166,7 +161,7 @@
 			<width>155</width>
 			<height>45</height>
 			<onleft>4</onleft>
-			<label>select</label>
+			<label>22080</label>
 			<font>Panel_Hint</font>
 			<focusedcolor>White</focusedcolor>
 			<texturefocus>button.png</texturefocus>
@@ -222,7 +217,7 @@
 				<control type="button" id="10">
                     <description>OK Button</description>
                     <width>145</width>
-                    <label>OK</label>
+                    <label>186</label>
                     <onleft>3</onleft>
                     <onright>3</onright>
 					<focusedcolor>White</focusedcolor>
@@ -246,7 +241,7 @@
 					<align>left</align>
 					 <onleft>3</onleft>
                     <onright>3</onright>
-					<label>Full Icon</label>
+					<label>538</label>
 					<focusedcolor>White</focusedcolor>
 					<texturenofocus>tile.png</texturenofocus>
 					<texturefocus colordiffuse="AccentDiffuse">button.png</texturefocus>
@@ -257,7 +252,7 @@
 				<control type="button" id="30">
                     <description>Reset Button</description>
                     <width>145</width>
-                    <label>RESET</label>
+                    <label>10035</label>
                     <onleft>3</onleft>
                     <onright>3</onright>
 					<focusedcolor>White</focusedcolor>

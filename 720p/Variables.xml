@@ -184,7 +184,7 @@
 		<value condition="Skin.String(SubMenu1Tile1.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu1Tile1.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu1Tile1.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu1Tile1.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -348,7 +348,7 @@
 		<value condition="Skin.String(SubMenu1Tile2.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu1Tile2.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu1Tile2.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu1Tile2.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -512,7 +512,7 @@
 		<value condition="Skin.String(SubMenu1Tile3.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu1Tile3.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu1Tile3.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu1Tile3.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -676,7 +676,7 @@
 		<value condition="Skin.String(SubMenu1Tile4.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu1Tile4.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu1Tile4.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu1Tile4.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -840,7 +840,7 @@
 		<value condition="Skin.String(SubMenu1Tile5.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu1Tile5.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu1Tile5.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu1Tile5.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1005,7 +1005,7 @@
 		<value condition="Skin.String(SubMenu2Tile1.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu2Tile1.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu2Tile1.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu2Tile1.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1169,7 +1169,7 @@
 		<value condition="Skin.String(SubMenu2Tile2.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu2Tile2.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu2Tile2.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu2Tile2.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1333,7 +1333,7 @@
 		<value condition="Skin.String(SubMenu2Tile3.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu2Tile3.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu2Tile3.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu2Tile3.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1497,7 +1497,7 @@
 		<value condition="Skin.String(SubMenu2Tile4.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu2Tile4.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu2Tile4.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu2Tile4.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1661,7 +1661,7 @@
 		<value condition="Skin.String(SubMenu2Tile5.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu2Tile5.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu2Tile5.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu2Tile5.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1826,7 +1826,7 @@
 		<value condition="Skin.String(SubMenu3Tile1.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu3Tile1.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu3Tile1.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu3Tile1.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -1990,7 +1990,7 @@
 		<value condition="Skin.String(SubMenu3Tile2.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu3Tile2.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu3Tile2.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu3Tile2.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2154,7 +2154,7 @@
 		<value condition="Skin.String(SubMenu3Tile3.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu3Tile3.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu3Tile3.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu3Tile3.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2318,7 +2318,7 @@
 		<value condition="Skin.String(SubMenu3Tile4.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu3Tile4.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu3Tile4.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu3Tile4.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2482,7 +2482,7 @@
 		<value condition="Skin.String(SubMenu3Tile5.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu3Tile5.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu3Tile5.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu3Tile5.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2647,7 +2647,7 @@
 		<value condition="Skin.String(SubMenu4Tile1.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu4Tile1.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu4Tile1.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu4Tile1.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2811,7 +2811,7 @@
 		<value condition="Skin.String(SubMenu4Tile2.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu4Tile2.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu4Tile2.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu4Tile2.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -2975,7 +2975,7 @@
 		<value condition="Skin.String(SubMenu4Tile3.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu4Tile3.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu4Tile3.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu4Tile3.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3139,7 +3139,7 @@
 		<value condition="Skin.String(SubMenu4Tile4.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu4Tile4.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu4Tile4.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu4Tile4.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3303,7 +3303,7 @@
 		<value condition="Skin.String(SubMenu4Tile5.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu4Tile5.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu4Tile5.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu4Tile5.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3468,7 +3468,7 @@
 		<value condition="Skin.String(SubMenu5Tile1.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu5Tile1.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu5Tile1.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu5Tile1.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3632,7 +3632,7 @@
 		<value condition="Skin.String(SubMenu5Tile2.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu5Tile2.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu5Tile2.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu5Tile2.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3796,7 +3796,7 @@
 		<value condition="Skin.String(SubMenu5Tile3.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu5Tile3.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu5Tile3.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu5Tile3.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -3960,7 +3960,7 @@
 		<value condition="Skin.String(SubMenu5Tile4.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu5Tile4.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu5Tile4.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu5Tile4.Type,TvChannels)">$LOCALIZE[31708]</value>
@@ -4124,7 +4124,7 @@
 		<value condition="Skin.String(SubMenu5Tile5.Type,VideoPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,MusicPlaylists)">$LOCALIZE[136]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,VideoAddons)">$LOCALIZE[1037]</value>
-		<value condition="Skin.String(SubMenu5Tile5.Type,MusicAddons)">$LOCALIZE[31708]</value>
+		<value condition="Skin.String(SubMenu5Tile5.Type,MusicAddons)">$LOCALIZE[1038]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,MusicVideos)">$LOCALIZE[31737]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,MusicFiles)">$LOCALIZE[2] $LOCALIZE[744]</value>
 		<value condition="Skin.String(SubMenu5Tile5.Type,TvChannels)">$LOCALIZE[31708]</value>

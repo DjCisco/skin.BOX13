@@ -26,7 +26,6 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>center</align>
-					<label></label>
 					<texturefocus></texturefocus>
 					<textoffsetx>0</textoffsetx>
 					<ondown>100</ondown>
@@ -46,7 +45,6 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
-					<label></label>
 					<ondown>200</ondown>
 					<texturefocus></texturefocus>
 					<focusedcolor>Accent</focusedcolor>
@@ -65,7 +63,6 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
-					<label></label>
 					<ondown>300</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<texturefocus></texturefocus>
@@ -84,7 +81,6 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
-					<label></label>
 					<ondown>400</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<texturefocus></texturefocus>
@@ -103,7 +99,6 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
-					<label></label>
 					<ondown>500</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<font>List_Settings</font>
@@ -253,7 +248,6 @@
 					<height>25</height>
 					<align>left</align>
 					<label>$VAR[MainMenu1.Label]</label>
-					<label2></label2>
 					<onup>100</onup>
 					<ondown>102</ondown>
 					<font>Panel_Description_Title</font>
@@ -266,7 +260,6 @@
 					<height>25</height>
 					<align>left</align>
 					<label>$VAR[MainMenu2.Label]</label>
-					<label2></label2>
 					<onup>200</onup>
 					<ondown>202</ondown>
 					<font>Panel_Description_Title</font>
@@ -280,7 +273,6 @@
 					<height>25</height>
 					<align>left</align>
 					<label>$VAR[MainMenu3.Label]</label>
-					<label2></label2>
 					<onup>300</onup>
 					<ondown>302</ondown>
 					<font>Panel_Description_Title</font>
@@ -294,7 +286,6 @@
 					<height>25</height>
 					<align>left</align>
 					<label>$VAR[MainMenu4.Label]</label>
-					<label2></label2>
 					<onup>400</onup>
 					<ondown>402</ondown>
 					<font>Panel_Description_Title</font>
@@ -308,7 +299,6 @@
 					<height>25</height>
 					<align>left</align>
 					<label>$VAR[MainMenu5.Label]</label>
-					<label2></label2>
 					<onleft>900</onleft>
 					<onup>500</onup>
 					<ondown>502</ondown>
@@ -329,8 +319,6 @@
 						<width>205</width>
 						<height>100</height>
 						<align>left</align>
-						<label></label>
-						<label2></label2>
 						<onleft>noop</onleft>
 						<onup>101</onup>
 						<ondown>103</ondown>
@@ -416,8 +404,6 @@
 						<width>205</width>
 						<height>100</height>
 						<align>left</align>
-						<label></label>
-						<label2></label2>
 						<onup>201</onup>
 						<ondown>203</ondown>
 						<onleft>102</onleft>
@@ -502,8 +488,6 @@
 						<width>205</width>
 						<height>100</height>
 						<align>left</align>
-						<label></label>
-						<label2></label2>
 						<onup>301</onup>
 						<ondown>303</ondown>
 						<onleft>202</onleft>
@@ -588,8 +572,6 @@
 						<width>205</width>
 						<height>100</height>
 						<align>left</align>
-						<label></label>
-						<label2></label2>
 						<onup>401</onup>
 						<ondown>403</ondown>
 						<onleft>302</onleft>
@@ -674,8 +656,6 @@
 						<width>205</width>
 						<height>100</height>
 						<align>left</align>
-						<label></label>
-						<label2></label2>
 						<onup>501</onup>
 						<ondown>503</ondown>
 						<onleft>402</onleft>

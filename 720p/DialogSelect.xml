@@ -118,7 +118,6 @@
                 <width>180</width>
                 <align>center</align>
                 <font>Panel_Info</font>
-                <label></label>
             </control>
             <control type="button" id="5">
                 <description>Manual</description>
