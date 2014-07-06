@@ -45,6 +45,7 @@
     </control>
 	<include>BarClock</include>
 
+
 	<!-- Main Menu Icons -->
 	<control type="grouplist">
 		<animation type="WindowClose">
@@ -58,8 +59,6 @@
 		<animation type="Conditional" condition="Window.IsActive(151) | Window.IsActive(138) | Window.IsActive(107)">
 				<effect type="slide" time="300" end="0,40" easing="out" tween="cubic"/>
 		</animation>
-		
-		
 		<left>50</left>
 		<top>10</top>
 		<width>350</width>
@@ -300,6 +299,8 @@
 			<ondown>3000</ondown>
 			<onfocus>SetProperty(menu,menu1)</onfocus>
 			<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
+			<onclick>$VAR[MainMenu1.Action]</onclick>
+			<onclick>$VAR[MainMenu1.2ndAction]</onclick>
 			<visible>Skin.HasSetting(EnableHomeMenu1)</visible>
 		</control>
 		<!-- Menu2 -->
@@ -311,6 +312,8 @@
 			<ondown>4000</ondown>
 			<onfocus>SetProperty(menu,menu2)</onfocus>
 			<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
+			<onclick>$VAR[MainMenu2.Action]</onclick>
+			<onclick>$VAR[MainMenu2.2ndAction]</onclick>
 			<visible>Skin.HasSetting(EnableHomeMenu2)</visible>
 		</control>
 		<!-- Menu3 -->
@@ -322,6 +325,8 @@
 			<ondown>5000</ondown>
 			<onfocus>SetProperty(menu,menu3)</onfocus>
 			<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
+			<onclick>$VAR[MainMenu3.Action]</onclick>
+			<onclick>$VAR[MainMenu3.2ndAction]</onclick>
 			<visible>Skin.HasSetting(EnableHomeMenu3)</visible>
 		</control>
 		<!-- Menu4 -->
@@ -335,6 +340,8 @@
 			<ondown>6000</ondown>
 			<onfocus>SetProperty(menu,menu4)</onfocus>
 			<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
+			<onclick>$VAR[MainMenu4.Action]</onclick>
+			<onclick>$VAR[MainMenu4.2ndAction]</onclick>
 			<visible>Skin.HasSetting(EnableHomeMenu4)</visible>
 		</control>
 		<!-- Menu5 -->
@@ -348,6 +355,8 @@
 			<ondown>7000</ondown>
 			<onfocus>SetProperty(menu,menu5)</onfocus>
 			<onfocus condition="Skin.HasSetting(showHomeHiddenMenu)">Skin.ToggleSetting(showHomeHiddenMenu)</onfocus>
+			<onclick>$VAR[MainMenu5.Action]</onclick>
+			<onclick>$VAR[MainMenu5.2ndAction]</onclick>
 			<visible>Skin.HasSetting(EnableHomeMenu5)</visible>
 		</control>
 	</control>	
@@ -523,6 +532,7 @@
 				</animation>
 				<visible>SubString(Window(Home).Property(menu),menu2)</visible>
 				<!--
+				
 				<animation type="Conditional" condition="StringCompare(Window(Home).Property(menu),menu2)" reversible="false">
 					<effect type="rotatey" start="0" end="360" center="210" time="1000" tween="cubic" easing="inout" />
 				</animation>

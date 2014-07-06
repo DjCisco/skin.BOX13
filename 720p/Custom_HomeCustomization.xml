@@ -9,11 +9,82 @@
 		</control>
 		<include>HomeBackground</include>
 		<control type="group">
-			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666) | Window.IsActive(7777)" reversible="true">
+			<animation type="Conditional" condition="Window.IsActive(4444) | Window.IsActive(5555) | Window.IsActive(6666) | Window.IsActive(7777) | Window.IsActive(8888)" reversible="true">
 				<effect type="slide" end="+1500" time="300" tween="cubic" easing="inout"/>
 			</animation>
 			
-			
+			<!-- Main Menu Actions -->
+			<control type="grouplist">
+				<top>100</top>
+				<left>50</left>
+				<orientation>horizontal</orientation>
+				<itemgap>25</itemgap>
+				<control type="button" id="98">
+					<textoffsetx>0</textoffsetx>
+					<width>210</width>
+					<height>25</height>
+					<align>left</align>
+					<label>$VAR[MainMenu1.Action]</label>
+					<ondown>99</ondown>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<onclick>Skin.SetString(SelectedMainMenu,MainMenu1)</onclick>
+					<onclick>ActivateWindow(8888)</onclick>
+				</control>
+				<control type="button" id="198">
+					<textoffsetx>0</textoffsetx>
+					<width>210</width>
+					<height>25</height>
+					<align>left</align>
+					<label>$VAR[MainMenu2.Action]</label>
+					<ondown>199</ondown>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
+					<onclick>Skin.SetString(SelectedMainMenu,MainMenu2)</onclick>
+					<onclick>ActivateWindow(8888)</onclick>
+				</control>
+				<control type="button" id="298">
+					<textoffsetx>0</textoffsetx>
+					<width>210</width>
+					<height>25</height>
+					<align>left</align>
+					<label>$VAR[MainMenu3.Action]</label>
+					<ondown>299</ondown>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
+					<onclick>Skin.SetString(SelectedMainMenu,MainMenu3)</onclick>
+					<onclick>ActivateWindow(8888)</onclick>
+				</control>
+				<control type="button" id="398">
+					<textoffsetx>0</textoffsetx>
+					<width>210</width>
+					<height>25</height>
+					<align>left</align>
+					<label>$VAR[MainMenu4.Action]</label>
+					<ondown>399</ondown>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
+					<onclick>Skin.SetString(SelectedMainMenu,MainMenu4)</onclick>
+					<onclick>ActivateWindow(8888)</onclick>
+				</control>
+				<control type="button" id="498">
+					<textoffsetx>0</textoffsetx>
+					<width>210</width>
+					<height>25</height>
+					<align>left</align>
+					<label>$VAR[MainMenu5.Action]</label>
+					<ondown>499</ondown>
+					<font>List_Settings</font>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
+					<onclick>Skin.SetString(SelectedMainMenu,MainMenu5)</onclick>
+					<onclick>ActivateWindow(8888)</onclick>
+				</control>
+			</control>
+			<!-- Home Menu Enable Disable Buttons -->
 			<control type="grouplist">
 				<top>140</top>
 				<left>50</left>
@@ -28,6 +99,7 @@
 					<align>center</align>
 					<texturefocus></texturefocus>
 					<textoffsetx>0</textoffsetx>
+					<onup>98</onup>
 					<ondown>100</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<font>List_Settings</font>
@@ -45,6 +117,7 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
+					<onup>198</onup>
 					<ondown>200</ondown>
 					<texturefocus></texturefocus>
 					<focusedcolor>Accent</focusedcolor>
@@ -63,6 +136,7 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
+					<onup>298</onup>
 					<ondown>300</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<texturefocus></texturefocus>
@@ -81,6 +155,7 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
+					<onup>398</onup>
 					<ondown>400</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<texturefocus></texturefocus>
@@ -99,6 +174,7 @@
 					<radiowidth>45</radiowidth>
 					<radioheight>45</radioheight>
 					<align>left</align>
+					<onup>498</onup>
 					<ondown>500</ondown>
 					<focusedcolor>Accent</focusedcolor>
 					<font>List_Settings</font>
@@ -111,8 +187,6 @@
 					<selected>Skin.HasSetting(EnableHomeMenu5)</selected>
 				</control>
 			</control>
-			
-			
 			<!-- Display of Home Icons-->
 			<control type="grouplist">
 				<top>205</top>
@@ -237,6 +311,7 @@
 					<onclick>ActivateWindow(6666,return)</onclick>
 				</control>
 			</control>
+			<!-- Main Menu Label -->
 			<control type="grouplist">
 				<top>260</top>
 				<left>50</left>
@@ -308,10 +383,12 @@
 					<onclick>Skin.SetString(HomeMenu5.Label)</onclick>
 				</control>
 			</control>
+			<!-- SubMenus Customization -->
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<itemgap>25</itemgap>
 				<include>PanelCoordinates</include>
+				<!-- SubMenu 1 -->
 				<control type="group">
 					<width>210</width>
 					<height>310</height>
@@ -397,6 +474,7 @@
 					</control>
 
 				</control>
+				<!-- SubMenu 2 -->
 				<control type="group">
 					<width>210</width>
 					<height>310</height>
@@ -481,6 +559,7 @@
 						</content>
 					</control>
 				</control>
+				<!-- SubMenu 3 -->
 				<control type="group">
 					<width>210</width>
 					<height>310</height>
@@ -565,6 +644,7 @@
 						</content>
 					</control>
 				</control>
+				<!-- SubMenu 4 -->
 				<control type="group">
 					<width>210</width>
 					<height>310</height>
@@ -649,6 +729,7 @@
 						</content>
 					</control>
 				</control>
+				<!-- SubMenu 5 -->
 				<control type="group">
 					<width>210</width>
 					<height>310</height>
@@ -734,6 +815,7 @@
 					</control>
 				</control>
 			</control>
+			<!-- Home Widget Customization --> 
 			<control type="grouplist">
 				<top>605</top>
 				<left>50</left>

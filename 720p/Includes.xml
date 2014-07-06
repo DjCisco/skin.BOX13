@@ -5400,7 +5400,54 @@
 	  </include>
 	
 
-
+	
+	<include name="MainMenu">
+		<item id="1">
+			<label>$VAR[MainMenu1.Label]</label>
+			<icon>$VAR[MainMenu1.Image]</icon>
+			<thumb>$VAR[MainMenu1.Image]</thumb>
+			<onclick>$VAR[MainMenu1.Action]</onclick>
+			<onclick>$VAR[MainMenu1.2ndAction]</onclick>
+			<property name="FocusAction">Skin.SetString(SelectedMainMenu,Menu1)</property>
+			<visible>Skin.HasSetting(EnableHomeMenu1)</visible>
+		 </item>
+		 <item id="2">
+			<label>$VAR[MainMenu2.Label]</label>
+			<icon>$VAR[MainMenu2.Image]</icon>
+			<thumb>$VAR[MainMenu2.Image]</thumb>
+			<onclick>$VAR[MainMenu2.Action]</onclick>
+			<onclick>$VAR[MainMenu2.2ndAction]</onclick>
+			<property name="FocusAction">Skin.SetString(SelectedMainMenu,Menu2)</property>
+			<visible>Skin.HasSetting(EnableHomeMenu2)</visible>
+		 </item>
+		 <item id="3">
+			<label>$VAR[MainMenu3.Label]</label>
+			<icon>$VAR[MainMenu3.Image]</icon>
+			<thumb>$VAR[MainMenu3.Image]</thumb>
+			<onclick>$VAR[MainMenu3.Action]</onclick>
+			<onclick>$VAR[MainMenu3.2ndAction]</onclick>
+			<property name="FocusAction">Skin.SetString(SelectedMainMenu,Menu3)</property>
+			<visible>Skin.HasSetting(EnableHomeMenu3)</visible>
+		 </item>
+		 <item id="4">
+			<label>$VAR[MainMenu4.Label]</label>
+			<icon>$VAR[MainMenu4.Image]</icon>
+			<thumb>$VAR[MainMenu4.Image]</thumb>
+			<onclick>$VAR[MainMenu4.Action]</onclick>
+			<onclick>$VAR[MainMenu4.2ndAction]</onclick>
+			<property name="FocusAction">Skin.SetString(SelectedMainMenu,Menu4)</property>
+			<visible>Skin.HasSetting(EnableHomeMenu4)</visible>
+		 </item>
+		 <item id="5">
+			<label>$VAR[MainMenu5.Label]</label>
+			<icon>$VAR[MainMenu5.Image]</icon>
+			<thumb>$VAR[MainMenu5.Image]</thumb>
+			<onclick>$VAR[MainMenu5.Action]</onclick>
+			<onclick>$VAR[MainMenu5.2ndAction]</onclick>
+			<property name="FocusAction">Skin.SetString(SelectedMainMenu,Menu5)</property>
+			<visible>Skin.HasSetting(EnableHomeMenu5)</visible>
+		 </item>
+	</include>
 	
 	<include name="SubMenu1B">
 		<item id="1">
@@ -5612,7 +5659,7 @@
 			<visible>!IsEmpty(Skin.String(SubMenu5Tile5.Type))</visible>
 		 </item>
 	</include>
-		
+	
 	<include name="SubMenu1BCustomization">
 		<item id="1">
 			<label>$VAR[SubMenu1Tile2.Label]</label>
@@ -6407,6 +6454,328 @@
 		 </item>
 	</include>
 
+<include name="MainMenuActionChooser">
+		<item id="1">
+			<label>$LOCALIZE[31004]</label>			
+			<icon>DefaultFolderBack.png</icon>
+			<thumb>DefaultFolderBack.png</thumb>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="2">
+			<label>$LOCALIZE[1211]</label>
+			<label2>$LOCALIZE[14022]</label2>
+			<icon>icons/MusicLibrary.png</icon>
+			<thumb>icons/MusicLibrary.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MusicLibrary)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="3">
+			<label>$LOCALIZE[20343]</label>
+			<label2>$LOCALIZE[14022]</label2>
+			<icon>icons/TvShowLibrary.png</icon>
+			<thumb>icons/TvShowLibrary.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,TVShowLibrary)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="4">
+			<label>$LOCALIZE[20342]</label>
+			<label2>$LOCALIZE[14022]</label2>
+			<icon>icons/MovieLibrary.png</icon>
+			<thumb>icons/MovieLibrary.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MovieLibrary)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="5">
+			<label>$LOCALIZE[10006]</label>
+			<icon>DefaultVideo.png</icon>
+			<thumb>DefaultVideo.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,VideoLibrary)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="6">
+			<label>$LOCALIZE[10005]</label>
+			<label2>$LOCALIZE[744]</label2>
+			<icon>DefaultMusicFiles.png</icon>
+			<thumb>DefaultMusicFiles.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MusicFiles)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="7">
+			<label>$LOCALIZE[20386]</label>
+			<icon>DefaultRecentlyAddedMovies.png</icon>
+			<thumb>DefaultRecentlyAddedMovies.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,RecentylAddedMovies)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="8">
+			<label>$LOCALIZE[20387]</label>
+			<icon>DefaultRecentlyAddedEpisodes.png</icon>
+			<thumb>DefaultRecentlyAddedEpisodes.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,RecentylAddedEpisodes)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="9">
+			<label>$LOCALIZE[359]</label>
+			<icon>DefaultMusicRecentlyAdded.png</icon>
+			<thumb>DefaultMusicRecentlyAdded.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,RecentylAddedAlbums)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="10">
+			<label>$LOCALIZE[1211]</label>
+			<label2>$LOCALIZE[133]</label2>
+			<icon>DefaultMusicArtists.png</icon>
+			<thumb>DefaultMusicArtists.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Artists)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="11">
+			<label>$LOCALIZE[20338]</label>
+			<label2>$LOCALIZE[20348]</label2>
+			<icon>DefaultDirector.png</icon>
+			<thumb>DefaultDirector.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Directors)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="12">
+			<label>$LOCALIZE[20338]</label>
+			<label2>$LOCALIZE[344]</label2>
+			<icon>DefaultMovieActor.png</icon>
+			<thumb>DefaultMovieActor.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MovieActors)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="13">
+			<label>$LOCALIZE[20364]</label>
+			<label2>$LOCALIZE[344]</label2>
+			<icon>DefaultTvShowActor.png</icon>
+			<thumb>DefaultTvShowActor.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,TvShowActors)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="14">
+			<label>$LOCALIZE[132]</label>
+			<icon>DefaultMusicAlbums.png</icon>
+			<thumb>DefaultMusicAlbums.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Albums)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="15">
+			<label>$LOCALIZE[342]</label>
+			<icon>DefaultMovies.png</icon>
+			<thumb>DefaultMovies.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Movies)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="16">
+			<label>$LOCALIZE[20343]</label>
+			<icon>DefaultTVShows.png</icon>
+			<thumb>DefaultTVShows.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,TvShows)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="17">
+			<label>$LOCALIZE[20012]</label>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb>DefaultVideoPlaylists.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,VideoPlaylists)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		<item id="18">
+			<label>$LOCALIZE[20011]</label>
+			<icon>DefaultMusicPlaylists.png</icon>
+			<thumb>DefaultMusicPlaylists.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MusicPlaylists)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="19">
+			<label>$LOCALIZE[1037]</label>
+			<icon>DefaultAddonVideo.png</icon>
+			<thumb>DefaultAddonVideo.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,VideoAddons)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="20">
+			<label>$LOCALIZE[1038]</label>
+			<icon>DefaultAddonMusic.png</icon>
+			<thumb>DefaultAddonMusic.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,MusicAddons)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="21">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19217]</label2>
+			<icon>DefaultTvChannels.png</icon>
+			<thumb>DefaultTvChannels.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,TvChannels)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="22">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19216]</label2>
+			<icon>DefaultRadio.png</icon>
+			<thumb>DefaultRadio.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,RadioChannels)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		<item id="23">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19069]</label2>
+			<icon>DefaultEPG.png</icon>
+			<thumb>DefaultEPG.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,EPG)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="24">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[19163]</label2>
+			<icon>DefaultTvRecordings.png</icon>
+			<thumb>DefaultTvRecordings.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Recordings)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="25">
+			<label>$LOCALIZE[31703]</label>
+			<label2>$LOCALIZE[31710]</label2>
+			<icon>DefaultTimer.png</icon>
+			<thumb>DefaultTimer.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Timers)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="26">
+			<label>$LOCALIZE[341]</label>
+			<icon>icons/music.png</icon>
+			<thumb>icons/music.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,PlayDisc)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="27">
+			<label>$LOCALIZE[13391]</label>
+			<icon>eject.png</icon>
+			<thumb>eject.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,EjectDisc)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		<item id="28">
+			<label>$LOCALIZE[8]</label>
+			<icon>DefaultWeather.png</icon>
+			<thumb>DefaultWeather.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Weather)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="29">
+			<label>$LOCALIZE[1036]</label>
+			<icon>top.png</icon>
+			<thumb>top.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Favourites)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		<item id="30">
+			<label>$LOCALIZE[1]</label>
+			<icon>DefaultPicture.png</icon>
+			<thumb>DefaultPicture.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Pictures)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		<item id="31">
+			<label>$LOCALIZE[0]</label>
+			<icon>DefaultProgram.png</icon>
+			<thumb>DefaultProgram.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Programs)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="32">
+			<label>$LOCALIZE[10004]</label>
+			<icon>icons/Settings.png</icon>
+			<thumb>icons/Settings.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Settings)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		<item id="33">
+			<label>$LOCALIZE[7]</label>
+			<icon>icons/FileManager.png</icon>
+			<thumb>icons/FileManager.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,FileManager)</onclick>
+		 </item>
+		 <item id="34">
+			<label>$LOCALIZE[13005]</label>
+			<icon>icons/Power.png</icon>
+			<thumb>icons/Power.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Shutdown)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="35">
+			<label>$LOCALIZE[636] • $LOCALIZE[31026]</label>
+			<label2>157</label2>
+			<icon>DefaultAddonVideo.png</icon>
+			<thumb>DefaultAddonVideo.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,addon)</onclick>
+			<onclick>Skin.SetAddon($INFO[Skin.String(SelectedMainMenu)].Path,xbmc.addon.video)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		</item>
+		 <item id="36">
+			<label>$LOCALIZE[636] • $LOCALIZE[31026]</label>
+			<label2>2</label2>
+			<icon>DefaultAddonMusic.png</icon>
+			<thumb>DefaultAddonMusic.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,addon)</onclick>
+			<onclick>Skin.SetAddon($INFO[Skin.String(SelectedMainMenu)].Path,xbmc.addon.audio)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="37">
+			<label>$LOCALIZE[636] • $LOCALIZE[31026]</label>
+			<label2>$LOCALIZE[31023]</label2>
+			<icon>DefaultAddonPicture.png</icon>
+			<thumb>DefaultAddonPicture.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,addon)</onclick>
+			<onclick>Skin.SetAddon($INFO[Skin.String(SelectedMainMenu)].Path,xbmc.addon.image)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="38">
+			<label>$LOCALIZE[636] • $LOCALIZE[31026]</label>
+			<label2>$LOCALIZE[31022]</label2>
+			<icon>DefaultAddonProgram.png</icon>
+			<thumb>DefaultAddonProgram.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,addon)</onclick>
+			<onclick>Skin.SetAddon($INFO[Skin.String(SelectedMainMenu)].Path,xbmc.addon.executable)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="39">
+			<label>$LOCALIZE[636] • $LOCALIZE[559]</label>
+			<label2>2</label2>
+			<icon>DefaultMusicPlaylists.png</icon>
+			<thumb>DefaultMusicPlaylists.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,PlaylistAudio)</onclick>
+			<onclick>Skin.SetFile($INFO[Skin.String(SelectedMainMenu)].Path,.xsp|.m3u,special://profile/playlists/music/)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="40">
+			<label>$LOCALIZE[636] • $LOCALIZE[559]</label>>
+			<label2>157</label2>
+			<icon>DefaultVideoPlaylists.png</icon>
+			<thumb>DefaultVideoPlaylists.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,PlaylistVideo)</onclick>
+			<onclick>Skin.SetFile($INFO[Skin.String(SelectedMainMenu)].Path,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="41">
+			<label>636</label>
+			<label2>$LOCALIZE[31021]</label2>
+			<icon>top.png</icon>
+			<thumb>top.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,Favourite)</onclick>
+			<onclick>RunScript(script.favourites,property=$INFO[Skin.String(SelectedMainMenu)])</onclick>
+			<visible>System.HasAddon(script.favourites)</visible>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+		 <item id="42">
+			<label>$LOCALIZE[117]</label>
+			<icon>DefaultDelete.png</icon>
+			<thumb>DefaultDelete.png</thumb>
+			<onclick>Skin.SetString($INFO[Skin.String(SelectedMainMenu)].Type,)</onclick>
+			<onclick>Dialog.Close(8888)</onclick>
+		 </item>
+	</include>
 
   
   </includes>
