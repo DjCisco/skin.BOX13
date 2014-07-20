@@ -974,9 +974,9 @@
 			<visible>!Skin.HasSetting(showHomeHiddenMenu)</visible>
 			<control type="button" id="6789">
 				<left>0</left>
-				<top>425</top>
-				<width>25</width>
-				<height>45</height>
+				<top>400</top>
+				<width>50</width>
+				<height>95</height>
 				<onleft>20000</onleft>
 				<onclick>left</onclick>
 			</control>
@@ -1000,16 +1000,26 @@
 			<visible>Skin.HasSetting(showHomeHiddenMenu)</visible>
 			<control type="button" id="9876">
 				<left>0</left>
-				<top>425</top>
-				<width>25</width>
-				<height>45</height>
+				<top>400</top>
+				<width>50</width>
+				<height>95</height>
 				<onleft>20000</onleft>
 				<onclick>right</onclick>
 				<onright condition="StringCompare(SelectedHomeMenu,menu1)">1000</onright>
 				<onright condition="StringCompare(SelectedHomeMenu,menu2)">2000</onright>
 				<onright condition="StringCompare(SelectedHomeMenu,menu3)">3000</onright>
 				<onright condition="StringCompare(SelectedHomeMenu,menu4)">4000</onright>
-				<onright condition="StringCompare(SelectedHomeMenu,menu5)">5000</onright>			
+				<onright condition="StringCompare(SelectedHomeMenu,menu5)">5000</onright>	
+				<onright condition="StringCompare(SelectedHomeMenu,menu6)">6000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu7)">7000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu8)">8000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu9)">9000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu10)">100000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu11)">11000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu12)">12000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu13)">13000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu14)">14000</onright>
+				<onright condition="StringCompare(SelectedHomeMenu,menu15)">15000</onright>				
 			</control>
 			<control type="image">
 				<left>0</left>
