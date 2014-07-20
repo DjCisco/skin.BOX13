@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="tvshows">
+    <name>CBS</name>
+    <match>all</match>
+    <rule field="studio" operator="is">
+        <value>CBS</value>
+    </rule>
+    <limit>10</limit>
+</smartplaylist>
